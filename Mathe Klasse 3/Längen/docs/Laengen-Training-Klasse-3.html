@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Laengen Training Klasse 3</title>
+<title>Laengen Lernbegleiter</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Laengen Training Klasse 3" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Laengen Lernbegleiter" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Laengen Training Klasse 3&lt;/title&gt;
+&lt;title&gt;Laengen Lernbegleiter&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(--background) !important;
@@ -748,124 +748,204 @@ svg {
 html&gt;body{padding:0}&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;div id=&quot;laengen-training&quot;&gt;
+&lt;div id=&quot;length-coach&quot;&gt;
   &lt;style&gt;
-    #laengen-training { color: var(--foreground); font-family: inherit; }
-    #laengen-training .top { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:16px; }
-    #laengen-training .progress { display:flex; gap:6px; flex-wrap:wrap; }
-    #laengen-training .dot { width:22px; height:22px; border-radius:50%; display:grid; place-items:center; background:var(--muted); color:var(--muted-foreground); border:1px solid var(--border); font-size:11px; }
-    #laengen-training .dot.active { background:var(--primary); color:var(--primary-foreground); }
-    #laengen-training .dot.done { background:color-mix(in srgb, var(--viz-series-2) 22%, var(--card)); color:var(--card-foreground); }
-    #laengen-training .stage { display:grid; grid-template-columns:minmax(0,1fr) minmax(180px,.38fr); gap:16px; align-items:start; }
-    #laengen-training .question { padding:22px; }
-    #laengen-training .level { display:flex; justify-content:space-between; gap:10px; color:var(--muted-foreground); margin-bottom:12px; }
-    #laengen-training .prompt { margin:0 0 18px; }
-    #laengen-training .answer-row { display:flex; align-items:end; gap:10px; flex-wrap:wrap; }
-    #laengen-training .answer-row .form-label { min-width:145px; }
-    #laengen-training .answer-row input { max-width:180px; }
-    #laengen-training .unit { padding-bottom:9px; font-weight:500; }
-    #laengen-training .feedback { margin-top:16px; min-height:48px; padding:12px; border-left:4px solid var(--border); background:var(--muted); color:var(--foreground); }
-    #laengen-training .feedback.good { border-color:var(--viz-series-2); }
-    #laengen-training .feedback.bad { border-color:var(--destructive); }
-    #laengen-training .feedback strong { display:block; margin-bottom:4px; }
-    #laengen-training .side { display:grid; gap:12px; }
-    #laengen-training .side .card { padding:16px; }
-    #laengen-training .ladder { display:grid; grid-template-columns:repeat(5,1fr); gap:4px; text-align:center; margin-top:10px; }
-    #laengen-training .ladder span { padding:7px 2px; background:var(--muted); color:var(--foreground); border-radius:6px; }
-    #laengen-training .hint-box { margin-top:12px; padding:12px; background:var(--accent); color:var(--accent-foreground); }
-    #laengen-training .hidden { display:none; }
-    #laengen-training .ruler { position:relative; height:56px; margin:12px 0 20px; border-bottom:3px solid var(--foreground); display:flex; justify-content:space-between; align-items:end; }
-    #laengen-training .ruler span { width:1px; height:18px; background:var(--foreground); position:relative; }
-    #laengen-training .ruler span:nth-child(5n+1) { height:30px; }
-    #laengen-training .ruler b { position:absolute; top:31px; left:-4px; font-weight:400; }
-    #laengen-training .finish { text-align:center; padding:28px; }
-    #laengen-training .finish-mark { font-size:48px; margin-bottom:8px; }
-    @media (max-width:600px) { #laengen-training .stage { grid-template-columns:1fr; } #laengen-training .question { padding:16px; } }
+    #length-coach{color:var(--foreground);font-family:inherit}
+    #length-coach .hero{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;align-items:center;margin-bottom:20px}
+    #length-coach .hero-copy{padding:4px 0}
+    #length-coach .hero-copy p{max-width:62ch}
+    #length-coach .hero-art{color:var(--viz-series-1)}
+    #length-coach .hero-art svg{display:block;width:100%;height:auto}
+    #length-coach .motivation{display:flex;gap:10px;align-items:center;padding:12px 14px;background:var(--accent);color:var(--accent-foreground);border-radius:10px;margin:12px 0}
+    #length-coach .motivation .star{font-size:26px}
+    #length-coach .section{margin:26px 0}
+    #length-coach .section-head{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+    #length-coach .section-head h2{margin:0}
+    #length-coach .icon-circle{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--primary);color:var(--primary-foreground);flex:0 0 auto}
+    #length-coach .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    #length-coach .facts .card{padding:16px}
+    #length-coach .fact-symbol{font-size:30px;margin-bottom:8px}
+    #length-coach .fact-title{font-weight:500;margin-bottom:5px}
+    #length-coach .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;align-items:stretch;margin:14px 0}
+    #length-coach .step{padding:14px 8px;text-align:center;background:color-mix(in srgb,var(--viz-series-1) 12%,var(--card));border-radius:9px}
+    #length-coach .step strong{display:block;margin-bottom:4px}
+    #length-coach .arrow{text-align:center;color:var(--muted-foreground);font-size:18px;align-self:center}
+    #length-coach .memory{padding:14px;border-left:5px solid var(--viz-series-2);background:color-mix(in srgb,var(--viz-series-2) 10%,var(--background));margin-top:12px}
+    #length-coach .place-wrap{overflow-x:auto;padding-bottom:4px}
+    #length-coach .place-table{width:100%;min-width:620px;border-collapse:separate;border-spacing:4px;text-align:center}
+    #length-coach .place-table th{padding:9px 5px;background:var(--muted);color:var(--foreground);font-weight:500}
+    #length-coach .place-table td{padding:14px 5px;background:var(--card);color:var(--card-foreground);border:1px solid var(--border);font-size:20px}
+    #length-coach .place-table .focus{background:color-mix(in srgb,var(--viz-series-1) 18%,var(--card))}
+    #length-coach .decimal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+    #length-coach .decimal-grid div{padding:12px;background:var(--muted);border-radius:8px;text-align:center}
+    #length-coach .converter{padding:18px}
+    #length-coach .converter-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:end}
+    #length-coach .converter-result{margin-top:14px;padding:14px;background:var(--accent);color:var(--accent-foreground);border-radius:9px;min-height:48px}
+    #length-coach .converter-result strong{font-size:22px}
+    #length-coach .comma-tip{margin-top:9px;color:var(--muted-foreground)}
+    #length-coach .training{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,.35fr);gap:14px;align-items:start}
+    #length-coach .question{padding:20px}
+    #length-coach .question-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+    #length-coach .progress{display:flex;gap:5px;flex-wrap:wrap;margin:10px 0 16px}
+    #length-coach .dot{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--muted);color:var(--muted-foreground);border:1px solid var(--border);font-size:11px}
+    #length-coach .dot.active{background:var(--primary);color:var(--primary-foreground)}
+    #length-coach .dot.done{background:color-mix(in srgb,var(--viz-series-2) 22%,var(--card));color:var(--card-foreground)}
+    #length-coach .answer-row{display:flex;gap:10px;align-items:end;flex-wrap:wrap;margin-top:16px}
+    #length-coach .answer-row .form-label{min-width:170px}
+    #length-coach .answer-row input{max-width:190px}
+    #length-coach .unit{padding-bottom:9px;font-weight:500}
+    #length-coach .feedback{margin-top:14px;padding:12px;border-left:4px solid var(--border);background:var(--muted)}
+    #length-coach .feedback.good{border-color:var(--viz-series-2)}
+    #length-coach .feedback.bad{border-color:var(--destructive)}
+    #length-coach .hintbox{margin-top:12px;padding:12px;background:var(--accent);color:var(--accent-foreground);border-radius:8px}
+    #length-coach .side{display:grid;gap:12px}
+    #length-coach .side .card{padding:15px}
+    #length-coach .mini-ladder{display:grid;gap:5px;margin-top:10px}
+    #length-coach .mini-ladder span{display:flex;justify-content:space-between;padding:7px 9px;background:var(--muted);border-radius:6px}
+    #length-coach .ruler{position:relative;height:58px;margin:10px 0 18px;border-bottom:3px solid var(--foreground);display:flex;justify-content:space-between;align-items:end}
+    #length-coach .ruler span{width:1px;height:18px;background:var(--foreground);position:relative}
+    #length-coach .ruler span:nth-child(5n+1){height:30px}
+    #length-coach .ruler b{position:absolute;top:31px;left:-4px;font-weight:400}
+    #length-coach .hidden{display:none}
+    #length-coach .finish{text-align:center;padding:18px 0}
+    #length-coach .finish-icon{font-size:46px}
+    @media(max-width:680px){#length-coach .hero,#length-coach .training{grid-template-columns:1fr}#length-coach .hero-art{max-width:300px;margin:auto}#length-coach .facts{grid-template-columns:1fr}#length-coach .converter-grid{grid-template-columns:1fr}#length-coach .decimal-grid{grid-template-columns:1fr}#length-coach .steps{grid-template-columns:1fr 26px 1fr 26px 1fr 26px 1fr}.question{padding:15px}}
   &lt;/style&gt;
-  &lt;div class=&quot;top&quot;&gt;
-    &lt;div&gt;&lt;strong&gt;Längen-Training&lt;/strong&gt; &lt;span class=&quot;text-muted&quot;&gt;Klasse 3&lt;/span&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress&quot; id=&quot;lt-progress&quot; aria-label=&quot;Fortschritt&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;stage&quot;&gt;
-    &lt;section class=&quot;card question&quot; id=&quot;lt-question&quot; aria-live=&quot;polite&quot;&gt;
-      &lt;div class=&quot;level&quot;&gt;&lt;span id=&quot;lt-level&quot;&gt;&lt;/span&gt;&lt;span id=&quot;lt-score&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-      &lt;h2 class=&quot;prompt&quot; id=&quot;lt-prompt&quot;&gt;&lt;/h2&gt;
-      &lt;div id=&quot;lt-visual&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;answer-row&quot; id=&quot;lt-answer&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;viz-controls&quot; style=&quot;margin-top:16px&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;lt-check&quot;&gt;Prüfen&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;lt-hint&quot;&gt;Hinweis&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn hidden&quot; id=&quot;lt-next&quot;&gt;Nächste Aufgabe&lt;/button&gt;
+
+  &lt;section class=&quot;hero&quot; aria-labelledby=&quot;lc-title&quot;&gt;
+    &lt;div class=&quot;hero-copy&quot;&gt;
+      &lt;span class=&quot;viz-badge&quot;&gt;Lernbegleiter · Klasse 3&lt;/span&gt;
+      &lt;h1 id=&quot;lc-title&quot;&gt;Längen verstehen und sicher umrechnen&lt;/h1&gt;
+      &lt;p&gt;Entdecke, wie Millimeter, Zentimeter, Dezimeter, Meter und Kilometer zusammengehören. Probiere den Umrechner aus und trainiere danach mit 12 Aufgaben.&lt;/p&gt;
+      &lt;div class=&quot;motivation&quot;&gt;&lt;span class=&quot;star&quot; aria-hidden=&quot;true&quot;&gt;⭐&lt;/span&gt;&lt;span&gt;&lt;strong&gt;Du schaffst das!&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;Jede richtig verstandene Stufe macht dich sicherer.&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;hero-art&quot; aria-label=&quot;Illustration eines Lineals mit Maßpfeilen&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 320 220&quot; role=&quot;img&quot;&gt;&lt;title&gt;Lineal und Wegweiser für Längeneinheiten&lt;/title&gt;&lt;rect x=&quot;24&quot; y=&quot;128&quot; width=&quot;272&quot; height=&quot;54&quot; rx=&quot;10&quot; fill=&quot;color-mix(in srgb,currentColor 18%,var(--card))&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;g stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M45 128v28M65 128v16M85 128v22M105 128v16M125 128v28M145 128v16M165 128v22M185 128v16M205 128v28M225 128v16M245 128v22M265 128v16&quot;/&gt;&lt;/g&gt;&lt;path d=&quot;M58 88h204&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;4&quot;/&gt;&lt;path d=&quot;M58 88l18-10v20zM262 88l-18-10v20z&quot; fill=&quot;currentColor&quot;/&gt;&lt;text x=&quot;160&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; fill=&quot;currentColor&quot; font-size=&quot;22&quot;&gt;messen · umrechnen&lt;/text&gt;&lt;circle cx=&quot;70&quot; cy=&quot;42&quot; r=&quot;20&quot; fill=&quot;color-mix(in srgb,var(--viz-series-2) 24%,var(--card))&quot;/&gt;&lt;path d=&quot;M62 42l6 6 12-15&quot; fill=&quot;none&quot; stroke=&quot;var(--foreground)&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot;/&gt;&lt;/svg&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;units-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;1&lt;/span&gt;&lt;h2 id=&quot;units-title&quot;&gt;Welche Einheit passt?&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class=&quot;facts&quot;&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;fact-symbol&quot;&gt;🐞&lt;/div&gt;&lt;div class=&quot;fact-title&quot;&gt;mm und cm&lt;/div&gt;&lt;div class=&quot;text-small&quot;&gt;Sehr kleine Dinge: Käfer, Bleistiftspitze, Fingernagel oder Heft.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;fact-symbol&quot;&gt;🚪&lt;/div&gt;&lt;div class=&quot;fact-title&quot;&gt;dm und m&lt;/div&gt;&lt;div class=&quot;text-small&quot;&gt;Möbel, Zimmer, Körpergröße oder Sprungweite.&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot;&gt;&lt;div class=&quot;fact-symbol&quot;&gt;🚲&lt;/div&gt;&lt;div class=&quot;fact-title&quot;&gt;km&lt;/div&gt;&lt;div class=&quot;text-small&quot;&gt;Weite Strecken: Schulweg, Radtour oder Entfernung zwischen Orten.&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory&quot;&gt;&lt;strong&gt;Merksatz:&lt;/strong&gt; Wähle eine Einheit, bei der die Zahl gut vorstellbar bleibt: Ein Heft ist etwa &lt;strong&gt;30 cm&lt;/strong&gt; lang, nicht 300 mm und nicht 0,3 m.&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;stairs-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;2&lt;/span&gt;&lt;h2 id=&quot;stairs-title&quot;&gt;Die Längen-Treppe&lt;/h2&gt;&lt;/div&gt;
+    &lt;p&gt;Bei jedem Schritt nach rechts wird die Zahl zehnmal so groß. Zwischen Kilometer und Meter liegen drei Zehnerschritte.&lt;/p&gt;
+    &lt;div class=&quot;steps&quot; aria-label=&quot;Längeneinheiten von groß nach klein&quot;&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;strong&gt;1 km&lt;/strong&gt;1.000 m&lt;/div&gt;&lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;strong&gt;1 m&lt;/strong&gt;10 dm&lt;/div&gt;&lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;strong&gt;1 dm&lt;/strong&gt;10 cm&lt;/div&gt;&lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
+      &lt;div class=&quot;step&quot;&gt;&lt;strong&gt;1 cm&lt;/strong&gt;10 mm&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory&quot;&gt;&lt;strong&gt;So denkst du:&lt;/strong&gt; Zu einer kleineren Einheit wird die Zahl größer. Zu einer größeren Einheit wird die Zahl kleiner. Beispiel: 3 m = 30 dm = 300 cm = 3.000 mm.&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;place-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;3&lt;/span&gt;&lt;h2 id=&quot;place-title&quot;&gt;Stellenwerttafel und Kommazahlen&lt;/h2&gt;&lt;/div&gt;
+    &lt;p&gt;Jede Spalte ist zehnmal größer als die Spalte rechts daneben. &lt;strong&gt;hm&lt;/strong&gt; und &lt;strong&gt;dam&lt;/strong&gt; sind hier nur Brücken zwischen km und m.&lt;/p&gt;
+    &lt;div class=&quot;place-wrap&quot;&gt;
+      &lt;table class=&quot;place-table&quot; aria-describedby=&quot;place-help&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;km&lt;/th&gt;&lt;th&gt;hm&lt;/th&gt;&lt;th&gt;dam&lt;/th&gt;&lt;th class=&quot;focus&quot;&gt;m&lt;/th&gt;&lt;th&gt;dm&lt;/th&gt;&lt;th&gt;cm&lt;/th&gt;&lt;th&gt;mm&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr id=&quot;lc-place-row&quot;&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td class=&quot;focus&quot;&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+      &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;p id=&quot;place-help&quot; class=&quot;text-small&quot;&gt;Die Tafel zeigt zunächst 1 m. Im Umrechner unten verändert sie sich passend zu deiner Eingabe.&lt;/p&gt;
+    &lt;div class=&quot;decimal-grid&quot;&gt;
+      &lt;div&gt;&lt;strong&gt;0,1 m = 1 dm&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;ein Zehntel Meter&lt;/span&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;0,01 m = 1 cm&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;ein Hundertstel Meter&lt;/span&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;0,001 m = 1 mm&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;ein Tausendstel Meter&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;memory&quot;&gt;&lt;strong&gt;Komma-Trick:&lt;/strong&gt; 2,35 m bedeutet 2 ganze Meter + 3 Dezimeter + 5 Zentimeter. Also sind 2,35 m genau 235 cm.&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;convert-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;4&lt;/span&gt;&lt;h2 id=&quot;convert-title&quot;&gt;Umrechnen selbst ausprobieren&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class=&quot;card converter&quot;&gt;
+      &lt;div class=&quot;converter-grid&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;lc-value&quot;&gt;Zahl&lt;input class=&quot;form-control&quot; id=&quot;lc-value&quot; inputmode=&quot;decimal&quot; value=&quot;2,35&quot;&gt;&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;lc-from&quot;&gt;Von&lt;select class=&quot;form-select&quot; id=&quot;lc-from&quot;&gt;&lt;option&gt;mm&lt;/option&gt;&lt;option&gt;cm&lt;/option&gt;&lt;option&gt;dm&lt;/option&gt;&lt;option selected&gt;m&lt;/option&gt;&lt;option&gt;km&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;lc-to&quot;&gt;In&lt;select class=&quot;form-select&quot; id=&quot;lc-to&quot;&gt;&lt;option&gt;mm&lt;/option&gt;&lt;option selected&gt;cm&lt;/option&gt;&lt;option&gt;dm&lt;/option&gt;&lt;option&gt;m&lt;/option&gt;&lt;option&gt;km&lt;/option&gt;&lt;/select&gt;&lt;/label&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;feedback hidden&quot; id=&quot;lt-feedback&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;hint-box hidden&quot; id=&quot;lt-hintbox&quot;&gt;&lt;/div&gt;
-    &lt;/section&gt;
-    &lt;aside class=&quot;side&quot;&gt;
-      &lt;div class=&quot;card&quot;&gt;
-        &lt;strong&gt;Die Längen-Treppe&lt;/strong&gt;
-        &lt;div class=&quot;ladder&quot; aria-label=&quot;Längeneinheiten von klein nach groß&quot;&gt;&lt;span&gt;mm&lt;/span&gt;&lt;span&gt;cm&lt;/span&gt;&lt;span&gt;dm&lt;/span&gt;&lt;span&gt;m&lt;/span&gt;&lt;span&gt;km&lt;/span&gt;&lt;/div&gt;
-        &lt;p class=&quot;text-small&quot;&gt;10 mm = 1 cm&lt;br&gt;10 cm = 1 dm&lt;br&gt;10 dm = 1 m&lt;br&gt;1.000 m = 1 km&lt;/p&gt;
+      &lt;div class=&quot;converter-result&quot; id=&quot;lc-convert-result&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;comma-tip text-small&quot; id=&quot;lc-convert-tip&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;train-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;5&lt;/span&gt;&lt;h2 id=&quot;train-title&quot;&gt;Jetzt bist du dran: 12 Übungen&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class=&quot;training&quot;&gt;
+      &lt;div class=&quot;card question&quot; aria-live=&quot;polite&quot;&gt;
+        &lt;div class=&quot;question-top&quot;&gt;&lt;span id=&quot;lc-level&quot;&gt;&lt;/span&gt;&lt;strong id=&quot;lc-score&quot;&gt;&lt;/strong&gt;&lt;/div&gt;
+        &lt;div class=&quot;progress&quot; id=&quot;lc-progress&quot; aria-label=&quot;Fortschritt&quot;&gt;&lt;/div&gt;
+        &lt;h3 id=&quot;lc-prompt&quot;&gt;&lt;/h3&gt;
+        &lt;div id=&quot;lc-visual&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;answer-row&quot; id=&quot;lc-answer&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;viz-controls&quot; style=&quot;margin-top:15px&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;lc-check&quot;&gt;Prüfen&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;lc-hint&quot;&gt;Hinweis&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;btn hidden&quot; id=&quot;lc-next&quot;&gt;Nächste Aufgabe&lt;/button&gt;&lt;/div&gt;
+        &lt;div class=&quot;feedback hidden&quot; id=&quot;lc-feedback&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;hintbox hidden&quot; id=&quot;lc-hintbox&quot;&gt;&lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;card&quot;&gt;
-        &lt;strong&gt;Merke&lt;/strong&gt;
-        &lt;p class=&quot;text-small&quot;&gt;Wandle zuerst in dieselbe Einheit um. Dann kannst du rechnen oder vergleichen.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/aside&gt;
-  &lt;/div&gt;
+      &lt;aside class=&quot;side&quot;&gt;
+        &lt;div class=&quot;card&quot;&gt;&lt;strong&gt;Dein Spickzettel&lt;/strong&gt;&lt;div class=&quot;mini-ladder&quot;&gt;&lt;span&gt;&lt;b&gt;1 km&lt;/b&gt;1.000 m&lt;/span&gt;&lt;span&gt;&lt;b&gt;1 m&lt;/b&gt;10 dm&lt;/span&gt;&lt;span&gt;&lt;b&gt;1 dm&lt;/b&gt;10 cm&lt;/span&gt;&lt;span&gt;&lt;b&gt;1 cm&lt;/b&gt;10 mm&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;card&quot;&gt;&lt;strong&gt;Mutmacher&lt;/strong&gt;&lt;p class=&quot;text-small&quot; id=&quot;lc-motto&quot;&gt;Fehler sind Helfer: Sie zeigen dir, was du als Nächstes lernen kannst.&lt;/p&gt;&lt;/div&gt;
+      &lt;/aside&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
   &lt;script&gt;
-  (() =&gt; {
-    const root=document.getElementById(&#x27;laengen-training&#x27;);
+  (()=&gt;{
+    const root=document.getElementById(&#x27;length-coach&#x27;), q=s=&gt;root.querySelector(s);
+    const factors={mm:.001,cm:.01,dm:.1,m:1,km:1000};
+    const format=n=&gt;new Intl.NumberFormat(&#x27;de-DE&#x27;,{maximumFractionDigits:6}).format(Number(n.toFixed(6)));
+    function updateConverter(){
+      const raw=q(&#x27;#lc-value&#x27;).value.trim().replace(&#x27;,&#x27;,&#x27;.&#x27;); const n=Number(raw),from=q(&#x27;#lc-from&#x27;).value,to=q(&#x27;#lc-to&#x27;).value;
+      if(!Number.isFinite(n)){q(&#x27;#lc-convert-result&#x27;).textContent=&#x27;Bitte gib eine Zahl ein.&#x27;;return}
+      const metres=n*factors[from],out=metres/factors[to],ratio=factors[from]/factors[to];
+      q(&#x27;#lc-convert-result&#x27;).innerHTML=&#x27;&lt;strong&gt;&#x27;+format(n)+&#x27; &#x27;+from+&#x27; = &#x27;+format(out)+&#x27; &#x27;+to+&#x27;&lt;/strong&gt;&#x27;;
+      q(&#x27;#lc-convert-tip&#x27;).textContent=ratio&gt;1?&#x27;Du gehst zu einer kleineren Einheit: Die Zahl wird größer.&#x27;:ratio&lt;1?&#x27;Du gehst zu einer größeren Einheit: Die Zahl wird kleiner.&#x27;:&#x27;Die Einheit bleibt gleich.&#x27;;
+      const mm=Math.round(Math.abs(metres)*1000), powers=[1000000,100000,10000,1000,100,10,1];
+      [...q(&#x27;#lc-place-row&#x27;).children].forEach((cell,i)=&gt;cell.textContent=Math.floor(mm/powers[i])%10);
+    }
+    [&#x27;#lc-value&#x27;,&#x27;#lc-from&#x27;,&#x27;#lc-to&#x27;].forEach(s=&gt;q(s).addEventListener(&#x27;input&#x27;,updateConverter));updateConverter();
     const tasks=[
-      {level:&#x27;Leicht · 1&#x27;,prompt:&#x27;Welche Einheit passt zu einer Bleistiftspitze?&#x27;,type:&#x27;choice&#x27;,choices:[&#x27;mm&#x27;,&#x27;cm&#x27;,&#x27;m&#x27;],answer:&#x27;mm&#x27;,hint:&#x27;Sie ist nur sehr dünn.&#x27;,explain:&#x27;Sehr kleine Längen misst man in Millimetern.&#x27;},
-      {level:&#x27;Leicht · 2&#x27;,prompt:&#x27;Welche Einheit passt zur Länge eines Schulhefts?&#x27;,type:&#x27;choice&#x27;,choices:[&#x27;mm&#x27;,&#x27;cm&#x27;,&#x27;km&#x27;],answer:&#x27;cm&#x27;,hint:&#x27;Ein Heft ist ungefähr 30 davon lang.&#x27;,explain:&#x27;Gegenstände auf dem Schreibtisch misst man meist in Zentimetern.&#x27;},
-      {level:&#x27;Leicht · 3&#x27;,prompt:&#x27;Wie viele Millimeter sind 4 cm?&#x27;,type:&#x27;number&#x27;,unit:&#x27;mm&#x27;,answer:40,hint:&#x27;1 cm sind 10 mm. Rechne 4 · 10.&#x27;,explain:&#x27;4 cm = 4 · 10 mm = 40 mm.&#x27;},
-      {level:&#x27;Leicht · 4&#x27;,prompt:&#x27;Wie viele Zentimeter sind 7 dm?&#x27;,type:&#x27;number&#x27;,unit:&#x27;cm&#x27;,answer:70,hint:&#x27;1 dm sind 10 cm.&#x27;,explain:&#x27;7 dm = 7 · 10 cm = 70 cm.&#x27;},
-      {level:&#x27;Mittel · 5&#x27;,prompt:&#x27;Setze das richtige Zeichen ein: 80 cm ___ 8 dm&#x27;,type:&#x27;choice&#x27;,choices:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],answer:&#x27;=&#x27;,hint:&#x27;Wandle 8 dm in Zentimeter um.&#x27;,explain:&#x27;8 dm = 80 cm. Beide Längen sind gleich.&#x27;},
-      {level:&#x27;Mittel · 6&#x27;,prompt:&#x27;Wie viele Zentimeter sind 2 m 35 cm?&#x27;,type:&#x27;number&#x27;,unit:&#x27;cm&#x27;,answer:235,hint:&#x27;2 m sind 200 cm. Addiere noch 35 cm.&#x27;,explain:&#x27;2 m 35 cm = 200 cm + 35 cm = 235 cm.&#x27;},
-      {level:&#x27;Mittel · 7&#x27;,prompt:&#x27;Ein Band ist 1 m lang. 38 cm werden abgeschnitten. Wie viele Zentimeter bleiben?&#x27;,type:&#x27;number&#x27;,unit:&#x27;cm&#x27;,answer:62,hint:&#x27;Wandle 1 m zuerst in 100 cm um.&#x27;,explain:&#x27;100 cm − 38 cm = 62 cm.&#x27;},
-      {level:&#x27;Mittel · 8&#x27;,prompt:&#x27;Wie lang ist die markierte Strecke auf dem Lineal?&#x27;,type:&#x27;number&#x27;,unit:&#x27;cm&#x27;,answer:6,visual:&#x27;ruler&#x27;,hint:&#x27;Die Strecke beginnt bei 2 cm und endet bei 8 cm.&#x27;,explain:&#x27;8 cm − 2 cm = 6 cm. Wichtig: Nicht die Striche zählen, sondern die Differenz.&#x27;},
-      {level:&#x27;Knifflig · 9&#x27;,prompt:&#x27;Ordne von kurz nach lang: 9 dm, 95 cm, 1 m&#x27;,type:&#x27;order&#x27;,answer:&#x27;9 dm, 95 cm, 1 m&#x27;,hint:&#x27;In Zentimetern: 90 cm, 95 cm, 100 cm.&#x27;,explain:&#x27;9 dm = 90 cm, 95 cm bleibt 95 cm, 1 m = 100 cm.&#x27;},
-      {level:&#x27;Knifflig · 10&#x27;,prompt:&#x27;Lina läuft morgens 650 m und nachmittags 850 m. Wie viele Meter läuft sie insgesamt?&#x27;,type:&#x27;number&#x27;,unit:&#x27;m&#x27;,answer:1500,hint:&#x27;Addiere 650 und 850.&#x27;,explain:&#x27;650 m + 850 m = 1.500 m. Das sind auch 1 km 500 m.&#x27;},
-      {level:&#x27;Knifflig · 11&#x27;,prompt:&#x27;Ein Wanderweg ist 3 km lang. 1.250 m sind geschafft. Wie viele Meter fehlen?&#x27;,type:&#x27;number&#x27;,unit:&#x27;m&#x27;,answer:1750,hint:&#x27;3 km sind 3.000 m.&#x27;,explain:&#x27;3.000 m − 1.250 m = 1.750 m.&#x27;},
-      {level:&#x27;Profi · 12&#x27;,prompt:&#x27;Ein 5 m langes Seil wird in Stücke von je 25 cm geteilt. Wie viele Stücke entstehen?&#x27;,type:&#x27;number&#x27;,unit:&#x27;Stücke&#x27;,answer:20,hint:&#x27;5 m sind 500 cm. Teile 500 durch 25.&#x27;,explain:&#x27;500 cm : 25 cm = 20. Es entstehen 20 gleich lange Stücke.&#x27;}
+      {l:&#x27;Warm-up · 1&#x27;,p:&#x27;Welche Einheit passt zu einer Bleistiftspitze?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;mm&#x27;,&#x27;cm&#x27;,&#x27;m&#x27;],a:&#x27;mm&#x27;,h:&#x27;Sie ist nur sehr dünn.&#x27;,e:&#x27;Sehr kleine Längen misst man in Millimetern.&#x27;},
+      {l:&#x27;Warm-up · 2&#x27;,p:&#x27;Welche Einheit passt zur Länge eines Schulhefts?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;mm&#x27;,&#x27;cm&#x27;,&#x27;km&#x27;],a:&#x27;cm&#x27;,h:&#x27;Ein Heft ist ungefähr 30 davon lang.&#x27;,e:&#x27;Gegenstände auf dem Tisch misst man oft in Zentimetern.&#x27;},
+      {l:&#x27;Leicht · 3&#x27;,p:&#x27;Wie viele Millimeter sind 4 cm?&#x27;,t:&#x27;number&#x27;,u:&#x27;mm&#x27;,a:40,h:&#x27;1 cm sind 10 mm. Rechne 4 · 10.&#x27;,e:&#x27;4 cm = 4 · 10 mm = 40 mm.&#x27;},
+      {l:&#x27;Leicht · 4&#x27;,p:&#x27;Wie viele Zentimeter sind 7 dm?&#x27;,t:&#x27;number&#x27;,u:&#x27;cm&#x27;,a:70,h:&#x27;1 dm sind 10 cm.&#x27;,e:&#x27;7 dm = 7 · 10 cm = 70 cm.&#x27;},
+      {l:&#x27;Mittel · 5&#x27;,p:&#x27;Setze das richtige Zeichen ein: 80 cm ___ 8 dm&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;=&#x27;,h:&#x27;Wandle 8 dm in Zentimeter um.&#x27;,e:&#x27;8 dm = 80 cm. Beide Längen sind gleich.&#x27;},
+      {l:&#x27;Mittel · 6&#x27;,p:&#x27;Wie viele Zentimeter sind 2 m 35 cm?&#x27;,t:&#x27;number&#x27;,u:&#x27;cm&#x27;,a:235,h:&#x27;2 m sind 200 cm. Addiere 35 cm.&#x27;,e:&#x27;2 m 35 cm = 200 cm + 35 cm = 235 cm.&#x27;},
+      {l:&#x27;Mittel · 7&#x27;,p:&#x27;Ein Band ist 1 m lang. 38 cm werden abgeschnitten. Wie viele Zentimeter bleiben?&#x27;,t:&#x27;number&#x27;,u:&#x27;cm&#x27;,a:62,h:&#x27;Wandle 1 m zuerst in 100 cm um.&#x27;,e:&#x27;100 cm − 38 cm = 62 cm.&#x27;},
+      {l:&#x27;Mittel · 8&#x27;,p:&#x27;Wie lang ist die Strecke von 2 cm bis 8 cm?&#x27;,t:&#x27;number&#x27;,u:&#x27;cm&#x27;,a:6,v:&#x27;ruler&#x27;,h:&#x27;Rechne Endpunkt minus Startpunkt.&#x27;,e:&#x27;8 cm − 2 cm = 6 cm. Zähle die Abstände, nicht die Striche.&#x27;},
+      {l:&#x27;Knifflig · 9&#x27;,p:&#x27;Ordne von kurz nach lang.&#x27;,t:&#x27;choice&#x27;,c:[&#x27;9 dm, 95 cm, 1 m&#x27;,&#x27;1 m, 95 cm, 9 dm&#x27;,&#x27;95 cm, 9 dm, 1 m&#x27;],a:&#x27;9 dm, 95 cm, 1 m&#x27;,h:&#x27;In cm: 90 cm, 95 cm, 100 cm.&#x27;,e:&#x27;9 dm = 90 cm, 95 cm bleibt, 1 m = 100 cm.&#x27;},
+      {l:&#x27;Knifflig · 10&#x27;,p:&#x27;Wie viele Zentimeter sind 0,8 m?&#x27;,t:&#x27;number&#x27;,u:&#x27;cm&#x27;,a:80,h:&#x27;0,8 m sind 8 dm. Jeder dm hat 10 cm.&#x27;,e:&#x27;0,8 m = 8 dm = 80 cm.&#x27;},
+      {l:&#x27;Knifflig · 11&#x27;,p:&#x27;Ein Weg ist 3 km lang. 1.250 m sind geschafft. Wie viele Meter fehlen?&#x27;,t:&#x27;number&#x27;,u:&#x27;m&#x27;,a:1750,h:&#x27;3 km sind 3.000 m.&#x27;,e:&#x27;3.000 m − 1.250 m = 1.750 m.&#x27;},
+      {l:&#x27;Profi · 12&#x27;,p:&#x27;Ein 5 m langes Seil wird in Stücke von je 25 cm geteilt. Wie viele Stücke entstehen?&#x27;,t:&#x27;number&#x27;,u:&#x27;Stücke&#x27;,a:20,h:&#x27;5 m sind 500 cm. Teile durch 25.&#x27;,e:&#x27;500 cm : 25 cm = 20 Stücke.&#x27;}
     ];
     let index=0,score=0,solved=false;
-    const q=id=&gt;root.querySelector(id);
-    const progress=q(&#x27;#lt-progress&#x27;),prompt=q(&#x27;#lt-prompt&#x27;),answer=q(&#x27;#lt-answer&#x27;),feedback=q(&#x27;#lt-feedback&#x27;),hintbox=q(&#x27;#lt-hintbox&#x27;),visual=q(&#x27;#lt-visual&#x27;);
+    const progress=q(&#x27;#lc-progress&#x27;),answer=q(&#x27;#lc-answer&#x27;),feedback=q(&#x27;#lc-feedback&#x27;),hintbox=q(&#x27;#lc-hintbox&#x27;);
     tasks.forEach((_,i)=&gt;{const d=document.createElement(&#x27;span&#x27;);d.className=&#x27;dot&#x27;;d.textContent=i+1;progress.appendChild(d)});
-    function ruler(){let s=&#x27;&lt;div class=&quot;ruler&quot; aria-label=&quot;Lineal von 2 bis 8 Zentimeter&quot;&gt;&#x27;;for(let i=0;i&lt;=30;i++){s+=&#x27;&lt;span&gt;&#x27;+((i%5===0)?&#x27;&lt;b&gt;&#x27;+String(2+i/5)+&#x27;&lt;/b&gt;&#x27;:&#x27;&#x27;)+&#x27;&lt;/span&gt;&#x27;}return s+&#x27;&lt;/div&gt;&#x27;}
+    function ruler(){let s=&#x27;&lt;div class=&quot;ruler&quot; aria-label=&quot;Lineal von 2 bis 8 Zentimeter&quot;&gt;&#x27;;for(let i=0;i&lt;=30;i++)s+=&#x27;&lt;span&gt;&#x27;+((i%5===0)?&#x27;&lt;b&gt;&#x27;+String(2+i/5)+&#x27;&lt;/b&gt;&#x27;:&#x27;&#x27;)+&#x27;&lt;/span&gt;&#x27;;return s+&#x27;&lt;/div&gt;&#x27;}
     function render(){
-      solved=false; const t=tasks[index]; q(&#x27;#lt-level&#x27;).textContent=t.level; q(&#x27;#lt-score&#x27;).textContent=score+&#x27; richtig&#x27;; prompt.textContent=t.prompt;
-      visual.innerHTML=t.visual===&#x27;ruler&#x27;?ruler():&#x27;&#x27;; answer.innerHTML=&#x27;&#x27;; feedback.className=&#x27;feedback hidden&#x27;; hintbox.className=&#x27;hint-box hidden&#x27;; q(&#x27;#lt-next&#x27;).className=&#x27;btn hidden&#x27;; q(&#x27;#lt-check&#x27;).className=&#x27;btn btn-primary&#x27;;
+      solved=false;const t=tasks[index];q(&#x27;#lc-level&#x27;).textContent=t.l;q(&#x27;#lc-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#lc-prompt&#x27;).textContent=t.p;q(&#x27;#lc-visual&#x27;).innerHTML=t.v===&#x27;ruler&#x27;?ruler():&#x27;&#x27;;answer.innerHTML=&#x27;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hintbox hidden&#x27;;q(&#x27;#lc-check&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#lc-next&#x27;).className=&#x27;btn hidden&#x27;;
       [...progress.children].forEach((d,i)=&gt;d.className=&#x27;dot &#x27;+(i&lt;index?&#x27;done&#x27;:i===index?&#x27;active&#x27;:&#x27;&#x27;));
-      if(t.type===&#x27;choice&#x27;){
-        const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;
-        const select=document.createElement(&#x27;select&#x27;);select.className=&#x27;form-select&#x27;;select.id=&#x27;lt-input&#x27;;select.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.choices.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;);label.appendChild(select);answer.appendChild(label);
-      }else if(t.type===&#x27;order&#x27;){
-        const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Reihenfolge&#x27;;
-        const select=document.createElement(&#x27;select&#x27;);select.className=&#x27;form-select&#x27;;select.id=&#x27;lt-input&#x27;;select.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&lt;option&gt;9 dm, 95 cm, 1 m&lt;/option&gt;&lt;option&gt;1 m, 95 cm, 9 dm&lt;/option&gt;&lt;option&gt;95 cm, 9 dm, 1 m&lt;/option&gt;&#x27;;label.appendChild(select);answer.appendChild(label);
-      }else{
-        const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;lt-input&#x27;);label.textContent=&#x27;Deine Antwort&#x27;;
-        const input=document.createElement(&#x27;input&#x27;);input.id=&#x27;lt-input&#x27;;input.className=&#x27;form-control&#x27;;input.type=&#x27;number&#x27;;input.inputMode=&#x27;numeric&#x27;;label.appendChild(input);answer.appendChild(label);
-        const unit=document.createElement(&#x27;span&#x27;);unit.className=&#x27;unit&#x27;;unit.textContent=t.unit;answer.appendChild(unit);
-      }
+      const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;let el;
+      if(t.t===&#x27;choice&#x27;){el=document.createElement(&#x27;select&#x27;);el.className=&#x27;form-select&#x27;;el.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.c.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;)}else{el=document.createElement(&#x27;input&#x27;);el.type=&#x27;number&#x27;;el.inputMode=&#x27;numeric&#x27;;el.className=&#x27;form-control&#x27;}
+      el.id=&#x27;lc-input&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;lc-input&#x27;);label.appendChild(el);answer.appendChild(label);if(t.u){const u=document.createElement(&#x27;span&#x27;);u.className=&#x27;unit&#x27;;u.textContent=t.u;answer.appendChild(u)}
     }
     function check(){
-      if(solved)return; const t=tasks[index],el=q(&#x27;#lt-input&#x27;); if(!el.value){feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch keine Antwort&lt;/strong&gt;Trage zuerst eine Antwort ein.&#x27;;return}
-      const val=t.type===&#x27;number&#x27;?Number(el.value):el.value; const ok=val===t.answer; solved=true; el.disabled=true;
-      if(ok){score++;feedback.className=&#x27;feedback good&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Richtig! 🎉&lt;/strong&gt;&#x27;+t.explain;}
-      else{feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Fast – die richtige Antwort ist &#x27;+t.answer+(t.unit?&#x27; &#x27;+t.unit:&#x27;&#x27;)+&#x27;.&lt;/strong&gt;&#x27;+t.explain;}
-      q(&#x27;#lt-score&#x27;).textContent=score+&#x27; richtig&#x27;; q(&#x27;#lt-check&#x27;).className=&#x27;btn hidden&#x27;; q(&#x27;#lt-next&#x27;).className=&#x27;btn btn-primary&#x27;; q(&#x27;#lt-next&#x27;).textContent=index===tasks.length-1?&#x27;Ergebnis ansehen&#x27;:&#x27;Nächste Aufgabe&#x27;;
+      if(solved)return;const t=tasks[index],el=q(&#x27;#lc-input&#x27;);if(!el.value){feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch keine Antwort.&lt;/strong&gt;&lt;br&gt;Probiere es – du kannst jederzeit den Hinweis nutzen.&#x27;;return}
+      const value=t.t===&#x27;number&#x27;?Number(el.value):el.value,ok=value===t.a;solved=true;el.disabled=true;
+      if(ok){score++;feedback.className=&#x27;feedback good&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Richtig! Stark gemacht! 🌟&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#lc-motto&#x27;).textContent=[&#x27;Prima! Schritt für Schritt wirst du zum Längen-Profi.&#x27;,&#x27;Sehr gut! Dein Wissen wächst mit jeder Aufgabe.&#x27;,&#x27;Klasse! Genau so geht cleveres Üben.&#x27;][score%3]}else{feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch nicht ganz. Richtig ist: &#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;.&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#lc-motto&#x27;).textContent=&#x27;Nicht aufgeben: Verstehen ist wichtiger als sofort richtig sein.&#x27;}
+      q(&#x27;#lc-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#lc-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#lc-next&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#lc-next&#x27;).textContent=index===tasks.length-1?&#x27;Ergebnis ansehen&#x27;:&#x27;Nächste Aufgabe&#x27;;
     }
-    function next(){if(!solved)return;if(index&lt;tasks.length-1){index++;render();}else finish()}
-    function finish(){
-      q(&#x27;#lt-level&#x27;).textContent=&#x27;Training beendet&#x27;; q(&#x27;#lt-score&#x27;).textContent=score+&#x27; richtig&#x27;; prompt.textContent=&#x27;Geschafft! 🏁&#x27;; visual.innerHTML=&#x27;&#x27;;
-      answer.innerHTML=&#x27;&lt;div class=&quot;finish&quot;&gt;&lt;p&gt;Du hast &lt;strong&gt;&#x27;+score+&#x27; von 12&lt;/strong&gt; Aufgaben richtig gelöst.&lt;/p&gt;&lt;p&gt;&#x27;+(score&gt;=10?&#x27;Super – du kennst dich mit Längen schon richtig gut aus!&#x27;:score&gt;=7?&#x27;Gut gemacht! Schau dir die Erklärungen bei den kniffligen Aufgaben noch einmal an.&#x27;:&#x27;Ein guter Anfang! Übe besonders die Längen-Treppe und versuche es dann noch einmal.&#x27;)+&#x27;&lt;/p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;lt-restart&quot;&gt;Noch einmal üben&lt;/button&gt;&lt;/div&gt;&#x27;;
-      feedback.className=&#x27;feedback hidden&#x27;; hintbox.className=&#x27;hint-box hidden&#x27;; q(&#x27;#lt-check&#x27;).className=&#x27;btn hidden&#x27;; q(&#x27;#lt-next&#x27;).className=&#x27;btn hidden&#x27;; q(&#x27;#lt-hint&#x27;).className=&#x27;btn hidden&#x27;;
-      q(&#x27;#lt-restart&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{index=0;score=0;q(&#x27;#lt-hint&#x27;).className=&#x27;btn&#x27;;render()});
-    }
-    q(&#x27;#lt-check&#x27;).addEventListener(&#x27;click&#x27;,check);q(&#x27;#lt-next&#x27;).addEventListener(&#x27;click&#x27;,next);q(&#x27;#lt-hint&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{hintbox.textContent=&#x27;💡 &#x27;+tasks[index].hint;hintbox.className=&#x27;hint-box&#x27;});
-    root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;!solved)check()});render();
+    function next(){if(!solved)return;if(index&lt;tasks.length-1){index++;render()}else finish()}
+    function finish(){q(&#x27;#lc-level&#x27;).textContent=&#x27;Training beendet&#x27;;q(&#x27;#lc-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#lc-prompt&#x27;).textContent=&#x27;Geschafft! 🏁&#x27;;q(&#x27;#lc-visual&#x27;).innerHTML=&#x27;&#x27;;answer.innerHTML=&#x27;&lt;div class=&quot;finish&quot;&gt;&lt;div class=&quot;finish-icon&quot;&gt;🏆&lt;/div&gt;&lt;p&gt;Du hast &lt;strong&gt;&#x27;+score+&#x27; von 12&lt;/strong&gt; Aufgaben richtig gelöst.&lt;/p&gt;&lt;p&gt;&#x27;+(score&gt;=10?&#x27;Fantastisch – du bist ein echter Längen-Profi!&#x27;:score&gt;=7?&#x27;Gut gemacht! Wiederhole die kniffligen Aufgaben und du wirst noch sicherer.&#x27;:&#x27;Ein guter Anfang! Lies die Merkkästen noch einmal und starte eine neue Runde.&#x27;)+&#x27;&lt;/p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;lc-restart&quot;&gt;Noch einmal üben&lt;/button&gt;&lt;/div&gt;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hintbox hidden&#x27;;q(&#x27;#lc-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#lc-next&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#lc-hint&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#lc-restart&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{index=0;score=0;q(&#x27;#lc-hint&#x27;).className=&#x27;btn&#x27;;render()})}
+    q(&#x27;#lc-check&#x27;).addEventListener(&#x27;click&#x27;,check);q(&#x27;#lc-next&#x27;).addEventListener(&#x27;click&#x27;,next);q(&#x27;#lc-hint&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{hintbox.textContent=&#x27;💡 &#x27;+tasks[index].h;hintbox.className=&#x27;hintbox&#x27;});root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;!solved)check()});render();
   })();
   &lt;/script&gt;
 &lt;/div&gt;

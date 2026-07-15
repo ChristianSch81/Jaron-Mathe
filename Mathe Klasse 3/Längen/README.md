@@ -1,5 +1,5 @@
 # Längen
 
-Interaktive Übungen zu Millimeter, Zentimeter, Dezimeter, Meter und Kilometer.
+Interaktiver Lernbegleiter zu Millimeter, Zentimeter, Dezimeter, Meter und Kilometer - mit Merkkästen, Stellenwerttafel, Umrechner und 12 Übungen.
 
 - [Längen-Training starten](./docs/Laengen-Training-Klasse-3.html)

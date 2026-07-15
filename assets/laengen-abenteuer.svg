@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" role="img" aria-labelledby="title desc">
+  <title id="title">Längen-Abenteuer</title><desc id="desc">Lineal, Maßband, Wegweiser und Zielstern.</desc>
+  <rect width="620" height="420" rx="38" fill="#dff5e8"/>
+  <path d="M65 320c100-100 170 60 280-40s130-55 205-150" fill="none" stroke="#fff" stroke-width="42" stroke-linecap="round"/>
+  <path d="M65 320c100-100 170 60 280-40s130-55 205-150" fill="none" stroke="#2463a9" stroke-width="5" stroke-dasharray="12 13" stroke-linecap="round"/>
+  <g transform="rotate(-8 195 115)"><rect x="65" y="75" width="270" height="82" rx="12" fill="#ffcf4a" stroke="#18324a" stroke-width="4"/><g stroke="#18324a" stroke-width="3"><path d="M90 76v32M115 76v18M140 76v25M165 76v18M190 76v32M215 76v18M240 76v25M265 76v18M290 76v32"/></g><text x="200" y="140" text-anchor="middle" fill="#18324a" font-family="system-ui,sans-serif" font-size="24" font-weight="700">mm · cm · dm · m · km</text></g>
+  <path d="M414 92h120l-24 32 24 32H414z" fill="#2463a9"/><path d="M414 92v154" stroke="#18324a" stroke-width="8"/><text x="473" y="132" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="22" font-weight="700">ZIEL</text>
+  <path d="M538 58l10 22 24 2-18 16 5 24-21-12-21 12 5-24-18-16 24-2z" fill="#ffcf4a" stroke="#18324a" stroke-width="3"/>
+  <circle cx="120" cy="320" r="28" fill="#45ad73"/><path d="M109 320l8 8 17-21" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+</svg>

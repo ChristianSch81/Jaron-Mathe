@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 440" role="img" aria-labelledby="title desc">
+  <title id="title">Abenteuer mit Gewichten</title>
+  <desc id="desc">Eine Waage mit Gramm-, Kilogramm- und Tonnenschildern sowie einem Lernstern.</desc>
+  <rect width="620" height="440" rx="42" fill="#eef8e9"/>
+  <circle cx="515" cy="78" r="42" fill="#ffcf4a"/>
+  <path d="M500 78l10 10 22-27" fill="none" stroke="#18324a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M310 88v238M174 135h272M214 135l-82 142h164zM406 135l-82 142h164z" fill="none" stroke="#2463a9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 278h220M296 278h220M218 353h184" stroke="#2463a9" stroke-width="14" stroke-linecap="round"/>
+  <rect x="167" y="210" width="92" height="56" rx="12" fill="#ffcf4a"/>
+  <text x="213" y="247" fill="#18324a" font-family="system-ui,sans-serif" font-size="25" font-weight="700" text-anchor="middle">1 kg</text>
+  <circle cx="406" cy="235" r="34" fill="#dff5e8"/>
+  <text x="406" y="244" fill="#194b83" font-family="system-ui,sans-serif" font-size="27" font-weight="700" text-anchor="middle">g</text>
+  <g font-family="system-ui,sans-serif" font-weight="700" text-anchor="middle">
+    <rect x="88" y="55" width="88" height="54" rx="14" fill="#e5f1ff"/><text x="132" y="91" fill="#194b83" font-size="24">g</text>
+    <rect x="190" y="55" width="88" height="54" rx="14" fill="#dff5e8"/><text x="234" y="91" fill="#21603d" font-size="24">kg</text>
+    <rect x="292" y="55" width="88" height="54" rx="14" fill="#fff5cd"/><text x="336" y="91" fill="#7a5a00" font-size="24">t</text>
+  </g>
+  <text x="310" y="405" fill="#194b83" font-family="system-ui,sans-serif" font-size="25" font-weight="700" text-anchor="middle">Schätzen · wiegen · umrechnen</text>
+</svg>

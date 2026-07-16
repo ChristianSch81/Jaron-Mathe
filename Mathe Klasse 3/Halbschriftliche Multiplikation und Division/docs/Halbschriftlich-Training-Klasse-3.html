@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Halbschriftlich Training Klasse 3</title>
+<title>Halbschriftlich Lernpaket</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Halbschriftlich Training Klasse 3" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Halbschriftlich Lernpaket" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Halbschriftlich Training Klasse 3&lt;/title&gt;
+&lt;title&gt;Halbschriftlich Lernpaket&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(--background) !important;
@@ -789,12 +789,24 @@ html&gt;body{padding:0}&lt;/style&gt;
     #half-written-coach .hidden{display:none!important}
     #half-written-coach .finish{text-align:center;padding:14px}
     #half-written-coach .finish-icon{font-size:38px}
-    @media(max-width:620px){#half-written-coach .hero,#half-written-coach .info-grid{grid-template-columns:1fr}#half-written-coach .hero-art{max-width:260px;margin:auto}#half-written-coach .method,#half-written-coach .operator-grid{grid-template-columns:1fr}#half-written-coach .progress{grid-template-columns:repeat(7,1fr)}}
+    #half-written-coach .starbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:11px 14px;background:color-mix(in srgb,var(--viz-series-2) 16%,var(--card));border-radius:10px}
+    #half-written-coach .star-count{font-weight:500}
+    #half-written-coach .guides{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    #half-written-coach .guide{display:flex;align-items:center;gap:10px;min-width:0}
+    #half-written-coach .portrait{width:76px;height:76px;flex:0 0 76px;color:var(--foreground)}
+    #half-written-coach .portrait svg{display:block;width:100%;height:100%}
+    #half-written-coach .speech{position:relative;padding:11px 13px;background:var(--accent);color:var(--accent-foreground);border-radius:12px;min-width:0}
+    #half-written-coach .speech:before{content:&quot;&quot;;position:absolute;left:-10px;top:25px;border-width:7px 10px 7px 0;border-style:solid;border-color:transparent var(--accent) transparent transparent}
+    #half-written-coach .comic-tip{display:flex;align-items:center;gap:10px}
+    #half-written-coach .comic-tip .portrait{width:58px;height:58px;flex-basis:58px}
+    #half-written-coach .test-result{padding:14px;background:var(--accent);color:var(--accent-foreground);border-radius:9px}
+    #half-written-coach .solution-list{padding-left:22px;text-align:left}
+    @media(max-width:620px){#half-written-coach .hero,#half-written-coach .info-grid,#half-written-coach .guides{grid-template-columns:1fr}#half-written-coach .hero-art{max-width:260px;margin:auto}#half-written-coach .method,#half-written-coach .operator-grid{grid-template-columns:1fr}#half-written-coach .progress{grid-template-columns:repeat(7,1fr)}}
   &lt;/style&gt;
 
   &lt;section class=&quot;hero&quot; aria-labelledby=&quot;hw-title&quot;&gt;
     &lt;div&gt;
-      &lt;span class=&quot;viz-badge&quot;&gt;Mathe Klasse 3 · 35 Übungen&lt;/span&gt;
+      &lt;span class=&quot;viz-badge&quot;&gt;Lernpaket · Mathe Klasse 3 · 35 Übungen&lt;/span&gt;
       &lt;h1 id=&quot;hw-title&quot;&gt;Clever malnehmen und teilen&lt;/h1&gt;
       &lt;p&gt;Beim halbschriftlichen Rechnen zerlegst du große Aufgaben in kleine, sichere Schritte. Starte leicht und arbeite dich bis zu kniffligen Textaufgaben vor.&lt;/p&gt;
     &lt;/div&gt;
@@ -812,6 +824,12 @@ html&gt;body{padding:0}&lt;/style&gt;
   &lt;/section&gt;
 
   &lt;div class=&quot;motivation&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;🚀&lt;/span&gt;&lt;span id=&quot;hw-motto&quot;&gt;Du musst nicht alles sofort können. Jeder Rechenschritt bringt dich weiter!&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;starbar&quot;&gt;&lt;span&gt;&lt;strong&gt;Deine Lernsterne&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;Für jede richtige Übung bekommst du einen Stern.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;star-count&quot; id=&quot;hw-stars&quot;&gt;⭐ 0&lt;/span&gt;&lt;/div&gt;
+
+  &lt;section class=&quot;guides&quot; aria-label=&quot;Deine Lernpartner Mila und Ben&quot;&gt;
+    &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;mila&quot; aria-label=&quot;Mila, zehn Jahre alt&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Mila:&lt;/strong&gt; Ich zeige dir, wie du große Aufgaben in leichte Päckchen zerlegst.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;ben&quot; aria-label=&quot;Ben, zehn Jahre alt&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Ben:&lt;/strong&gt; Ich kenne gute Proben und helfe dir bei kniffligen Textaufgaben.&lt;/div&gt;&lt;/div&gt;
+  &lt;/section&gt;
 
   &lt;section class=&quot;section&quot; aria-labelledby=&quot;mul-info&quot;&gt;
     &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;×&lt;/span&gt;&lt;h2 id=&quot;mul-info&quot;&gt;Halbschriftlich multiplizieren&lt;/h2&gt;&lt;/div&gt;
@@ -885,10 +903,24 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;/article&gt;
   &lt;/section&gt;
 
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;hw-test-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;✓&lt;/span&gt;&lt;h2 id=&quot;hw-test-title&quot;&gt;Abschlusstest: 10 Aufgaben&lt;/h2&gt;&lt;/div&gt;
+    &lt;article class=&quot;card task-card&quot;&gt;
+      &lt;div id=&quot;hw-test-intro&quot;&gt;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;ben&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Ben:&lt;/strong&gt; Im Test rechnest du ohne Hinweise. Mit 8 richtigen Antworten hast du ihn super bestanden!&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-test-start&quot;&gt;Test starten&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div id=&quot;hw-test-run&quot; class=&quot;hidden&quot;&gt;&lt;div class=&quot;task-top&quot;&gt;&lt;span class=&quot;viz-badge&quot; id=&quot;hw-test-progress&quot;&gt;&lt;/span&gt;&lt;span id=&quot;hw-test-stars&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;h3 id=&quot;hw-test-prompt&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;answer-row&quot; id=&quot;hw-test-answer&quot;&gt;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-test-check&quot;&gt;Antwort abgeben&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;test-result hidden&quot; id=&quot;hw-test-result&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+    &lt;/article&gt;
+  &lt;/section&gt;
+
   &lt;script&gt;
   (()=&gt;{
     const root=document.getElementById(&#x27;half-written-coach&#x27;);
     const q=s=&gt;root.querySelector(s);
+    function avatar(name){const girl=name===&#x27;mila&#x27;;return &#x27;&lt;svg viewBox=&quot;0 0 80 80&quot; role=&quot;img&quot; aria-label=&quot;&#x27;+(girl?&#x27;Mila&#x27;:&#x27;Ben&#x27;)+&#x27;&quot;&gt;&lt;circle cx=&quot;40&quot; cy=&quot;40&quot; r=&quot;38&quot; fill=&quot;color-mix(in srgb,&#x27;+(girl?&#x27;var(--viz-series-4)&#x27;:&#x27;var(--viz-series-1)&#x27;)+&#x27; 20%,var(--card))&quot;/&gt;&lt;path d=&quot;M24 36c0-17 32-21 34 0v13c0 13-9 22-18 22S22 62 22 49z&quot; fill=&quot;color-mix(in srgb,var(--viz-series-2) 30%,var(--card))&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;path d=&quot;M24 38c2-20 29-24 35-4-9 1-17-4-22-9-2 7-7 12-13 13z&quot; fill=&quot;currentColor&quot; opacity=&quot;.78&quot;/&gt;&lt;circle cx=&quot;33&quot; cy=&quot;45&quot; r=&quot;2&quot; fill=&quot;currentColor&quot;/&gt;&lt;circle cx=&quot;49&quot; cy=&quot;45&quot; r=&quot;2&quot; fill=&quot;currentColor&quot;/&gt;&lt;path d=&quot;M35 56q6 5 12 0&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot;/&gt;&#x27;+(girl?&#x27;&lt;path d=&quot;M23 35q-8 8-2 20M58 35q8 8 2 20&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;5&quot; stroke-linecap=&quot;round&quot;/&gt;&#x27;:&#x27;&lt;path d=&quot;M25 31q15-16 31 0&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;6&quot; stroke-linecap=&quot;round&quot;/&gt;&#x27;)+&#x27;&lt;/svg&gt;&#x27;}
+    root.querySelectorAll(&#x27;[data-guide]&#x27;).forEach(el=&gt;el.innerHTML=avatar(el.dataset.guide));
+    let testBonus=0;
+    function updateStars(){q(&#x27;#hw-stars&#x27;).textContent=&#x27;⭐ &#x27;+(score+testBonus)}
+    function comicTip(text,i){const who=i%2===0?&#x27;mila&#x27;:&#x27;ben&#x27;,name=who===&#x27;mila&#x27;?&#x27;Mila&#x27;:&#x27;Ben&#x27;;return &#x27;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot;&gt;&#x27;+avatar(who)+&#x27;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;&#x27;+name+&#x27;:&lt;/strong&gt; &#x27;+text+&#x27;&lt;/div&gt;&lt;/div&gt;&#x27;}
     const tasks=[
       {l:&#x27;Start · 1&#x27;,p:&#x27;Rechne: 20 · 3&#x27;,a:60,h:&#x27;2 · 3 = 6. Hänge bei 20 · 3 eine Null an.&#x27;,e:&#x27;20 · 3 = 60.&#x27;},
       {l:&#x27;Start · 2&#x27;,p:&#x27;Rechne: 4 · 20&#x27;,a:80,h:&#x27;4 · 2 = 8. Mit einem Zehner wird daraus 80.&#x27;,e:&#x27;4 · 20 = 80.&#x27;},
@@ -940,12 +972,32 @@ html&gt;body{padding:0}&lt;/style&gt;
     function check(){
       if(solved)return;const t=tasks[index],el=q(&#x27;#hw-input&#x27;);if(el.value===&#x27;&#x27;){feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch keine Antwort.&lt;/strong&gt;&lt;br&gt;Probiere es oder nutze den Hinweis.&#x27;;return}
       const value=t.t===&#x27;choice&#x27;?el.value:Number(el.value),ok=value===t.a;solved=true;el.disabled=true;
-      if(ok){score++;feedback.className=&#x27;feedback good&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Richtig! Stark gerechnet! 🌟&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#hw-motto&#x27;).textContent=[&#x27;Prima! Dein Rechenweg wird immer sicherer.&#x27;,&#x27;Klasse! Zerlegen macht große Aufgaben klein.&#x27;,&#x27;Weiter so – Fehler sind Helfer beim Lernen.&#x27;][score%3]}else{feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch nicht ganz. Richtig ist: &#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;.&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#hw-motto&#x27;).textContent=&#x27;Nicht aufgeben: Schau dir den Rechenweg an und verstehe den nächsten Schritt.&#x27;}
+      if(ok){score++;updateStars();feedback.className=&#x27;feedback good&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Richtig! Du bekommst einen Lernstern! 🌟&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#hw-motto&#x27;).textContent=[&#x27;Prima! Dein Rechenweg wird immer sicherer.&#x27;,&#x27;Klasse! Zerlegen macht große Aufgaben klein.&#x27;,&#x27;Weiter so – Fehler sind Helfer beim Lernen.&#x27;][score%3]}else{feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch nicht ganz. Richtig ist: &#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;.&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#hw-motto&#x27;).textContent=&#x27;Nicht aufgeben: Schau dir den Rechenweg an und verstehe den nächsten Schritt.&#x27;}
       q(&#x27;#hw-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#hw-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-next&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#hw-next&#x27;).textContent=index===tasks.length-1?&#x27;Ergebnis ansehen&#x27;:&#x27;Nächste Aufgabe&#x27;;
     }
     function next(){if(!solved)return;if(index&lt;tasks.length-1){index++;render()}else finish()}
-    function finish(){q(&#x27;#hw-level&#x27;).textContent=&#x27;Training beendet&#x27;;q(&#x27;#hw-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#hw-prompt&#x27;).textContent=&#x27;Geschafft! 🏁&#x27;;q(&#x27;#hw-calculation&#x27;).className=&#x27;calculation hidden&#x27;;answer.innerHTML=&#x27;&lt;div class=&quot;finish&quot;&gt;&lt;div class=&quot;finish-icon&quot;&gt;🏆&lt;/div&gt;&lt;p&gt;Du hast &lt;strong&gt;&#x27;+score+&#x27; von 35&lt;/strong&gt; Aufgaben richtig gelöst.&lt;/p&gt;&lt;p&gt;&#x27;+(score&gt;=30?&#x27;Fantastisch – du bist ein Halbschriftlich-Profi!&#x27;:score&gt;=22?&#x27;Gut gemacht! Wiederhole die kniffligen Aufgaben und du wirst noch sicherer.&#x27;:&#x27;Ein guter Anfang! Lies die Infokästen noch einmal und starte eine neue Runde.&#x27;)+&#x27;&lt;/p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-restart&quot;&gt;Noch einmal üben&lt;/button&gt;&lt;/div&gt;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hint hidden&#x27;;q(&#x27;#hw-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-next&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-hint&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-restart&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{index=0;score=0;q(&#x27;#hw-hint&#x27;).className=&#x27;btn&#x27;;render()})}
-    q(&#x27;#hw-check&#x27;).addEventListener(&#x27;click&#x27;,check);q(&#x27;#hw-next&#x27;).addEventListener(&#x27;click&#x27;,next);q(&#x27;#hw-hint&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{hintbox.textContent=&#x27;💡 &#x27;+tasks[index].h;hintbox.className=&#x27;hint&#x27;});root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;!solved)check()});render();
+    function finish(){q(&#x27;#hw-level&#x27;).textContent=&#x27;Training beendet&#x27;;q(&#x27;#hw-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#hw-prompt&#x27;).textContent=&#x27;Geschafft! 🏁&#x27;;q(&#x27;#hw-calculation&#x27;).className=&#x27;calculation hidden&#x27;;answer.innerHTML=&#x27;&lt;div class=&quot;finish&quot;&gt;&lt;div class=&quot;finish-icon&quot;&gt;🏆&lt;/div&gt;&lt;p&gt;Du hast &lt;strong&gt;&#x27;+score+&#x27; Lernsterne&lt;/strong&gt; gesammelt.&lt;/p&gt;&lt;p&gt;Wenn du bereit bist, wartet unten der Abschlusstest mit 10 Aufgaben.&lt;/p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-restart&quot;&gt;Noch einmal üben&lt;/button&gt;&lt;/div&gt;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hint hidden&#x27;;q(&#x27;#hw-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-next&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-hint&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-restart&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{index=0;score=0;testBonus=0;updateStars();q(&#x27;#hw-hint&#x27;).className=&#x27;btn&#x27;;render()})}
+    q(&#x27;#hw-check&#x27;).addEventListener(&#x27;click&#x27;,check);q(&#x27;#hw-next&#x27;).addEventListener(&#x27;click&#x27;,next);q(&#x27;#hw-hint&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{hintbox.innerHTML=comicTip(tasks[index].h,index);hintbox.className=&#x27;hint&#x27;});root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;!solved&amp;&amp;e.target?.id===&#x27;hw-input&#x27;)check()});render();updateStars();
+
+    const testTasks=[
+      {p:&#x27;Rechne: 23 · 3&#x27;,a:69},
+      {p:&#x27;Rechne: 17 · 4&#x27;,a:68},
+      {p:&#x27;Rechne: 48 · 2&#x27;,a:96},
+      {p:&#x27;Rechne: 84 : 4&#x27;,a:21},
+      {p:&#x27;Rechne: 96 : 3&#x27;,a:32},
+      {p:&#x27;Rechne: 75 : 5&#x27;,a:15},
+      {p:&#x27;Gib nur den Rest an: 68 : 6&#x27;,a:2,u:&#x27;Rest&#x27;},
+      {p:&#x27;Welche Probe passt zu 91 : 7 = 13?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;13 · 7 = 91&#x27;,&#x27;91 · 7 = 13&#x27;,&#x27;13 + 7 = 91&#x27;],a:&#x27;13 · 7 = 91&#x27;},
+      {p:&#x27;Vier Kisten enthalten jeweils 22 Flaschen. Wie viele Flaschen sind es?&#x27;,a:88,u:&#x27;Flaschen&#x27;},
+      {p:&#x27;72 Karten werden gleichmäßig auf 3 Kinder verteilt. Wie viele Karten bekommt jedes Kind?&#x27;,a:24,u:&#x27;Karten&#x27;}
+    ];
+    let ti=0,ts=0,testAnswers=[];
+    const ta=q(&#x27;#hw-test-answer&#x27;);
+    function renderTest(){const t=testTasks[ti];q(&#x27;#hw-test-progress&#x27;).textContent=&#x27;Testaufgabe &#x27;+(ti+1)+&#x27; von 10&#x27;;q(&#x27;#hw-test-stars&#x27;).textContent=&#x27;⭐ &#x27;+(score+testBonus)+&#x27; Lernsterne&#x27;;q(&#x27;#hw-test-prompt&#x27;).textContent=t.p;ta.innerHTML=&#x27;&#x27;;const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;let el;if(t.t===&#x27;choice&#x27;){el=document.createElement(&#x27;select&#x27;);el.className=&#x27;form-select&#x27;;el.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.c.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;)}else{el=document.createElement(&#x27;input&#x27;);el.type=&#x27;number&#x27;;el.inputMode=&#x27;numeric&#x27;;el.className=&#x27;form-control&#x27;}el.id=&#x27;hw-test-input&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;hw-test-input&#x27;);label.appendChild(el);ta.appendChild(label);if(t.u){const u=document.createElement(&#x27;span&#x27;);u.className=&#x27;unit&#x27;;u.textContent=t.u;ta.appendChild(u)}}
+    function finishTest(){const pct=ts*10;testBonus=ts&gt;=8?3:ts&gt;=6?2:ts&gt;=5?1:0;updateStars();const message=ts&gt;=8?&#x27;Super bestanden! Du rechnest schon sehr sicher.&#x27;:ts&gt;=6?&#x27;Gut bearbeitet! Die wichtigsten Rechenwege sitzen.&#x27;:ts&gt;=5?&#x27;Fast geschafft. Übe noch einige Aufgaben und versuche es erneut.&#x27;:&#x27;Bitte wiederhole das Thema und starte den Test danach noch einmal.&#x27;;q(&#x27;#hw-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#hw-test-result&#x27;).className=&#x27;test-result&#x27;;q(&#x27;#hw-test-result&#x27;).innerHTML=&#x27;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot;&gt;&#x27;+avatar(ts&gt;=6?&#x27;mila&#x27;:&#x27;ben&#x27;)+&#x27;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;&#x27;+(ts&gt;=6?&#x27;Mila&#x27;:&#x27;Ben&#x27;)+&#x27;:&lt;/strong&gt; &#x27;+message+&#x27;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&#x27;+ts+&#x27; von 10 richtig · &#x27;+pct+&#x27; % · &#x27;+testBonus+&#x27; Bonus-Lernsterne&lt;/strong&gt;&lt;/p&gt;&lt;ol class=&quot;solution-list&quot;&gt;&#x27;+testTasks.map((t,i)=&gt;&#x27;&lt;li&gt;&#x27;+t.p+&#x27; &lt;strong&gt;&#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;&lt;/strong&gt;&#x27;+(testAnswers[i]===t.a?&#x27; ✓&#x27;:&#x27;&#x27;)+&#x27;&lt;/li&gt;&#x27;).join(&#x27;&#x27;)+&#x27;&lt;/ol&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;hw-test-restart&quot;&gt;Test wiederholen&lt;/button&gt;&#x27;;q(&#x27;#hw-test-restart&#x27;).addEventListener(&#x27;click&#x27;,startTest)}
+    function submitTest(){const el=q(&#x27;#hw-test-input&#x27;);if(el.value===&#x27;&#x27;)return;const t=testTasks[ti],value=t.t===&#x27;choice&#x27;?el.value:Number(el.value);testAnswers.push(value);if(value===t.a)ts++;if(ti&lt;9){ti++;renderTest()}else finishTest()}
+    function startTest(){ti=0;ts=0;testBonus=0;testAnswers=[];updateStars();q(&#x27;#hw-test-intro&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#hw-test-result&#x27;).className=&#x27;test-result hidden&#x27;;q(&#x27;#hw-test-run&#x27;).className=&#x27;&#x27;;renderTest()}
+    q(&#x27;#hw-test-start&#x27;).addEventListener(&#x27;click&#x27;,startTest);q(&#x27;#hw-test-check&#x27;).addEventListener(&#x27;click&#x27;,submitTest);root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;e.target?.id===&#x27;hw-test-input&#x27;)submitTest()});
   })();
   &lt;/script&gt;
 &lt;/div&gt;

@@ -6,7 +6,7 @@
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <title>Lernpaket Halbschriftliches Rechnen – Klasse 3</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0;min-height:100%}body{box-sizing:border-box;padding:16px;background:inherit;overflow-x:hidden}iframe{display:block;width:100%;max-width:1180px;height:calc(100vh - 32px);min-height:640px;margin:0 auto;border:0}@media(max-width:780px){body{padding:8px}iframe{height:calc(100vh - 16px);min-height:560px}}</style>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:inherit}iframe{display:block;box-sizing:border-box;width:100%;max-width:none;height:100vh;min-height:560px;margin:0;border:0}</style>
 </head>
 <body>
 <iframe sandbox="allow-scripts allow-top-navigation-by-user-activation" referrerpolicy="no-referrer" title="Lernpaket Halbschriftliches Rechnen – Klasse 3" srcdoc="&lt;!doctype html&gt;
@@ -750,7 +750,8 @@ html&gt;body{padding:0}&lt;/style&gt;
 &lt;body&gt;
 &lt;div id=&quot;half-written-coach&quot;&gt;
   &lt;style&gt;
-    #half-written-coach{color:var(--foreground);font-family:inherit;display:flex;flex-direction:column;gap:18px}
+    #half-written-coach{color:var(--foreground);font-family:inherit;display:flex;flex-direction:column;gap:18px;width:100%;max-width:1060px;margin-inline:auto;padding-inline:clamp(14px,2.5vw,32px);box-sizing:border-box;overflow-x:clip}
+    #half-written-coach&gt;*{min-width:0;max-width:100%}
     #half-written-coach .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:center}
     #half-written-coach .hero p{max-width:62ch}
     #half-written-coach .hero-art{color:var(--viz-series-1)}
@@ -801,7 +802,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     #half-written-coach .comic-tip .portrait{width:58px;height:58px;flex-basis:58px}
     #half-written-coach .test-result{padding:14px;background:var(--accent);color:var(--accent-foreground);border-radius:9px}
     #half-written-coach .solution-list{padding-left:22px;text-align:left}
-    #half-written-coach .package-nav{display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+    #half-written-coach .package-nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
     #half-written-coach .package-nav .nav-home,#half-written-coach .package-nav .nav-reset{min-height:48px;padding:12px 20px;border-width:2px;font-size:1.08rem;font-weight:800;box-shadow:0 4px 0 rgba(0,0,0,.16);transition:transform .15s ease,box-shadow .15s ease,filter .15s ease}
     #half-written-coach .package-nav .nav-home{background:#15803d;color:#fff;border-color:#166534}
     #half-written-coach .package-nav .nav-reset{background:#dc2626;color:#fff;border-color:#991b1b}

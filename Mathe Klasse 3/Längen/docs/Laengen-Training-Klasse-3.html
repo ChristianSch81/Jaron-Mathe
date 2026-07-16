@@ -9,7 +9,7 @@
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Laengen Lernpaket" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts allow-top-navigation-by-user-activation" referrerpolicy="no-referrer" title="Laengen Lernpaket" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -822,6 +822,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     #length-coach .test-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
     #length-coach .test-result{margin-top:14px;padding:14px;background:var(--accent);color:var(--accent-foreground);border-radius:9px}
     #length-coach .solution-list{margin-top:10px;padding-left:22px;text-align:left}
+    #length-coach .package-nav{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;margin:4px 0 14px}
     @media(max-width:680px){#length-coach .hero,#length-coach .training{grid-template-columns:1fr}#length-coach .hero-art{max-width:300px;margin:auto}#length-coach .facts,#length-coach .guides{grid-template-columns:1fr}#length-coach .converter-grid{grid-template-columns:1fr}#length-coach .decimal-grid{grid-template-columns:1fr}#length-coach .steps{grid-template-columns:1fr 26px 1fr 26px 1fr 26px 1fr}.question{padding:15px}}
   &lt;/style&gt;
 
@@ -837,6 +838,8 @@ html&gt;body{padding:0}&lt;/style&gt;
       &lt;svg viewBox=&quot;0 0 320 220&quot; role=&quot;img&quot;&gt;&lt;title&gt;Lineal und Wegweiser für Längeneinheiten&lt;/title&gt;&lt;rect x=&quot;24&quot; y=&quot;128&quot; width=&quot;272&quot; height=&quot;54&quot; rx=&quot;10&quot; fill=&quot;color-mix(in srgb,currentColor 18%,var(--card))&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;&lt;g stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M45 128v28M65 128v16M85 128v22M105 128v16M125 128v28M145 128v16M165 128v22M185 128v16M205 128v28M225 128v16M245 128v22M265 128v16&quot;/&gt;&lt;/g&gt;&lt;path d=&quot;M58 88h204&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;4&quot;/&gt;&lt;path d=&quot;M58 88l18-10v20zM262 88l-18-10v20z&quot; fill=&quot;currentColor&quot;/&gt;&lt;text x=&quot;160&quot; y=&quot;72&quot; text-anchor=&quot;middle&quot; fill=&quot;currentColor&quot; font-size=&quot;22&quot;&gt;messen · umrechnen&lt;/text&gt;&lt;circle cx=&quot;70&quot; cy=&quot;42&quot; r=&quot;20&quot; fill=&quot;color-mix(in srgb,var(--viz-series-2) 24%,var(--card))&quot;/&gt;&lt;path d=&quot;M62 42l6 6 12-15&quot; fill=&quot;none&quot; stroke=&quot;var(--foreground)&quot; stroke-width=&quot;4&quot; stroke-linecap=&quot;round&quot;/&gt;&lt;/svg&gt;
     &lt;/div&gt;
   &lt;/section&gt;
+
+  &lt;nav class=&quot;package-nav&quot; aria-label=&quot;Lernpaket-Navigation&quot;&gt;&lt;a class=&quot;btn&quot; href=&quot;https://christiansch81.github.io/Jaron-Mathe/&quot; target=&quot;_top&quot; rel=&quot;noopener&quot;&gt;← Zur Startseite&lt;/a&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;lc-reset&quot;&gt;↺ Zurücksetzen&lt;/button&gt;&lt;/nav&gt;
 
   &lt;section class=&quot;guides&quot; aria-label=&quot;Deine Lernpartner Mila und Ben&quot;&gt;
     &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;mila&quot; aria-label=&quot;Mila, zehn Jahre alt&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Mila:&lt;/strong&gt; Ich liebe Merksätze und zeige dir clevere Umrechenwege.&lt;/div&gt;&lt;/div&gt;
@@ -1022,7 +1025,8 @@ html&gt;body{padding:0}&lt;/style&gt;
     function finishTest(){const pct=ts*10;testBonus=ts&gt;=8?3:ts&gt;=6?2:ts&gt;=5?1:0;updateStars();const message=ts&gt;=8?&#x27;Super bestanden! Du beherrschst das Thema sehr sicher.&#x27;:ts&gt;=6?&#x27;Gut bearbeitet! Du hast die wichtigsten Regeln verstanden.&#x27;:ts&gt;=5?&#x27;Fast geschafft. Wiederhole noch einige Regeln und versuche es erneut.&#x27;:&#x27;Bitte wiederhole das Thema und starte den Test danach noch einmal.&#x27;;q(&#x27;#lc-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#lc-test-result&#x27;).className=&#x27;test-result&#x27;;q(&#x27;#lc-test-result&#x27;).innerHTML=&#x27;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot;&gt;&#x27;+avatar(ts&gt;=6?&#x27;mila&#x27;:&#x27;ben&#x27;)+&#x27;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;&#x27;+(ts&gt;=6?&#x27;Mila&#x27;:&#x27;Ben&#x27;)+&#x27;:&lt;/strong&gt; &#x27;+message+&#x27;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&#x27;+ts+&#x27; von 10 richtig · &#x27;+pct+&#x27; % · &#x27;+testBonus+&#x27; Bonus-Lernsterne&lt;/strong&gt;&lt;/p&gt;&lt;ol class=&quot;solution-list&quot;&gt;&#x27;+testTasks.map((t,i)=&gt;&#x27;&lt;li&gt;&#x27;+t.p+&#x27; &lt;strong&gt;&#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;&lt;/strong&gt;&#x27;+(testAnswers[i]===t.a?&#x27; ✓&#x27;:&#x27;&#x27;)+&#x27;&lt;/li&gt;&#x27;).join(&#x27;&#x27;)+&#x27;&lt;/ol&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;lc-test-restart&quot;&gt;Test wiederholen&lt;/button&gt;&#x27;;q(&#x27;#lc-test-restart&#x27;).addEventListener(&#x27;click&#x27;,startTest)}
     function submitTest(){const el=q(&#x27;#lc-test-input&#x27;);if(el.value===&#x27;&#x27;)return;const t=testTasks[ti],value=t.t===&#x27;choice&#x27;?el.value:Number(el.value);testAnswers.push(value);if(value===t.a)ts++;if(ti&lt;9){ti++;renderTest()}else finishTest()}
     function startTest(){ti=0;ts=0;testBonus=0;testAnswers=[];updateStars();q(&#x27;#lc-test-intro&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#lc-test-result&#x27;).className=&#x27;test-result hidden&#x27;;q(&#x27;#lc-test-run&#x27;).className=&#x27;&#x27;;renderTest()}
-    q(&#x27;#lc-test-start&#x27;).addEventListener(&#x27;click&#x27;,startTest);q(&#x27;#lc-test-check&#x27;).addEventListener(&#x27;click&#x27;,submitTest);root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;e.target?.id===&#x27;lc-test-input&#x27;)submitTest()});
+    function resetAll(){index=0;score=0;solved=false;testBonus=0;ti=0;ts=0;testAnswers=[];updateStars();q(&#x27;#lc-hint&#x27;).className=&#x27;btn&#x27;;q(&#x27;#lc-test-intro&#x27;).className=&#x27;&#x27;;q(&#x27;#lc-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#lc-test-result&#x27;).className=&#x27;test-result hidden&#x27;;render()}
+    q(&#x27;#lc-test-start&#x27;).addEventListener(&#x27;click&#x27;,startTest);q(&#x27;#lc-test-check&#x27;).addEventListener(&#x27;click&#x27;,submitTest);q(&#x27;#lc-reset&#x27;).addEventListener(&#x27;click&#x27;,resetAll);root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;e.target?.id===&#x27;lc-test-input&#x27;)submitTest()});
   })();
   &lt;/script&gt;
 &lt;/div&gt;

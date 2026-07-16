@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Halbschriftlich Lernpaket</title>
+<title>Zahlenraum Lernpaket</title>
 <style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts allow-top-navigation-by-user-activation" referrerpolicy="no-referrer" title="Halbschriftlich Lernpaket" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts allow-top-navigation-by-user-activation" referrerpolicy="no-referrer" title="Zahlenraum Lernpaket" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Halbschriftlich Lernpaket&lt;/title&gt;
+&lt;title&gt;Zahlenraum Lernpaket&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(--background) !important;
@@ -748,260 +748,217 @@ svg {
 html&gt;body{padding:0}&lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;div id=&quot;half-written-coach&quot;&gt;
+&lt;div id=&quot;number-space-coach&quot;&gt;
   &lt;style&gt;
-    #half-written-coach{color:var(--foreground);font-family:inherit;display:flex;flex-direction:column;gap:18px}
-    #half-written-coach .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:center}
-    #half-written-coach .hero p{max-width:62ch}
-    #half-written-coach .hero-art{color:var(--viz-series-1)}
-    #half-written-coach .hero-art svg{display:block;width:100%;height:auto}
-    #half-written-coach .motivation{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;background:var(--accent);color:var(--accent-foreground)}
-    #half-written-coach .motivation .symbol{font-size:26px}
-    #half-written-coach .section{display:flex;flex-direction:column;gap:12px;margin-top:8px}
-    #half-written-coach .section-head{display:flex;align-items:center;gap:9px}
-    #half-written-coach .section-head h2{margin:0}
-    #half-written-coach .icon-circle{display:grid;place-items:center;width:34px;height:34px;flex:0 0 auto;border-radius:50%;background:var(--primary);color:var(--primary-foreground)}
-    #half-written-coach .info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-    #half-written-coach .info-grid .card{padding:16px}
-    #half-written-coach .method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch;margin-top:10px}
-    #half-written-coach .method-step{padding:10px;text-align:center;background:var(--muted);border-radius:9px}
-    #half-written-coach .method-step strong{display:block;margin-bottom:4px}
-    #half-written-coach .example{margin-top:10px;padding:10px;border-left:4px solid var(--viz-series-2);background:color-mix(in srgb,var(--viz-series-2) 10%,transparent)}
-    #half-written-coach .operator-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-    #half-written-coach .operator{padding:10px;background:var(--muted);border-radius:8px}
-    #half-written-coach .operator strong{display:block}
-    #half-written-coach .practice{display:flex;flex-direction:column;gap:12px}
-    #half-written-coach .progress{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
-    #half-written-coach .dot{display:grid;place-items:center;min-height:26px;border-radius:7px;background:var(--muted);color:var(--muted-foreground);font-size:var(--font-size-small)}
-    #half-written-coach .dot.active{background:var(--primary);color:var(--primary-foreground)}
-    #half-written-coach .dot.done{background:color-mix(in srgb,var(--viz-series-3) 25%,var(--muted));color:var(--foreground)}
-    #half-written-coach .task-card{display:flex;flex-direction:column;gap:12px;padding:16px}
-    #half-written-coach .task-top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
-    #half-written-coach .calculation{padding:12px;background:var(--muted);border-radius:9px;font-family:var(--font-mono);font-size:var(--font-size-h3);white-space:pre-line}
-    #half-written-coach .answer-row{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
-    #half-written-coach .answer-row .form-label{min-width:190px;flex:1}
-    #half-written-coach .unit{padding-bottom:4px}
-    #half-written-coach .actions{display:flex;gap:8px;flex-wrap:wrap}
-    #half-written-coach .feedback,#half-written-coach .hint{padding:11px;border-radius:9px}
-    #half-written-coach .feedback.good{background:color-mix(in srgb,var(--viz-series-3) 18%,transparent)}
-    #half-written-coach .feedback.bad{background:color-mix(in srgb,var(--destructive) 13%,transparent)}
-    #half-written-coach .hint{background:color-mix(in srgb,var(--viz-series-2) 14%,transparent)}
-    #half-written-coach .hidden{display:none!important}
-    #half-written-coach .finish{text-align:center;padding:14px}
-    #half-written-coach .finish-icon{font-size:38px}
-    #half-written-coach .starbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:11px 14px;background:color-mix(in srgb,var(--viz-series-2) 16%,var(--card));border-radius:10px}
-    #half-written-coach .star-count{font-weight:500}
-    #half-written-coach .guides{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    #half-written-coach .guide{display:flex;align-items:center;gap:10px;min-width:0}
-    #half-written-coach .portrait{width:76px;height:76px;flex:0 0 76px;color:var(--foreground)}
-    #half-written-coach .portrait svg,#half-written-coach .portrait img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
-    #half-written-coach .speech{position:relative;padding:11px 13px;background:var(--accent);color:var(--accent-foreground);border-radius:12px;min-width:0}
-    #half-written-coach .speech:before{content:&quot;&quot;;position:absolute;left:-10px;top:25px;border-width:7px 10px 7px 0;border-style:solid;border-color:transparent var(--accent) transparent transparent}
-    #half-written-coach .comic-tip{display:flex;align-items:center;gap:10px}
-    #half-written-coach .comic-tip .portrait{width:58px;height:58px;flex-basis:58px}
-    #half-written-coach .test-result{padding:14px;background:var(--accent);color:var(--accent-foreground);border-radius:9px}
-    #half-written-coach .solution-list{padding-left:22px;text-align:left}
-    #half-written-coach .package-nav{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap}
-    @media(max-width:620px){#half-written-coach .hero,#half-written-coach .info-grid,#half-written-coach .guides{grid-template-columns:1fr}#half-written-coach .hero-art{max-width:260px;margin:auto}#half-written-coach .method,#half-written-coach .operator-grid{grid-template-columns:1fr}#half-written-coach .progress{grid-template-columns:repeat(7,1fr)}}
+    #number-space-coach{color:var(--foreground);font-family:inherit;display:flex;flex-direction:column;gap:18px}
+    #number-space-coach .hero{display:grid;grid-template-columns:1.25fr .75fr;gap:18px;align-items:center}
+    #number-space-coach .hero p{max-width:62ch}
+    #number-space-coach .hero-art{color:var(--viz-series-1)}
+    #number-space-coach .hero-art svg{display:block;width:100%;height:auto}
+    #number-space-coach .motivation,#number-space-coach .starbar{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;background:var(--accent);color:var(--accent-foreground)}
+    #number-space-coach .starbar{justify-content:space-between;flex-wrap:wrap;background:color-mix(in srgb,var(--viz-series-2) 16%,var(--card));color:var(--foreground)}
+    #number-space-coach .section{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+    #number-space-coach .section-head{display:flex;align-items:center;gap:9px}
+    #number-space-coach .section-head h2{margin:0}
+    #number-space-coach .icon-circle{display:grid;place-items:center;width:34px;height:34px;flex:0 0 auto;border-radius:50%;background:var(--primary);color:var(--primary-foreground)}
+    #number-space-coach .guides,#number-space-coach .info-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    #number-space-coach .guide{display:flex;align-items:center;gap:10px;min-width:0}
+    #number-space-coach .portrait{width:76px;height:76px;flex:0 0 76px}
+    #number-space-coach .portrait img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover}
+    #number-space-coach .speech{position:relative;padding:11px 13px;background:var(--accent);color:var(--accent-foreground);border-radius:12px;min-width:0}
+    #number-space-coach .speech:before{content:&quot;&quot;;position:absolute;left:-10px;top:25px;border-width:7px 10px 7px 0;border-style:solid;border-color:transparent var(--accent) transparent transparent}
+    #number-space-coach .info-grid .card{padding:16px}
+    #number-space-coach .place-table{width:100%;border-collapse:separate;border-spacing:6px;text-align:center;margin-top:10px}
+    #number-space-coach .place-table th{padding:8px;background:var(--muted)}
+    #number-space-coach .place-table td{padding:14px;background:var(--card);border:1px solid var(--border);font-size:var(--font-size-h2)}
+    #number-space-coach .decomposition{padding:11px;background:color-mix(in srgb,var(--viz-series-2) 12%,transparent);border-left:4px solid var(--viz-series-2);margin-top:10px}
+    #number-space-coach .numberline{position:relative;height:78px;margin:12px 8px 4px}
+    #number-space-coach .numberline-line{position:absolute;left:0;right:0;top:34px;height:3px;background:var(--foreground)}
+    #number-space-coach .numberline-points{position:absolute;left:0;right:0;top:21px;display:flex;justify-content:space-between}
+    #number-space-coach .numberline-point{display:flex;flex-direction:column;align-items:center;gap:12px}
+    #number-space-coach .numberline-point:before{content:&quot;&quot;;width:3px;height:27px;background:var(--foreground)}
+    #number-space-coach .builder{padding:16px}
+    #number-space-coach .builder-controls{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    #number-space-coach .builder-result{text-align:center;padding:14px;margin-top:12px;background:var(--muted);border-radius:9px}
+    #number-space-coach .builder-number{font-size:var(--font-size-h1);font-weight:500}
+    #number-space-coach .progress{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+    #number-space-coach .dot{display:grid;place-items:center;min-height:26px;border-radius:7px;background:var(--muted);color:var(--muted-foreground);font-size:var(--font-size-small)}
+    #number-space-coach .dot.active{background:var(--primary);color:var(--primary-foreground)}
+    #number-space-coach .dot.done{background:color-mix(in srgb,var(--viz-series-3) 25%,var(--muted));color:var(--foreground)}
+    #number-space-coach .task-card{display:flex;flex-direction:column;gap:12px;padding:16px}
+    #number-space-coach .task-top{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+    #number-space-coach .answer-row{display:flex;align-items:end;gap:8px;flex-wrap:wrap}
+    #number-space-coach .answer-row .form-label{min-width:190px;flex:1}
+    #number-space-coach .actions{display:flex;gap:8px;flex-wrap:wrap}
+    #number-space-coach .feedback,#number-space-coach .hint{padding:11px;border-radius:9px}
+    #number-space-coach .feedback.good{background:color-mix(in srgb,var(--viz-series-3) 18%,transparent)}
+    #number-space-coach .feedback.bad{background:color-mix(in srgb,var(--destructive) 13%,transparent)}
+    #number-space-coach .hint{background:color-mix(in srgb,var(--viz-series-2) 14%,transparent)}
+    #number-space-coach .comic-tip{display:flex;align-items:center;gap:10px}
+    #number-space-coach .comic-tip .portrait{width:58px;height:58px;flex-basis:58px}
+    #number-space-coach .test-result{padding:14px;background:var(--accent);color:var(--accent-foreground);border-radius:9px}
+    #number-space-coach .solution-list{padding-left:22px;text-align:left}
+    #number-space-coach .package-nav{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap}
+    #number-space-coach .hidden{display:none!important}
+    #number-space-coach .finish{text-align:center;padding:14px}
+    #number-space-coach .finish-icon{font-size:38px}
+    @media(max-width:620px){#number-space-coach .hero,#number-space-coach .guides,#number-space-coach .info-grid{grid-template-columns:1fr}#number-space-coach .hero-art{max-width:260px;margin:auto}#number-space-coach .builder-controls{grid-template-columns:1fr}#number-space-coach .progress{grid-template-columns:repeat(7,1fr)}}
   &lt;/style&gt;
 
-  &lt;section class=&quot;hero&quot; aria-labelledby=&quot;hw-title&quot;&gt;
+  &lt;section class=&quot;hero&quot; aria-labelledby=&quot;ns-title&quot;&gt;
     &lt;div&gt;
       &lt;span class=&quot;viz-badge&quot;&gt;Lernpaket · Mathe Klasse 3 · 35 Übungen&lt;/span&gt;
-      &lt;h1 id=&quot;hw-title&quot;&gt;Clever malnehmen und teilen&lt;/h1&gt;
-      &lt;p&gt;Beim halbschriftlichen Rechnen zerlegst du große Aufgaben in kleine, sichere Schritte. Starte leicht und arbeite dich bis zu kniffligen Textaufgaben vor.&lt;/p&gt;
+      &lt;h1 id=&quot;ns-title&quot;&gt;Zahlenraum bis 1.000 entdecken&lt;/h1&gt;
+      &lt;p&gt;Verstehe Hunderter, Zehner und Einer. Vergleiche, ordne und runde Zahlen und entdecke Muster auf dem Zahlenstrahl.&lt;/p&gt;
     &lt;/div&gt;
     &lt;div class=&quot;hero-art&quot; aria-hidden=&quot;true&quot;&gt;
-      &lt;svg viewBox=&quot;0 0 300 190&quot;&gt;
-        &lt;path d=&quot;M32 151 C83 116 105 165 153 126 S234 84 272 35&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;7&quot; stroke-linecap=&quot;round&quot; stroke-dasharray=&quot;11 12&quot;/&gt;
-        &lt;circle cx=&quot;44&quot; cy=&quot;145&quot; r=&quot;27&quot; fill=&quot;color-mix(in srgb,var(--viz-series-2) 24%,transparent)&quot;/&gt;
-        &lt;rect x=&quot;29&quot; y=&quot;131&quot; width=&quot;30&quot; height=&quot;25&quot; rx=&quot;5&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;/&gt;
-        &lt;path d=&quot;M34 139h20M44 134v18&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;
-        &lt;path d=&quot;M249 57l7-18 19-1-15-11 5-19-15 11-16-10 6 19-14 12 19-1z&quot; fill=&quot;color-mix(in srgb,var(--viz-series-2) 45%,transparent)&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;
-        &lt;text x=&quot;102&quot; y=&quot;93&quot; fill=&quot;currentColor&quot; font-size=&quot;24&quot; font-weight=&quot;500&quot;&gt;×&lt;/text&gt;
-        &lt;text x=&quot;160&quot; y=&quot;145&quot; fill=&quot;currentColor&quot; font-size=&quot;24&quot; font-weight=&quot;500&quot;&gt;÷&lt;/text&gt;
-      &lt;/svg&gt;
+      &lt;svg viewBox=&quot;0 0 300 190&quot;&gt;&lt;path d=&quot;M28 143h244&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;5&quot; stroke-linecap=&quot;round&quot;/&gt;&lt;g stroke=&quot;currentColor&quot; stroke-width=&quot;3&quot;&gt;&lt;path d=&quot;M35 128v30M93 132v22M151 128v30M209 132v22M267 128v30&quot;/&gt;&lt;/g&gt;&lt;g fill=&quot;currentColor&quot; font-size=&quot;17&quot; text-anchor=&quot;middle&quot;&gt;&lt;text x=&quot;35&quot; y=&quot;181&quot;&gt;0&lt;/text&gt;&lt;text x=&quot;93&quot; y=&quot;181&quot;&gt;250&lt;/text&gt;&lt;text x=&quot;151&quot; y=&quot;181&quot;&gt;500&lt;/text&gt;&lt;text x=&quot;209&quot; y=&quot;181&quot;&gt;750&lt;/text&gt;&lt;text x=&quot;267&quot; y=&quot;181&quot;&gt;1.000&lt;/text&gt;&lt;/g&gt;&lt;rect x=&quot;60&quot; y=&quot;35&quot; width=&quot;54&quot; height=&quot;54&quot; rx=&quot;9&quot; fill=&quot;color-mix(in srgb,var(--viz-series-2) 24%,transparent)&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;rect x=&quot;123&quot; y=&quot;35&quot; width=&quot;54&quot; height=&quot;54&quot; rx=&quot;9&quot; fill=&quot;color-mix(in srgb,var(--viz-series-3) 24%,transparent)&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;rect x=&quot;186&quot; y=&quot;35&quot; width=&quot;54&quot; height=&quot;54&quot; rx=&quot;9&quot; fill=&quot;color-mix(in srgb,var(--viz-series-4) 24%,transparent)&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot;/&gt;&lt;g fill=&quot;currentColor&quot; font-size=&quot;24&quot; text-anchor=&quot;middle&quot;&gt;&lt;text x=&quot;87&quot; y=&quot;69&quot;&gt;H&lt;/text&gt;&lt;text x=&quot;150&quot; y=&quot;69&quot;&gt;Z&lt;/text&gt;&lt;text x=&quot;213&quot; y=&quot;69&quot;&gt;E&lt;/text&gt;&lt;/g&gt;&lt;/svg&gt;
     &lt;/div&gt;
   &lt;/section&gt;
 
-  &lt;div class=&quot;motivation&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;🚀&lt;/span&gt;&lt;span id=&quot;hw-motto&quot;&gt;Du musst nicht alles sofort können. Jeder Rechenschritt bringt dich weiter!&lt;/span&gt;&lt;/div&gt;
-  &lt;div class=&quot;starbar&quot;&gt;&lt;span&gt;&lt;strong&gt;Deine Lernsterne&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;Für jede richtige Übung bekommst du einen Stern.&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;star-count&quot; id=&quot;hw-stars&quot;&gt;⭐ 0&lt;/span&gt;&lt;/div&gt;
-  &lt;nav class=&quot;package-nav&quot; aria-label=&quot;Lernpaket-Navigation&quot;&gt;&lt;a class=&quot;btn&quot; href=&quot;https://christiansch81.github.io/Jaron-Mathe/&quot; target=&quot;_top&quot; rel=&quot;noopener&quot;&gt;← Zur Startseite&lt;/a&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;hw-reset&quot;&gt;↺ Zurücksetzen&lt;/button&gt;&lt;/nav&gt;
+  &lt;div class=&quot;motivation&quot;&gt;&lt;span&gt;🚀&lt;/span&gt;&lt;span id=&quot;ns-motto&quot;&gt;Jede große Zahl besteht aus kleinen, gut verständlichen Stellenwerten.&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;starbar&quot;&gt;&lt;span&gt;&lt;strong&gt;Deine Lernsterne&lt;/strong&gt;&lt;br&gt;&lt;span class=&quot;text-small&quot;&gt;Für jede richtige Übung bekommst du einen Stern.&lt;/span&gt;&lt;/span&gt;&lt;strong id=&quot;ns-stars&quot;&gt;⭐ 0&lt;/strong&gt;&lt;/div&gt;
+  &lt;nav class=&quot;package-nav&quot; aria-label=&quot;Lernpaket-Navigation&quot;&gt;&lt;a class=&quot;btn&quot; href=&quot;https://christiansch81.github.io/Jaron-Mathe/&quot; target=&quot;_top&quot; rel=&quot;noopener&quot;&gt;← Zur Startseite&lt;/a&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;ns-reset&quot;&gt;↺ Zurücksetzen&lt;/button&gt;&lt;/nav&gt;
 
   &lt;section class=&quot;guides&quot; aria-label=&quot;Deine Lernpartner Mila und Ben&quot;&gt;
-    &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;mila&quot; aria-label=&quot;Mila, zehn Jahre alt&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Mila:&lt;/strong&gt; Ich zeige dir, wie du große Aufgaben in leichte Päckchen zerlegst.&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;ben&quot; aria-label=&quot;Ben, zehn Jahre alt&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Ben:&lt;/strong&gt; Ich kenne gute Proben und helfe dir bei kniffligen Textaufgaben.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;mila&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Mila:&lt;/strong&gt; Ich helfe dir, Zahlen in Hunderter, Zehner und Einer zu zerlegen.&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;guide&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;ben&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Ben:&lt;/strong&gt; Ich zeige dir Zahlenstrahl-Tricks, Nachbarzahlen und clevere Muster.&lt;/div&gt;&lt;/div&gt;
   &lt;/section&gt;
 
-  &lt;section class=&quot;section&quot; aria-labelledby=&quot;mul-info&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;×&lt;/span&gt;&lt;h2 id=&quot;mul-info&quot;&gt;Halbschriftlich multiplizieren&lt;/h2&gt;&lt;/div&gt;
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;ns-place-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;1&lt;/span&gt;&lt;h2 id=&quot;ns-place-title&quot;&gt;Hunderter, Zehner und Einer&lt;/h2&gt;&lt;/div&gt;
     &lt;div class=&quot;info-grid&quot;&gt;
-      &lt;article class=&quot;card&quot;&gt;
-        &lt;h3&gt;Zerlege die große Zahl&lt;/h3&gt;
-        &lt;p&gt;Zerlege zuerst in Zehner und Einer. Multipliziere beide Teile und addiere die Teilergebnisse.&lt;/p&gt;
-        &lt;div class=&quot;method&quot; aria-label=&quot;Rechenweg für 24 mal 3&quot;&gt;
-          &lt;div class=&quot;method-step&quot;&gt;&lt;strong&gt;1. Zerlegen&lt;/strong&gt;24 = 20 + 4&lt;/div&gt;
-          &lt;div class=&quot;method-step&quot;&gt;&lt;strong&gt;2. Malnehmen&lt;/strong&gt;20 · 3 = 60&lt;br&gt;4 · 3 = 12&lt;/div&gt;
-          &lt;div class=&quot;method-step&quot;&gt;&lt;strong&gt;3. Addieren&lt;/strong&gt;60 + 12 = 72&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;example&quot;&gt;&lt;strong&gt;24 · 3 = 72&lt;/strong&gt;&lt;br&gt;Du rechnest in deinem Kopf mit zwei leichteren Päckchen.&lt;/div&gt;
-      &lt;/article&gt;
-      &lt;article class=&quot;card&quot;&gt;
-        &lt;h3&gt;Wichtig beim Zerlegen&lt;/h3&gt;
-        &lt;p&gt;Beide Teile werden mit demselben Faktor multipliziert. Vergiss keinen Teil!&lt;/p&gt;
-        &lt;div class=&quot;example&quot;&gt;&lt;strong&gt;Richtig:&lt;/strong&gt; 32 · 2 = 30 · 2 + 2 · 2&lt;br&gt;&lt;strong&gt;Also:&lt;/strong&gt; 60 + 4 = 64&lt;/div&gt;
-        &lt;p class=&quot;text-small text-muted&quot;&gt;Probe: Das Ergebnis von 32 · 2 muss ungefähr bei 30 · 2 = 60 liegen.&lt;/p&gt;
-      &lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;h3&gt;Jede Stelle hat einen Wert&lt;/h3&gt;&lt;p&gt;Bei der Zahl 472 steht die 4 für vier Hunderter, die 7 für sieben Zehner und die 2 für zwei Einer.&lt;/p&gt;&lt;table class=&quot;place-table&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;H&lt;/th&gt;&lt;th&gt;Z&lt;/th&gt;&lt;th&gt;E&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class=&quot;decomposition&quot;&gt;&lt;strong&gt;472 = 400 + 70 + 2&lt;/strong&gt;&lt;/div&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;h3&gt;Die Null hält eine Stelle frei&lt;/h3&gt;&lt;p&gt;Bei 504 gibt es fünf Hunderter, keine Zehner und vier Einer. Ohne die Null würde aus 504 die Zahl 54.&lt;/p&gt;&lt;table class=&quot;place-table&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;H&lt;/th&gt;&lt;th&gt;Z&lt;/th&gt;&lt;th&gt;E&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class=&quot;decomposition&quot;&gt;&lt;strong&gt;504 = 500 + 0 + 4&lt;/strong&gt;&lt;/div&gt;&lt;/article&gt;
     &lt;/div&gt;
   &lt;/section&gt;
 
-  &lt;section class=&quot;section&quot; aria-labelledby=&quot;div-info&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;÷&lt;/span&gt;&lt;h2 id=&quot;div-info&quot;&gt;Halbschriftlich dividieren&lt;/h2&gt;&lt;/div&gt;
-    &lt;div class=&quot;info-grid&quot;&gt;
-      &lt;article class=&quot;card&quot;&gt;
-        &lt;h3&gt;Zerlege in passende Päckchen&lt;/h3&gt;
-        &lt;p&gt;Suche Teile, die sich gut durch den Divisor teilen lassen. Teile beide Päckchen und addiere.&lt;/p&gt;
-        &lt;div class=&quot;method&quot; aria-label=&quot;Rechenweg für 84 geteilt durch 4&quot;&gt;
-          &lt;div class=&quot;method-step&quot;&gt;&lt;strong&gt;1. Zerlegen&lt;/strong&gt;84 = 80 + 4&lt;/div&gt;
-          &lt;div class=&quot;method-step&quot;&gt;&lt;strong&gt;2. Teilen&lt;/strong&gt;80 : 4 = 20&lt;br&gt;4 : 4 = 1&lt;/div&gt;
-          &lt;div class=&quot;method-step&quot;&gt;&lt;strong&gt;3. Addieren&lt;/strong&gt;20 + 1 = 21&lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;example&quot;&gt;&lt;strong&gt;84 : 4 = 21&lt;/strong&gt;&lt;/div&gt;
-      &lt;/article&gt;
-      &lt;article class=&quot;card&quot;&gt;
-        &lt;h3&gt;Nutze die Umkehraufgabe&lt;/h3&gt;
-        &lt;p&gt;Multiplikation und Division gehören zusammen. Mit einer Malaufgabe kannst du dein Ergebnis prüfen.&lt;/p&gt;
-        &lt;div class=&quot;example&quot;&gt;84 : 4 = 21&lt;br&gt;&lt;strong&gt;Probe:&lt;/strong&gt; 21 · 4 = 84 ✓&lt;/div&gt;
-        &lt;p class=&quot;text-small text-muted&quot;&gt;Bei einem Rest gilt: Rest &amp;lt; Divisor. Beispiel: 67 : 5 = 13 Rest 2.&lt;/p&gt;
-      &lt;/article&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class=&quot;section&quot; aria-labelledby=&quot;operators&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;?&lt;/span&gt;&lt;h2 id=&quot;operators&quot;&gt;Operatoren in Textaufgaben&lt;/h2&gt;&lt;/div&gt;
-    &lt;div class=&quot;operator-grid&quot;&gt;
-      &lt;div class=&quot;operator&quot;&gt;&lt;strong&gt;Multiplikation ·&lt;/strong&gt;jeweils, pro, doppelt, dreimal so viel, insgesamt bei gleichen Gruppen&lt;/div&gt;
-      &lt;div class=&quot;operator&quot;&gt;&lt;strong&gt;Aufteilen : &lt;/strong&gt;gleichmäßig verteilen, aufteilen, jeder bekommt gleich viel&lt;/div&gt;
-      &lt;div class=&quot;operator&quot;&gt;&lt;strong&gt;Verteilen : &lt;/strong&gt;Wie viele Gruppen? Wie oft passt eine Menge hinein?&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;example&quot;&gt;&lt;strong&gt;Textaufgaben-Tipp:&lt;/strong&gt; 1. Frage markieren. 2. Zahlen und Operatorwörter finden. 3. Rechnung planen. 4. Antwortsatz mit Einheit schreiben.&lt;/div&gt;
-  &lt;/section&gt;
-
-  &lt;section class=&quot;section practice&quot; aria-labelledby=&quot;practice-title&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;★&lt;/span&gt;&lt;h2 id=&quot;practice-title&quot;&gt;Jetzt bist du dran: 35 Übungen&lt;/h2&gt;&lt;/div&gt;
-    &lt;div class=&quot;progress&quot; id=&quot;hw-progress&quot; aria-label=&quot;Fortschritt&quot;&gt;&lt;/div&gt;
-    &lt;article class=&quot;card task-card&quot; aria-live=&quot;polite&quot;&gt;
-      &lt;div class=&quot;task-top&quot;&gt;&lt;span class=&quot;viz-badge&quot; id=&quot;hw-level&quot;&gt;&lt;/span&gt;&lt;span id=&quot;hw-score&quot;&gt;0 richtig&lt;/span&gt;&lt;/div&gt;
-      &lt;h3 id=&quot;hw-prompt&quot;&gt;&lt;/h3&gt;
-      &lt;div id=&quot;hw-calculation&quot; class=&quot;calculation hidden&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;answer-row&quot; id=&quot;hw-answer&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;actions&quot;&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;hw-hint&quot;&gt;Hinweis&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-check&quot;&gt;Prüfen&lt;/button&gt;
-        &lt;button type=&quot;button&quot; class=&quot;btn hidden&quot; id=&quot;hw-next&quot;&gt;Nächste Aufgabe&lt;/button&gt;
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;ns-builder-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;2&lt;/span&gt;&lt;h2 id=&quot;ns-builder-title&quot;&gt;Stellenwerttafel ausprobieren&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class=&quot;card builder&quot;&gt;
+      &lt;div class=&quot;builder-controls&quot;&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;ns-h&quot;&gt;Hunderter&lt;select class=&quot;form-select&quot; id=&quot;ns-h&quot;&gt;&lt;/select&gt;&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;ns-z&quot;&gt;Zehner&lt;select class=&quot;form-select&quot; id=&quot;ns-z&quot;&gt;&lt;/select&gt;&lt;/label&gt;
+        &lt;label class=&quot;form-label&quot; for=&quot;ns-e&quot;&gt;Einer&lt;select class=&quot;form-select&quot; id=&quot;ns-e&quot;&gt;&lt;/select&gt;&lt;/label&gt;
       &lt;/div&gt;
-      &lt;div class=&quot;hint hidden&quot; id=&quot;hw-hintbox&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;feedback hidden&quot; id=&quot;hw-feedback&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;builder-result&quot; aria-live=&quot;polite&quot;&gt;&lt;div class=&quot;builder-number&quot; id=&quot;ns-builder-number&quot;&gt;000&lt;/div&gt;&lt;div id=&quot;ns-builder-sum&quot;&gt;0 + 0 + 0&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;ns-line-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;3&lt;/span&gt;&lt;h2 id=&quot;ns-line-title&quot;&gt;Zahlenstrahl und Nachbarn&lt;/h2&gt;&lt;/div&gt;
+    &lt;p&gt;Auf dem Zahlenstrahl werden Zahlen nach rechts größer. Nachbarzehner und Nachbarhunderter helfen beim Einordnen und Runden.&lt;/p&gt;
+    &lt;div class=&quot;numberline&quot; aria-label=&quot;Zahlenstrahl von 300 bis 400&quot;&gt;&lt;div class=&quot;numberline-line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;numberline-points&quot;&gt;&lt;span class=&quot;numberline-point&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;numberline-point&quot;&gt;325&lt;/span&gt;&lt;span class=&quot;numberline-point&quot;&gt;350&lt;/span&gt;&lt;span class=&quot;numberline-point&quot;&gt;375&lt;/span&gt;&lt;span class=&quot;numberline-point&quot;&gt;400&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;decomposition&quot;&gt;&lt;strong&gt;347 liegt zwischen 340 und 350.&lt;/strong&gt; Weil 347 näher bei 350 liegt, wird auf 350 gerundet.&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;ns-compare-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;4&lt;/span&gt;&lt;h2 id=&quot;ns-compare-title&quot;&gt;Vergleichen, ordnen und runden&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class=&quot;info-grid&quot;&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;h3&gt;Von links vergleichen&lt;/h3&gt;&lt;p&gt;Vergleiche zuerst die Hunderter. Sind sie gleich, folgen die Zehner und danach die Einer.&lt;/p&gt;&lt;div class=&quot;decomposition&quot;&gt;582 &amp;gt; 569, weil 8 Zehner mehr sind als 6 Zehner.&lt;/div&gt;&lt;/article&gt;
+      &lt;article class=&quot;card&quot;&gt;&lt;h3&gt;Rundungsregel&lt;/h3&gt;&lt;p&gt;0 bis 4: abrunden. 5 bis 9: aufrunden. Beim Runden auf Hunderter schaust du auf die Zehnerstelle.&lt;/p&gt;&lt;div class=&quot;decomposition&quot;&gt;342 ≈ 300 &amp;nbsp;·&amp;nbsp; 368 ≈ 400&lt;/div&gt;&lt;/article&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;ns-practice-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;★&lt;/span&gt;&lt;h2 id=&quot;ns-practice-title&quot;&gt;Jetzt bist du dran: 35 Übungen&lt;/h2&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress&quot; id=&quot;ns-progress&quot; aria-label=&quot;Fortschritt&quot;&gt;&lt;/div&gt;
+    &lt;article class=&quot;card task-card&quot; aria-live=&quot;polite&quot;&gt;
+      &lt;div class=&quot;task-top&quot;&gt;&lt;span class=&quot;viz-badge&quot; id=&quot;ns-level&quot;&gt;&lt;/span&gt;&lt;span id=&quot;ns-score&quot;&gt;0 richtig&lt;/span&gt;&lt;/div&gt;
+      &lt;h3 id=&quot;ns-prompt&quot;&gt;&lt;/h3&gt;
+      &lt;div class=&quot;answer-row&quot; id=&quot;ns-answer&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;ns-hint&quot;&gt;Hinweis&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;ns-check&quot;&gt;Prüfen&lt;/button&gt;&lt;button type=&quot;button&quot; class=&quot;btn hidden&quot; id=&quot;ns-next&quot;&gt;Nächste Aufgabe&lt;/button&gt;&lt;/div&gt;
+      &lt;div class=&quot;hint hidden&quot; id=&quot;ns-hintbox&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;feedback hidden&quot; id=&quot;ns-feedback&quot;&gt;&lt;/div&gt;
     &lt;/article&gt;
   &lt;/section&gt;
 
-  &lt;section class=&quot;section&quot; aria-labelledby=&quot;hw-test-title&quot;&gt;
-    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;✓&lt;/span&gt;&lt;h2 id=&quot;hw-test-title&quot;&gt;Abschlusstest: 10 Aufgaben&lt;/h2&gt;&lt;/div&gt;
+  &lt;section class=&quot;section&quot; aria-labelledby=&quot;ns-test-title&quot;&gt;
+    &lt;div class=&quot;section-head&quot;&gt;&lt;span class=&quot;icon-circle&quot;&gt;✓&lt;/span&gt;&lt;h2 id=&quot;ns-test-title&quot;&gt;Abschlusstest: 10 Aufgaben&lt;/h2&gt;&lt;/div&gt;
     &lt;article class=&quot;card task-card&quot;&gt;
-      &lt;div id=&quot;hw-test-intro&quot;&gt;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;ben&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Ben:&lt;/strong&gt; Im Test rechnest du ohne Hinweise. Mit 8 richtigen Antworten hast du ihn super bestanden!&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-test-start&quot;&gt;Test starten&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
-      &lt;div id=&quot;hw-test-run&quot; class=&quot;hidden&quot;&gt;&lt;div class=&quot;task-top&quot;&gt;&lt;span class=&quot;viz-badge&quot; id=&quot;hw-test-progress&quot;&gt;&lt;/span&gt;&lt;span id=&quot;hw-test-stars&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;h3 id=&quot;hw-test-prompt&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;answer-row&quot; id=&quot;hw-test-answer&quot;&gt;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-test-check&quot;&gt;Antwort abgeben&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
-      &lt;div class=&quot;test-result hidden&quot; id=&quot;hw-test-result&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
+      &lt;div id=&quot;ns-test-intro&quot;&gt;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot; data-guide=&quot;ben&quot;&gt;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;Ben:&lt;/strong&gt; Im Test arbeitest du ohne Hinweise. Ab 8 richtigen Antworten hast du ihn super bestanden!&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;ns-test-start&quot;&gt;Test starten&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div id=&quot;ns-test-run&quot; class=&quot;hidden&quot;&gt;&lt;div class=&quot;task-top&quot;&gt;&lt;span class=&quot;viz-badge&quot; id=&quot;ns-test-progress&quot;&gt;&lt;/span&gt;&lt;span id=&quot;ns-test-stars&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;h3 id=&quot;ns-test-prompt&quot;&gt;&lt;/h3&gt;&lt;div class=&quot;answer-row&quot; id=&quot;ns-test-answer&quot;&gt;&lt;/div&gt;&lt;div class=&quot;actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;ns-test-check&quot;&gt;Antwort abgeben&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;test-result hidden&quot; id=&quot;ns-test-result&quot; aria-live=&quot;polite&quot;&gt;&lt;/div&gt;
     &lt;/article&gt;
   &lt;/section&gt;
 
   &lt;script&gt;
   (()=&gt;{
-    const root=document.getElementById(&#x27;half-written-coach&#x27;);
-    const q=s=&gt;root.querySelector(s);
+    const root=document.getElementById(&#x27;number-space-coach&#x27;),q=s=&gt;root.querySelector(s);
     const guideImages={mila:&#x27;data:image/webp;base64,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&#x27;,ben:&#x27;data:image/webp;base64,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&#x27;};
     function avatar(name){return &#x27;&lt;img src=&quot;&#x27;+guideImages[name]+&#x27;&quot; alt=&quot;&#x27;+(name===&#x27;mila&#x27;?&#x27;Mila&#x27;:&#x27;Ben&#x27;)+&#x27;&quot; loading=&quot;lazy&quot;&gt;&#x27;}
     root.querySelectorAll(&#x27;[data-guide]&#x27;).forEach(el=&gt;el.innerHTML=avatar(el.dataset.guide));
-    let testBonus=0;
-    function updateStars(){q(&#x27;#hw-stars&#x27;).textContent=&#x27;⭐ &#x27;+(score+testBonus)}
     function comicTip(text,i){const who=i%2===0?&#x27;mila&#x27;:&#x27;ben&#x27;,name=who===&#x27;mila&#x27;?&#x27;Mila&#x27;:&#x27;Ben&#x27;;return &#x27;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot;&gt;&#x27;+avatar(who)+&#x27;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;&#x27;+name+&#x27;:&lt;/strong&gt; &#x27;+text+&#x27;&lt;/div&gt;&lt;/div&gt;&#x27;}
+    const digitOptions=&#x27;&lt;option value=&quot;0&quot;&gt;0&lt;/option&gt;&#x27;+[1,2,3,4,5,6,7,8,9].map(x=&gt;&#x27;&lt;option value=&quot;&#x27;+x+&#x27;&quot;&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;);
+    [&#x27;#ns-h&#x27;,&#x27;#ns-z&#x27;,&#x27;#ns-e&#x27;].forEach(s=&gt;q(s).innerHTML=digitOptions);
+    q(&#x27;#ns-h&#x27;).value=&#x27;4&#x27;;q(&#x27;#ns-z&#x27;).value=&#x27;7&#x27;;q(&#x27;#ns-e&#x27;).value=&#x27;2&#x27;;
+    function updateBuilder(){const h=Number(q(&#x27;#ns-h&#x27;).value),z=Number(q(&#x27;#ns-z&#x27;).value),e=Number(q(&#x27;#ns-e&#x27;).value),n=h*100+z*10+e;q(&#x27;#ns-builder-number&#x27;).textContent=String(n).padStart(3,&#x27;0&#x27;);q(&#x27;#ns-builder-sum&#x27;).textContent=(h*100)+&#x27; + &#x27;+(z*10)+&#x27; + &#x27;+e+&#x27; = &#x27;+n}
+    [&#x27;#ns-h&#x27;,&#x27;#ns-z&#x27;,&#x27;#ns-e&#x27;].forEach(s=&gt;q(s).addEventListener(&#x27;input&#x27;,updateBuilder));updateBuilder();
     const tasks=[
-      {l:&#x27;Start · 1&#x27;,p:&#x27;Rechne: 20 · 3&#x27;,a:60,h:&#x27;2 · 3 = 6. Hänge bei 20 · 3 eine Null an.&#x27;,e:&#x27;20 · 3 = 60.&#x27;},
-      {l:&#x27;Start · 2&#x27;,p:&#x27;Rechne: 4 · 20&#x27;,a:80,h:&#x27;4 · 2 = 8. Mit einem Zehner wird daraus 80.&#x27;,e:&#x27;4 · 20 = 80.&#x27;},
-      {l:&#x27;Start · 3&#x27;,p:&#x27;Rechne: 60 : 3&#x27;,a:20,h:&#x27;Welche Zahl mal 3 ergibt 60?&#x27;,e:&#x27;60 : 3 = 20, denn 20 · 3 = 60.&#x27;},
-      {l:&#x27;Start · 4&#x27;,p:&#x27;Rechne: 80 : 4&#x27;,a:20,h:&#x27;Nutze die Umkehraufgabe 4 · ? = 80.&#x27;,e:&#x27;80 : 4 = 20.&#x27;},
-      {l:&#x27;Leicht · 5&#x27;,p:&#x27;Welche Zerlegung passt zu 23 · 3?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;20 · 3 + 3 · 3&#x27;,&#x27;2 · 3 + 3 · 3&#x27;,&#x27;20 · 3 + 30 · 3&#x27;],a:&#x27;20 · 3 + 3 · 3&#x27;,h:&#x27;23 besteht aus 20 und 3.&#x27;,e:&#x27;23 · 3 = 20 · 3 + 3 · 3.&#x27;},
-      {l:&#x27;Leicht · 6&#x27;,p:&#x27;Rechne halbschriftlich: 21 · 4&#x27;,a:84,v:&#x27;21 · 4\n= 20 · 4 + 1 · 4\n= 80 + 4&#x27;,h:&#x27;Addiere 80 und 4.&#x27;,e:&#x27;21 · 4 = 84.&#x27;},
-      {l:&#x27;Leicht · 7&#x27;,p:&#x27;Rechne halbschriftlich: 32 · 2&#x27;,a:64,v:&#x27;32 · 2\n= 30 · 2 + 2 · 2\n= 60 + 4&#x27;,h:&#x27;Beide Teile werden verdoppelt.&#x27;,e:&#x27;32 · 2 = 64.&#x27;},
-      {l:&#x27;Leicht · 8&#x27;,p:&#x27;Rechne halbschriftlich: 14 · 5&#x27;,a:70,v:&#x27;14 · 5\n= 10 · 5 + 4 · 5\n= 50 + 20&#x27;,h:&#x27;Addiere die Teilergebnisse.&#x27;,e:&#x27;14 · 5 = 70.&#x27;},
-      {l:&#x27;Leicht · 9&#x27;,p:&#x27;Rechne halbschriftlich: 12 · 7&#x27;,a:84,v:&#x27;12 · 7\n= 10 · 7 + 2 · 7&#x27;,h:&#x27;70 + 14 = ?&#x27;,e:&#x27;12 · 7 = 70 + 14 = 84.&#x27;},
-      {l:&#x27;Leicht · 10&#x27;,p:&#x27;Rechne halbschriftlich: 31 · 3&#x27;,a:93,v:&#x27;31 · 3\n= 30 · 3 + 1 · 3&#x27;,h:&#x27;90 + 3 = ?&#x27;,e:&#x27;31 · 3 = 93.&#x27;},
-      {l:&#x27;Mittel · 11&#x27;,p:&#x27;Welches Zwischenergebnis fehlt? 24 · 3 = 60 + ___&#x27;,a:12,h:&#x27;Der fehlende Teil ist 4 · 3.&#x27;,e:&#x27;4 · 3 = 12. Also 60 + 12 = 72.&#x27;},
-      {l:&#x27;Mittel · 12&#x27;,p:&#x27;Rechne: 27 · 3&#x27;,a:81,h:&#x27;Zerlege 27 in 20 + 7.&#x27;,e:&#x27;20 · 3 + 7 · 3 = 60 + 21 = 81.&#x27;},
-      {l:&#x27;Mittel · 13&#x27;,p:&#x27;Rechne: 19 · 4&#x27;,a:76,h:&#x27;Zerlege in 10 + 9 oder rechne 20 · 4 − 4.&#x27;,e:&#x27;10 · 4 + 9 · 4 = 40 + 36 = 76.&#x27;},
-      {l:&#x27;Mittel · 14&#x27;,p:&#x27;Rechne geschickt: 49 · 2&#x27;,a:98,h:&#x27;Rechne 50 · 2 und ziehe 2 ab.&#x27;,e:&#x27;49 · 2 = 100 − 2 = 98.&#x27;},
-      {l:&#x27;Mittel · 15&#x27;,p:&#x27;Rechne: 16 · 6&#x27;,a:96,h:&#x27;10 · 6 = 60 und 6 · 6 = 36.&#x27;,e:&#x27;16 · 6 = 60 + 36 = 96.&#x27;},
-      {l:&#x27;Mittel · 16&#x27;,p:&#x27;Welche Zerlegung hilft bei 96 : 3?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;90 : 3 + 6 : 3&#x27;,&#x27;90 : 3 + 3 : 3&#x27;,&#x27;9 : 3 + 6 : 3&#x27;],a:&#x27;90 : 3 + 6 : 3&#x27;,h:&#x27;Beide Teile müssen zusammen 96 ergeben und durch 3 teilbar sein.&#x27;,e:&#x27;96 = 90 + 6. Beide Teile lassen sich durch 3 teilen.&#x27;},
-      {l:&#x27;Mittel · 17&#x27;,p:&#x27;Rechne halbschriftlich: 66 : 3&#x27;,a:22,v:&#x27;66 : 3\n= 60 : 3 + 6 : 3\n= 20 + 2&#x27;,h:&#x27;Addiere 20 und 2.&#x27;,e:&#x27;66 : 3 = 22.&#x27;},
-      {l:&#x27;Mittel · 18&#x27;,p:&#x27;Rechne halbschriftlich: 84 : 4&#x27;,a:21,v:&#x27;84 : 4\n= 80 : 4 + 4 : 4&#x27;,h:&#x27;20 + 1 = ?&#x27;,e:&#x27;84 : 4 = 21.&#x27;},
-      {l:&#x27;Mittel · 19&#x27;,p:&#x27;Rechne: 75 : 5&#x27;,a:15,h:&#x27;Zerlege 75 in 50 + 25.&#x27;,e:&#x27;50 : 5 + 25 : 5 = 10 + 5 = 15.&#x27;},
-      {l:&#x27;Mittel · 20&#x27;,p:&#x27;Rechne: 96 : 6&#x27;,a:16,h:&#x27;Zerlege 96 in 60 + 36.&#x27;,e:&#x27;60 : 6 + 36 : 6 = 10 + 6 = 16.&#x27;},
-      {l:&#x27;Knifflig · 21&#x27;,p:&#x27;Rechne: 91 : 7&#x27;,a:13,h:&#x27;Zerlege 91 in 70 + 21.&#x27;,e:&#x27;70 : 7 + 21 : 7 = 10 + 3 = 13.&#x27;},
-      {l:&#x27;Knifflig · 22&#x27;,p:&#x27;Welches Ergebnis stimmt?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;78 : 3 = 26&#x27;,&#x27;78 : 3 = 24&#x27;,&#x27;78 : 3 = 25&#x27;],a:&#x27;78 : 3 = 26&#x27;,h:&#x27;60 : 3 = 20 und 18 : 3 = 6.&#x27;,e:&#x27;78 : 3 = 20 + 6 = 26.&#x27;},
-      {l:&#x27;Knifflig · 23&#x27;,p:&#x27;Rechne und gib nur den Rest an: 67 : 5&#x27;,a:2,u:&#x27;Rest&#x27;,h:&#x27;5 · 13 = 65. Wie viel bleibt bis 67?&#x27;,e:&#x27;67 : 5 = 13 Rest 2.&#x27;},
-      {l:&#x27;Knifflig · 24&#x27;,p:&#x27;Rechne und gib nur den Rest an: 74 : 8&#x27;,a:2,u:&#x27;Rest&#x27;,h:&#x27;8 · 9 = 72.&#x27;,e:&#x27;74 : 8 = 9 Rest 2.&#x27;},
-      {l:&#x27;Knifflig · 25&#x27;,p:&#x27;Welche Probe passt zu 92 : 4 = 23?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;23 · 4 = 92&#x27;,&#x27;92 · 4 = 23&#x27;,&#x27;23 + 4 = 92&#x27;],a:&#x27;23 · 4 = 92&#x27;,h:&#x27;Divisor mal Ergebnis muss wieder den Dividend ergeben.&#x27;,e:&#x27;23 · 4 = 92 bestätigt das Ergebnis.&#x27;},
-      {l:&#x27;Knifflig · 26&#x27;,p:&#x27;Eine Zahl wird verdreifacht. Das Ergebnis ist 87. Wie lautet die Zahl?&#x27;,a:29,h:&#x27;Rechne die Umkehraufgabe 87 : 3.&#x27;,e:&#x27;87 : 3 = 29. Die gesuchte Zahl ist 29.&#x27;},
-      {l:&#x27;Knifflig · 27&#x27;,p:&#x27;Das Doppelte einer Zahl ist 76. Wie lautet die Zahl?&#x27;,a:38,h:&#x27;Teile 76 durch 2.&#x27;,e:&#x27;76 : 2 = 38.&#x27;},
-      {l:&#x27;Knifflig · 28&#x27;,p:&#x27;Was ist größer?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;23 · 4&#x27;,&#x27;96 : 2&#x27;,&#x27;Beide sind gleich&#x27;],a:&#x27;23 · 4&#x27;,h:&#x27;Berechne beide Ergebnisse getrennt.&#x27;,e:&#x27;23 · 4 = 92 und 96 : 2 = 48. Daher ist 23 · 4 größer.&#x27;},
-      {l:&#x27;Textaufgabe · 29&#x27;,p:&#x27;In 4 Kisten liegen jeweils 23 Äpfel. Wie viele Äpfel sind es insgesamt?&#x27;,a:92,u:&#x27;Äpfel&#x27;,h:&#x27;„Jeweils“ und gleich große Gruppen weisen auf Multiplikation hin: 4 · 23.&#x27;,e:&#x27;4 · 23 = 92. In den Kisten liegen insgesamt 92 Äpfel.&#x27;},
-      {l:&#x27;Textaufgabe · 30&#x27;,p:&#x27;Eine Lehrerin verteilt 84 Stifte gleichmäßig auf 4 Gruppen. Wie viele Stifte bekommt jede Gruppe?&#x27;,a:21,u:&#x27;Stifte&#x27;,h:&#x27;„Gleichmäßig verteilen“ bedeutet teilen: 84 : 4.&#x27;,e:&#x27;84 : 4 = 21. Jede Gruppe bekommt 21 Stifte.&#x27;},
-      {l:&#x27;Textaufgabe · 31&#x27;,p:&#x27;Jaron sammelt 3 Wochen lang jeweils 28 Punkte. Wie viele Punkte sammelt er insgesamt?&#x27;,a:84,u:&#x27;Punkte&#x27;,h:&#x27;Drei gleich große Wochen-Päckchen: 3 · 28.&#x27;,e:&#x27;3 · 28 = 84. Jaron sammelt insgesamt 84 Punkte.&#x27;},
-      {l:&#x27;Textaufgabe · 32&#x27;,p:&#x27;96 Murmeln werden in Beutel mit jeweils 6 Murmeln aufgeteilt. Wie viele Beutel werden gebraucht?&#x27;,a:16,u:&#x27;Beutel&#x27;,h:&#x27;Gesucht ist die Anzahl der Gruppen: 96 : 6.&#x27;,e:&#x27;96 : 6 = 16. Es werden 16 Beutel gebraucht.&#x27;},
-      {l:&#x27;Textaufgabe · 33&#x27;,p:&#x27;Ein Eintritt kostet 7 Euro. Eine Familie kauft 13 Eintrittskarten. Wie viel bezahlt sie?&#x27;,a:91,u:&#x27;Euro&#x27;,h:&#x27;13 Karten zu jeweils 7 Euro: 13 · 7.&#x27;,e:&#x27;13 · 7 = 91. Die Familie bezahlt 91 Euro.&#x27;},
-      {l:&#x27;Textaufgabe · 34&#x27;,p:&#x27;Für ein Spiel werden Teams mit je 5 Kindern gebildet. 68 Kinder machen mit. Wie viele vollständige Teams entstehen?&#x27;,a:13,u:&#x27;Teams&#x27;,h:&#x27;68 : 5 = 13 Rest 3. Gefragt sind vollständige Teams.&#x27;,e:&#x27;68 : 5 = 13 Rest 3. Es entstehen 13 vollständige Teams; 3 Kinder bleiben übrig.&#x27;},
-      {l:&#x27;Profi · 35&#x27;,p:&#x27;Ein Bus hat 4 Reihen mit jeweils 18 Sitzplätzen. 63 Plätze sind besetzt. Wie viele Plätze sind noch frei?&#x27;,a:9,u:&#x27;Plätze&#x27;,h:&#x27;Rechne zuerst alle Plätze: 4 · 18. Ziehe danach die 63 besetzten Plätze ab.&#x27;,e:&#x27;4 · 18 = 72. Dann 72 − 63 = 9. Es sind noch 9 Plätze frei.&#x27;}
+      {l:&#x27;Start · 1&#x27;,p:&#x27;Wie viele Hunderter hat die Zahl 462?&#x27;,a:4,h:&#x27;Die erste Ziffer von links steht bei einer dreistelligen Zahl für die Hunderter.&#x27;,e:&#x27;462 besteht aus 4 Hundertern, 6 Zehnern und 2 Einern.&#x27;},
+      {l:&#x27;Start · 2&#x27;,p:&#x27;Wie viele Zehner hat die Zahl 462?&#x27;,a:6,h:&#x27;Die mittlere Ziffer steht für die Zehner.&#x27;,e:&#x27;Die 6 in 462 bedeutet 6 Zehner beziehungsweise 60.&#x27;},
+      {l:&#x27;Start · 3&#x27;,p:&#x27;Wie viele Einer hat die Zahl 462?&#x27;,a:2,h:&#x27;Die letzte Ziffer steht für die Einer.&#x27;,e:&#x27;Die Zahl 462 hat 2 Einer.&#x27;},
+      {l:&#x27;Start · 4&#x27;,p:&#x27;Welche Zahl ist 500 + 30 + 8?&#x27;,a:538,h:&#x27;Setze 5 in die Hunderter-, 3 in die Zehner- und 8 in die Einerstelle.&#x27;,e:&#x27;500 + 30 + 8 = 538.&#x27;},
+      {l:&#x27;Start · 5&#x27;,p:&#x27;Welche Zahl besteht aus 7 Hundertern, 0 Zehnern und 4 Einern?&#x27;,a:704,h:&#x27;Die Zehnerstelle bleibt mit einer Null frei.&#x27;,e:&#x27;7 H, 0 Z und 4 E ergeben 704.&#x27;},
+      {l:&#x27;Leicht · 6&#x27;,p:&#x27;Welchen Wert hat die Ziffer 6 in der Zahl 268?&#x27;,a:60,h:&#x27;Die 6 steht an der Zehnerstelle.&#x27;,e:&#x27;6 Zehner sind 60.&#x27;},
+      {l:&#x27;Leicht · 7&#x27;,p:&#x27;Welche Zahl heißt „achthundertfünfzehn“?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;815&#x27;,&#x27;851&#x27;,&#x27;805&#x27;],a:&#x27;815&#x27;,h:&#x27;Acht Hunderter, ein Zehner und fünf Einer.&#x27;,e:&#x27;Achthundertfünfzehn schreibt man 815.&#x27;},
+      {l:&#x27;Leicht · 8&#x27;,p:&#x27;Wie heißt der Vorgänger von 390?&#x27;,a:389,h:&#x27;Der Vorgänger ist genau 1 kleiner.&#x27;,e:&#x27;390 − 1 = 389.&#x27;},
+      {l:&#x27;Leicht · 9&#x27;,p:&#x27;Wie heißt der Nachfolger von 599?&#x27;,a:600,h:&#x27;Der Nachfolger ist genau 1 größer.&#x27;,e:&#x27;599 + 1 = 600.&#x27;},
+      {l:&#x27;Leicht · 10&#x27;,p:&#x27;Wie lautet der kleinere Nachbarzehner von 347?&#x27;,a:340,h:&#x27;Suche den Zehner direkt unterhalb von 347.&#x27;,e:&#x27;347 liegt zwischen 340 und 350.&#x27;},
+      {l:&#x27;Leicht · 11&#x27;,p:&#x27;Wie lautet der größere Nachbarzehner von 347?&#x27;,a:350,h:&#x27;Suche den nächsten vollen Zehner oberhalb von 347.&#x27;,e:&#x27;Der größere Nachbarzehner ist 350.&#x27;},
+      {l:&#x27;Leicht · 12&#x27;,p:&#x27;Wie lautet der kleinere Nachbarhunderter von 682?&#x27;,a:600,h:&#x27;Welcher volle Hunderter liegt direkt unter 682?&#x27;,e:&#x27;682 liegt zwischen 600 und 700.&#x27;},
+      {l:&#x27;Leicht · 13&#x27;,p:&#x27;Wie lautet der größere Nachbarhunderter von 682?&#x27;,a:700,h:&#x27;Welcher volle Hunderter folgt nach 682?&#x27;,e:&#x27;Der größere Nachbarhunderter ist 700.&#x27;},
+      {l:&#x27;Mittel · 14&#x27;,p:&#x27;Setze das richtige Zeichen ein: 509 ___ 590&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;&lt;&#x27;,h:&#x27;Beide Zahlen haben 5 Hunderter. Vergleiche danach die Zehner.&#x27;,e:&#x27;509 ist kleiner als 590.&#x27;},
+      {l:&#x27;Mittel · 15&#x27;,p:&#x27;Setze ein: 700 ___ 699&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;&gt;&#x27;,h:&#x27;700 ist der erste Wert nach 699.&#x27;,e:&#x27;700 ist größer als 699.&#x27;},
+      {l:&#x27;Mittel · 16&#x27;,p:&#x27;Welche Reihenfolge geht von klein nach groß?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;298, 308, 380&#x27;,&#x27;380, 308, 298&#x27;,&#x27;308, 298, 380&#x27;],a:&#x27;298, 308, 380&#x27;,h:&#x27;Vergleiche zuerst die Hunderter.&#x27;,e:&#x27;298 &lt; 308 &lt; 380.&#x27;},
+      {l:&#x27;Mittel · 17&#x27;,p:&#x27;Welche Zahl liegt genau zwischen 428 und 430?&#x27;,a:429,h:&#x27;Gehe von 428 einen Schritt weiter.&#x27;,e:&#x27;428, 429, 430.&#x27;},
+      {l:&#x27;Mittel · 18&#x27;,p:&#x27;Welche Zahl liegt genau in der Mitte zwischen 400 und 500?&#x27;,a:450,h:&#x27;Der Abstand beträgt 100. Die Hälfte davon ist 50.&#x27;,e:&#x27;400 + 50 = 450.&#x27;},
+      {l:&#x27;Mittel · 19&#x27;,p:&#x27;Setze die Folge fort: 200, 250, 300, ___&#x27;,a:350,h:&#x27;Die Zahlen wachsen immer um 50.&#x27;,e:&#x27;300 + 50 = 350.&#x27;},
+      {l:&#x27;Mittel · 20&#x27;,p:&#x27;Setze fort: 460, 470, 480, ___&#x27;,a:490,h:&#x27;Es geht in Zehnerschritten weiter.&#x27;,e:&#x27;480 + 10 = 490.&#x27;},
+      {l:&#x27;Mittel · 21&#x27;,p:&#x27;Setze fort: 125, 150, 175, ___&#x27;,a:200,h:&#x27;Addiere immer 25.&#x27;,e:&#x27;175 + 25 = 200.&#x27;},
+      {l:&#x27;Mittel · 22&#x27;,p:&#x27;Setze fort: 930, 830, 730, ___&#x27;,a:630,h:&#x27;Ziehe immer 100 ab.&#x27;,e:&#x27;730 − 100 = 630.&#x27;},
+      {l:&#x27;Mittel · 23&#x27;,p:&#x27;Welche Zahl folgt im Muster? 3, 6, 12, 24, ___&#x27;,a:48,h:&#x27;Jede Zahl wird verdoppelt.&#x27;,e:&#x27;24 · 2 = 48.&#x27;},
+      {l:&#x27;Mittel · 24&#x27;,p:&#x27;Ist 735 gerade oder ungerade?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;gerade&#x27;,&#x27;ungerade&#x27;],a:&#x27;ungerade&#x27;,h:&#x27;Gerade Zahlen enden auf 0, 2, 4, 6 oder 8.&#x27;,e:&#x27;735 endet auf 5 und ist deshalb ungerade.&#x27;},
+      {l:&#x27;Knifflig · 25&#x27;,p:&#x27;Wie viel ist die Hälfte von 800?&#x27;,a:400,h:&#x27;Teile 8 Hunderter in zwei gleich große Teile.&#x27;,e:&#x27;800 : 2 = 400.&#x27;},
+      {l:&#x27;Knifflig · 26&#x27;,p:&#x27;Wie viel ist das Doppelte von 345?&#x27;,a:690,h:&#x27;Verdopple 300, 40 und 5 getrennt.&#x27;,e:&#x27;600 + 80 + 10 = 690.&#x27;},
+      {l:&#x27;Knifflig · 27&#x27;,p:&#x27;Runde 347 auf den nächsten Zehner.&#x27;,a:350,h:&#x27;Die Einerstelle ist 7. Bei 5 bis 9 wird aufgerundet.&#x27;,e:&#x27;347 wird auf 350 gerundet.&#x27;},
+      {l:&#x27;Knifflig · 28&#x27;,p:&#x27;Runde 342 auf den nächsten Hunderter.&#x27;,a:300,h:&#x27;Die Zehnerstelle ist 4. Bei 0 bis 4 wird abgerundet.&#x27;,e:&#x27;342 liegt näher bei 300.&#x27;},
+      {l:&#x27;Knifflig · 29&#x27;,p:&#x27;Runde 761 auf den nächsten Hunderter.&#x27;,a:800,h:&#x27;Die Zehnerstelle ist 6. Runde deshalb auf.&#x27;,e:&#x27;761 wird auf 800 gerundet.&#x27;},
+      {l:&#x27;Knifflig · 30&#x27;,p:&#x27;Welche Zahl liegt am nächsten bei 500?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;492&#x27;,&#x27;541&#x27;,&#x27;458&#x27;],a:&#x27;492&#x27;,h:&#x27;Vergleiche die Abstände zu 500.&#x27;,e:&#x27;492 ist nur 8 von 500 entfernt.&#x27;},
+      {l:&#x27;Textaufgabe · 31&#x27;,p:&#x27;Ein Ort hat 742 Einwohner. Auf welchen Hunderter wird diese Zahl gerundet?&#x27;,a:700,h:&#x27;Die Zehnerstelle der 742 ist 4.&#x27;,e:&#x27;742 wird auf 700 gerundet.&#x27;},
+      {l:&#x27;Profi · 32&#x27;,p:&#x27;Bilde mit den Ziffern 2, 5 und 9 die größte mögliche Zahl.&#x27;,a:952,h:&#x27;Die größte Ziffer kommt an die Hunderterstelle.&#x27;,e:&#x27;9 Hunderter, 5 Zehner und 2 Einer ergeben 952.&#x27;},
+      {l:&#x27;Profi · 33&#x27;,p:&#x27;Bilde mit den Ziffern 3, 0 und 7 die kleinste dreistellige Zahl.&#x27;,a:307,h:&#x27;Eine dreistellige Zahl darf nicht mit 0 beginnen.&#x27;,e:&#x27;3 muss vorne stehen, danach folgen 0 und 7: 307.&#x27;},
+      {l:&#x27;Profi · 34&#x27;,p:&#x27;Gesucht ist eine Zahl zwischen 600 und 700. Sie hat 4 Zehner und 8 Einer. Wie heißt sie?&#x27;,a:648,h:&#x27;6 Hunderter + 4 Zehner + 8 Einer.&#x27;,e:&#x27;Die gesuchte Zahl ist 648.&#x27;},
+      {l:&#x27;Profi · 35&#x27;,p:&#x27;Wie heißt der Nachfolger von 999?&#x27;,a:1000,h:&#x27;Addiere genau 1.&#x27;,e:&#x27;999 + 1 = 1.000.&#x27;}
     ];
-    let index=0,score=0,solved=false;
-    const progress=q(&#x27;#hw-progress&#x27;),answer=q(&#x27;#hw-answer&#x27;),feedback=q(&#x27;#hw-feedback&#x27;),hintbox=q(&#x27;#hw-hintbox&#x27;);
+    let index=0,score=0,solved=false,testBonus=0;
+    const progress=q(&#x27;#ns-progress&#x27;),answer=q(&#x27;#ns-answer&#x27;),feedback=q(&#x27;#ns-feedback&#x27;),hintbox=q(&#x27;#ns-hintbox&#x27;);
     tasks.forEach((_,i)=&gt;{const d=document.createElement(&#x27;span&#x27;);d.className=&#x27;dot&#x27;;d.textContent=i+1;progress.appendChild(d)});
-    function render(){
-      solved=false;const t=tasks[index];q(&#x27;#hw-level&#x27;).textContent=t.l;q(&#x27;#hw-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#hw-prompt&#x27;).textContent=t.p;
-      const calc=q(&#x27;#hw-calculation&#x27;);calc.textContent=t.v||&#x27;&#x27;;calc.className=t.v?&#x27;calculation&#x27;:&#x27;calculation hidden&#x27;;answer.innerHTML=&#x27;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hint hidden&#x27;;q(&#x27;#hw-check&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#hw-next&#x27;).className=&#x27;btn hidden&#x27;;
-      [...progress.children].forEach((d,i)=&gt;d.className=&#x27;dot &#x27;+(i&lt;index?&#x27;done&#x27;:i===index?&#x27;active&#x27;:&#x27;&#x27;));
-      const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;let el;
-      if(t.t===&#x27;choice&#x27;){el=document.createElement(&#x27;select&#x27;);el.className=&#x27;form-select&#x27;;el.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.c.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;)}else{el=document.createElement(&#x27;input&#x27;);el.type=&#x27;number&#x27;;el.inputMode=&#x27;numeric&#x27;;el.className=&#x27;form-control&#x27;}
-      el.id=&#x27;hw-input&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;hw-input&#x27;);label.appendChild(el);answer.appendChild(label);if(t.u){const u=document.createElement(&#x27;span&#x27;);u.className=&#x27;unit&#x27;;u.textContent=t.u;answer.appendChild(u)}
-    }
-    function check(){
-      if(solved)return;const t=tasks[index],el=q(&#x27;#hw-input&#x27;);if(el.value===&#x27;&#x27;){feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch keine Antwort.&lt;/strong&gt;&lt;br&gt;Probiere es oder nutze den Hinweis.&#x27;;return}
-      const value=t.t===&#x27;choice&#x27;?el.value:Number(el.value),ok=value===t.a;solved=true;el.disabled=true;
-      if(ok){score++;updateStars();feedback.className=&#x27;feedback good&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Richtig! Du bekommst einen Lernstern! 🌟&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#hw-motto&#x27;).textContent=[&#x27;Prima! Dein Rechenweg wird immer sicherer.&#x27;,&#x27;Klasse! Zerlegen macht große Aufgaben klein.&#x27;,&#x27;Weiter so – Fehler sind Helfer beim Lernen.&#x27;][score%3]}else{feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch nicht ganz. Richtig ist: &#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;.&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#hw-motto&#x27;).textContent=&#x27;Nicht aufgeben: Schau dir den Rechenweg an und verstehe den nächsten Schritt.&#x27;}
-      q(&#x27;#hw-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#hw-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-next&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#hw-next&#x27;).textContent=index===tasks.length-1?&#x27;Ergebnis ansehen&#x27;:&#x27;Nächste Aufgabe&#x27;;
-    }
+    function updateStars(){q(&#x27;#ns-stars&#x27;).textContent=&#x27;⭐ &#x27;+(score+testBonus)}
+    function render(){solved=false;const t=tasks[index];q(&#x27;#ns-level&#x27;).textContent=t.l;q(&#x27;#ns-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#ns-prompt&#x27;).textContent=t.p;answer.innerHTML=&#x27;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hint hidden&#x27;;q(&#x27;#ns-check&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#ns-next&#x27;).className=&#x27;btn hidden&#x27;;[...progress.children].forEach((d,i)=&gt;d.className=&#x27;dot &#x27;+(i&lt;index?&#x27;done&#x27;:i===index?&#x27;active&#x27;:&#x27;&#x27;));const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;let el;if(t.t===&#x27;choice&#x27;){el=document.createElement(&#x27;select&#x27;);el.className=&#x27;form-select&#x27;;el.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.c.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;)}else{el=document.createElement(&#x27;input&#x27;);el.type=&#x27;number&#x27;;el.inputMode=&#x27;numeric&#x27;;el.className=&#x27;form-control&#x27;}el.id=&#x27;ns-input&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;ns-input&#x27;);label.appendChild(el);answer.appendChild(label)}
+    function check(){if(solved)return;const t=tasks[index],el=q(&#x27;#ns-input&#x27;);if(el.value===&#x27;&#x27;){feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch keine Antwort.&lt;/strong&gt;&lt;br&gt;Probiere es oder nutze den Hinweis.&#x27;;return}const value=t.t===&#x27;choice&#x27;?el.value:Number(el.value),ok=value===t.a;solved=true;el.disabled=true;if(ok){score++;updateStars();feedback.className=&#x27;feedback good&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Richtig! Du bekommst einen Lernstern! 🌟&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#ns-motto&#x27;).textContent=[&#x27;Prima! Du kennst dich im Zahlenraum immer besser aus.&#x27;,&#x27;Klasse! Stellenwerte machen Zahlen verständlich.&#x27;,&#x27;Weiter so – du wirst zum Zahlen-Profi.&#x27;][score%3]}else{feedback.className=&#x27;feedback bad&#x27;;feedback.innerHTML=&#x27;&lt;strong&gt;Noch nicht ganz. Richtig ist: &#x27;+t.a+&#x27;.&lt;/strong&gt;&lt;br&gt;&#x27;+t.e;q(&#x27;#ns-motto&#x27;).textContent=&#x27;Nicht aufgeben: Vergleiche die Stellenwerte noch einmal.&#x27;}q(&#x27;#ns-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#ns-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#ns-next&#x27;).className=&#x27;btn btn-primary&#x27;;q(&#x27;#ns-next&#x27;).textContent=index===tasks.length-1?&#x27;Ergebnis ansehen&#x27;:&#x27;Nächste Aufgabe&#x27;}
     function next(){if(!solved)return;if(index&lt;tasks.length-1){index++;render()}else finish()}
-    function finish(){q(&#x27;#hw-level&#x27;).textContent=&#x27;Training beendet&#x27;;q(&#x27;#hw-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#hw-prompt&#x27;).textContent=&#x27;Geschafft! 🏁&#x27;;q(&#x27;#hw-calculation&#x27;).className=&#x27;calculation hidden&#x27;;answer.innerHTML=&#x27;&lt;div class=&quot;finish&quot;&gt;&lt;div class=&quot;finish-icon&quot;&gt;🏆&lt;/div&gt;&lt;p&gt;Du hast &lt;strong&gt;&#x27;+score+&#x27; Lernsterne&lt;/strong&gt; gesammelt.&lt;/p&gt;&lt;p&gt;Wenn du bereit bist, wartet unten der Abschlusstest mit 10 Aufgaben.&lt;/p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;hw-restart&quot;&gt;Noch einmal üben&lt;/button&gt;&lt;/div&gt;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hint hidden&#x27;;q(&#x27;#hw-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-next&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-hint&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#hw-restart&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{index=0;score=0;testBonus=0;updateStars();q(&#x27;#hw-hint&#x27;).className=&#x27;btn&#x27;;render()})}
-    q(&#x27;#hw-check&#x27;).addEventListener(&#x27;click&#x27;,check);q(&#x27;#hw-next&#x27;).addEventListener(&#x27;click&#x27;,next);q(&#x27;#hw-hint&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{hintbox.innerHTML=comicTip(tasks[index].h,index);hintbox.className=&#x27;hint&#x27;});root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;!solved&amp;&amp;e.target?.id===&#x27;hw-input&#x27;)check()});render();updateStars();
-
+    function finish(){q(&#x27;#ns-level&#x27;).textContent=&#x27;Training beendet&#x27;;q(&#x27;#ns-score&#x27;).textContent=score+&#x27; richtig&#x27;;q(&#x27;#ns-prompt&#x27;).textContent=&#x27;Geschafft! 🏁&#x27;;answer.innerHTML=&#x27;&lt;div class=&quot;finish&quot;&gt;&lt;div class=&quot;finish-icon&quot;&gt;🏆&lt;/div&gt;&lt;p&gt;Du hast &lt;strong&gt;&#x27;+score+&#x27; Lernsterne&lt;/strong&gt; gesammelt.&lt;/p&gt;&lt;p&gt;Unten wartet dein Abschlusstest.&lt;/p&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; id=&quot;ns-restart&quot;&gt;Noch einmal üben&lt;/button&gt;&lt;/div&gt;&#x27;;feedback.className=&#x27;feedback hidden&#x27;;hintbox.className=&#x27;hint hidden&#x27;;q(&#x27;#ns-check&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#ns-next&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#ns-hint&#x27;).className=&#x27;btn hidden&#x27;;q(&#x27;#ns-restart&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{index=0;score=0;testBonus=0;updateStars();q(&#x27;#ns-hint&#x27;).className=&#x27;btn&#x27;;render()})}
+    q(&#x27;#ns-check&#x27;).addEventListener(&#x27;click&#x27;,check);q(&#x27;#ns-next&#x27;).addEventListener(&#x27;click&#x27;,next);q(&#x27;#ns-hint&#x27;).addEventListener(&#x27;click&#x27;,()=&gt;{hintbox.innerHTML=comicTip(tasks[index].h,index);hintbox.className=&#x27;hint&#x27;});root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;!solved&amp;&amp;e.target?.id===&#x27;ns-input&#x27;)check()});render();updateStars();
     const testTasks=[
-      {p:&#x27;Rechne: 23 · 3&#x27;,a:69},
-      {p:&#x27;Rechne: 17 · 4&#x27;,a:68},
-      {p:&#x27;Rechne: 48 · 2&#x27;,a:96},
-      {p:&#x27;Rechne: 84 : 4&#x27;,a:21},
-      {p:&#x27;Rechne: 96 : 3&#x27;,a:32},
-      {p:&#x27;Rechne: 75 : 5&#x27;,a:15},
-      {p:&#x27;Gib nur den Rest an: 68 : 6&#x27;,a:2,u:&#x27;Rest&#x27;},
-      {p:&#x27;Welche Probe passt zu 91 : 7 = 13?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;13 · 7 = 91&#x27;,&#x27;91 · 7 = 13&#x27;,&#x27;13 + 7 = 91&#x27;],a:&#x27;13 · 7 = 91&#x27;},
-      {p:&#x27;Vier Kisten enthalten jeweils 22 Flaschen. Wie viele Flaschen sind es?&#x27;,a:88,u:&#x27;Flaschen&#x27;},
-      {p:&#x27;72 Karten werden gleichmäßig auf 3 Kinder verteilt. Wie viele Karten bekommt jedes Kind?&#x27;,a:24,u:&#x27;Karten&#x27;}
+      {p:&#x27;Welche Zahl ist 600 + 20 + 7?&#x27;,a:627},
+      {p:&#x27;Welchen Wert hat die 8 in 381?&#x27;,a:80},
+      {p:&#x27;Wie heißt der Vorgänger von 700?&#x27;,a:699},
+      {p:&#x27;Wie heißt der größere Nachbarzehner von 563?&#x27;,a:570},
+      {p:&#x27;Setze ein: 608 ___ 680&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;&lt;&#x27;},
+      {p:&#x27;Welche Zahl liegt in der Mitte zwischen 700 und 800?&#x27;,a:750},
+      {p:&#x27;Setze fort: 240, 290, 340, ___&#x27;,a:390},
+      {p:&#x27;Runde 674 auf den nächsten Hunderter.&#x27;,a:700},
+      {p:&#x27;Bilde mit 1, 8 und 6 die größte mögliche Zahl.&#x27;,a:861},
+      {p:&#x27;Gesucht: 5 Hunderter, 3 Zehner und 9 Einer.&#x27;,a:539}
     ];
-    let ti=0,ts=0,testAnswers=[];
-    const ta=q(&#x27;#hw-test-answer&#x27;);
-    function renderTest(){const t=testTasks[ti];q(&#x27;#hw-test-progress&#x27;).textContent=&#x27;Testaufgabe &#x27;+(ti+1)+&#x27; von 10&#x27;;q(&#x27;#hw-test-stars&#x27;).textContent=&#x27;⭐ &#x27;+(score+testBonus)+&#x27; Lernsterne&#x27;;q(&#x27;#hw-test-prompt&#x27;).textContent=t.p;ta.innerHTML=&#x27;&#x27;;const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;let el;if(t.t===&#x27;choice&#x27;){el=document.createElement(&#x27;select&#x27;);el.className=&#x27;form-select&#x27;;el.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.c.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;)}else{el=document.createElement(&#x27;input&#x27;);el.type=&#x27;number&#x27;;el.inputMode=&#x27;numeric&#x27;;el.className=&#x27;form-control&#x27;}el.id=&#x27;hw-test-input&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;hw-test-input&#x27;);label.appendChild(el);ta.appendChild(label);if(t.u){const u=document.createElement(&#x27;span&#x27;);u.className=&#x27;unit&#x27;;u.textContent=t.u;ta.appendChild(u)}}
-    function finishTest(){const pct=ts*10;testBonus=ts&gt;=8?3:ts&gt;=6?2:ts&gt;=5?1:0;updateStars();const message=ts&gt;=8?&#x27;Super bestanden! Du rechnest schon sehr sicher.&#x27;:ts&gt;=6?&#x27;Gut bearbeitet! Die wichtigsten Rechenwege sitzen.&#x27;:ts&gt;=5?&#x27;Fast geschafft. Übe noch einige Aufgaben und versuche es erneut.&#x27;:&#x27;Bitte wiederhole das Thema und starte den Test danach noch einmal.&#x27;;q(&#x27;#hw-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#hw-test-result&#x27;).className=&#x27;test-result&#x27;;q(&#x27;#hw-test-result&#x27;).innerHTML=&#x27;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot;&gt;&#x27;+avatar(ts&gt;=6?&#x27;mila&#x27;:&#x27;ben&#x27;)+&#x27;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;&#x27;+(ts&gt;=6?&#x27;Mila&#x27;:&#x27;Ben&#x27;)+&#x27;:&lt;/strong&gt; &#x27;+message+&#x27;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&#x27;+ts+&#x27; von 10 richtig · &#x27;+pct+&#x27; % · &#x27;+testBonus+&#x27; Bonus-Lernsterne&lt;/strong&gt;&lt;/p&gt;&lt;ol class=&quot;solution-list&quot;&gt;&#x27;+testTasks.map((t,i)=&gt;&#x27;&lt;li&gt;&#x27;+t.p+&#x27; &lt;strong&gt;&#x27;+t.a+(t.u?&#x27; &#x27;+t.u:&#x27;&#x27;)+&#x27;&lt;/strong&gt;&#x27;+(testAnswers[i]===t.a?&#x27; ✓&#x27;:&#x27;&#x27;)+&#x27;&lt;/li&gt;&#x27;).join(&#x27;&#x27;)+&#x27;&lt;/ol&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;hw-test-restart&quot;&gt;Test wiederholen&lt;/button&gt;&#x27;;q(&#x27;#hw-test-restart&#x27;).addEventListener(&#x27;click&#x27;,startTest)}
-    function submitTest(){const el=q(&#x27;#hw-test-input&#x27;);if(el.value===&#x27;&#x27;)return;const t=testTasks[ti],value=t.t===&#x27;choice&#x27;?el.value:Number(el.value);testAnswers.push(value);if(value===t.a)ts++;if(ti&lt;9){ti++;renderTest()}else finishTest()}
-    function startTest(){ti=0;ts=0;testBonus=0;testAnswers=[];updateStars();q(&#x27;#hw-test-intro&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#hw-test-result&#x27;).className=&#x27;test-result hidden&#x27;;q(&#x27;#hw-test-run&#x27;).className=&#x27;&#x27;;renderTest()}
-    function resetAll(){index=0;score=0;solved=false;testBonus=0;ti=0;ts=0;testAnswers=[];updateStars();q(&#x27;#hw-hint&#x27;).className=&#x27;btn&#x27;;q(&#x27;#hw-test-intro&#x27;).className=&#x27;&#x27;;q(&#x27;#hw-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#hw-test-result&#x27;).className=&#x27;test-result hidden&#x27;;render()}
-    q(&#x27;#hw-test-start&#x27;).addEventListener(&#x27;click&#x27;,startTest);q(&#x27;#hw-test-check&#x27;).addEventListener(&#x27;click&#x27;,submitTest);q(&#x27;#hw-reset&#x27;).addEventListener(&#x27;click&#x27;,resetAll);root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;e.target?.id===&#x27;hw-test-input&#x27;)submitTest()});
+    let ti=0,ts=0,testAnswers=[];const ta=q(&#x27;#ns-test-answer&#x27;);
+    function renderTest(){const t=testTasks[ti];q(&#x27;#ns-test-progress&#x27;).textContent=&#x27;Testaufgabe &#x27;+(ti+1)+&#x27; von 10&#x27;;q(&#x27;#ns-test-stars&#x27;).textContent=&#x27;⭐ &#x27;+(score+testBonus)+&#x27; Lernsterne&#x27;;q(&#x27;#ns-test-prompt&#x27;).textContent=t.p;ta.innerHTML=&#x27;&#x27;;const label=document.createElement(&#x27;label&#x27;);label.className=&#x27;form-label&#x27;;label.textContent=&#x27;Deine Antwort&#x27;;let el;if(t.t===&#x27;choice&#x27;){el=document.createElement(&#x27;select&#x27;);el.className=&#x27;form-select&#x27;;el.innerHTML=&#x27;&lt;option value=&quot;&quot;&gt;Bitte wählen&lt;/option&gt;&#x27;+t.c.map(x=&gt;&#x27;&lt;option&gt;&#x27;+x+&#x27;&lt;/option&gt;&#x27;).join(&#x27;&#x27;)}else{el=document.createElement(&#x27;input&#x27;);el.type=&#x27;number&#x27;;el.inputMode=&#x27;numeric&#x27;;el.className=&#x27;form-control&#x27;}el.id=&#x27;ns-test-input&#x27;;label.setAttribute(&#x27;for&#x27;,&#x27;ns-test-input&#x27;);label.appendChild(el);ta.appendChild(label)}
+    function finishTest(){const pct=ts*10;testBonus=ts&gt;=8?3:ts&gt;=6?2:ts&gt;=5?1:0;updateStars();const message=ts&gt;=8?&#x27;Super bestanden! Du bewegst dich sehr sicher im Zahlenraum bis 1.000.&#x27;:ts&gt;=6?&#x27;Gut bearbeitet! Die wichtigsten Stellenwertregeln sitzen.&#x27;:ts&gt;=5?&#x27;Fast geschafft. Übe Nachbarzahlen und Runden noch einmal.&#x27;:&#x27;Bitte wiederhole das Thema und starte den Test danach erneut.&#x27;;q(&#x27;#ns-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#ns-test-result&#x27;).className=&#x27;test-result&#x27;;q(&#x27;#ns-test-result&#x27;).innerHTML=&#x27;&lt;div class=&quot;comic-tip&quot;&gt;&lt;div class=&quot;portrait&quot;&gt;&#x27;+avatar(ts&gt;=6?&#x27;mila&#x27;:&#x27;ben&#x27;)+&#x27;&lt;/div&gt;&lt;div class=&quot;speech&quot;&gt;&lt;strong&gt;&#x27;+(ts&gt;=6?&#x27;Mila&#x27;:&#x27;Ben&#x27;)+&#x27;:&lt;/strong&gt; &#x27;+message+&#x27;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;&#x27;+ts+&#x27; von 10 richtig · &#x27;+pct+&#x27; % · &#x27;+testBonus+&#x27; Bonus-Lernsterne&lt;/strong&gt;&lt;/p&gt;&lt;ol class=&quot;solution-list&quot;&gt;&#x27;+testTasks.map((t,i)=&gt;&#x27;&lt;li&gt;&#x27;+t.p+&#x27; &lt;strong&gt;&#x27;+t.a+&#x27;&lt;/strong&gt;&#x27;+(testAnswers[i]===t.a?&#x27; ✓&#x27;:&#x27;&#x27;)+&#x27;&lt;/li&gt;&#x27;).join(&#x27;&#x27;)+&#x27;&lt;/ol&gt;&lt;button type=&quot;button&quot; class=&quot;btn&quot; id=&quot;ns-test-restart&quot;&gt;Test wiederholen&lt;/button&gt;&#x27;;q(&#x27;#ns-test-restart&#x27;).addEventListener(&#x27;click&#x27;,startTest)}
+    function submitTest(){const el=q(&#x27;#ns-test-input&#x27;);if(el.value===&#x27;&#x27;)return;const t=testTasks[ti],value=t.t===&#x27;choice&#x27;?el.value:Number(el.value);testAnswers.push(value);if(value===t.a)ts++;if(ti&lt;9){ti++;renderTest()}else finishTest()}
+    function startTest(){ti=0;ts=0;testBonus=0;testAnswers=[];updateStars();q(&#x27;#ns-test-intro&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#ns-test-result&#x27;).className=&#x27;test-result hidden&#x27;;q(&#x27;#ns-test-run&#x27;).className=&#x27;&#x27;;renderTest()}
+    function resetAll(){index=0;score=0;solved=false;testBonus=0;ti=0;ts=0;testAnswers=[];updateStars();q(&#x27;#ns-hint&#x27;).className=&#x27;btn&#x27;;q(&#x27;#ns-test-intro&#x27;).className=&#x27;&#x27;;q(&#x27;#ns-test-run&#x27;).className=&#x27;hidden&#x27;;q(&#x27;#ns-test-result&#x27;).className=&#x27;test-result hidden&#x27;;render()}
+    q(&#x27;#ns-test-start&#x27;).addEventListener(&#x27;click&#x27;,startTest);q(&#x27;#ns-test-check&#x27;).addEventListener(&#x27;click&#x27;,submitTest);q(&#x27;#ns-reset&#x27;).addEventListener(&#x27;click&#x27;,resetAll);root.addEventListener(&#x27;keydown&#x27;,e=&gt;{if(e.key===&#x27;Enter&#x27;&amp;&amp;e.target?.id===&#x27;ns-test-input&#x27;)submitTest()});
   })();
   &lt;/script&gt;
 &lt;/div&gt;

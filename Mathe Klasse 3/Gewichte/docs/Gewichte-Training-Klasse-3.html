@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
-<title>Lernpaket Gewichte – Klasse 3</title>
-<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0;width:100%;height:100%;overflow:hidden}body{background:inherit}iframe{display:block;box-sizing:border-box;width:100%;max-width:none;height:100vh;min-height:560px;margin:0;border:0}</style>
+<title>Gewichte Lernpaket</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;max-width:736px;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
 </head>
 <body>
-<iframe sandbox="allow-scripts allow-same-origin allow-top-navigation-by-user-activation" referrerpolicy="no-referrer" title="Lernpaket Gewichte – Klasse 3" srcdoc="&lt;!doctype html&gt;
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Gewichte Lernpaket" srcdoc="&lt;!doctype html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;utf-8&quot;&gt;
 &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
 &lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
 &lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
-&lt;title&gt;Lernpaket Gewichte – Klasse 3&lt;/title&gt;
+&lt;title&gt;Gewichte Lernpaket&lt;/title&gt;
 &lt;style&gt;:root {
   color-scheme: light dark;
   background-color: var(--background) !important;
@@ -181,6 +181,71 @@ code:not(pre code) {
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
 }
 
 #widget {
@@ -778,8 +843,8 @@ html&gt;body{padding:0}&lt;/style&gt;
     #weight-coach .ladder{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:9px;align-items:center;text-align:center;margin-top:12px}
     #weight-coach .ladder-step{padding:12px 8px;background:var(--muted);border-radius:9px}
     #weight-coach .ladder-arrow{font-weight:500}
-    #weight-coach .fraction-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px;text-align:center}
-    #weight-coach .fraction-row span{padding:10px 5px;background:color-mix(in srgb,var(--viz-series-2) 15%,var(--card));border-radius:8px}
+    #weight-coach .example-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px;text-align:center}
+    #weight-coach .example-row span{padding:10px 5px;background:color-mix(in srgb,var(--viz-series-2) 15%,var(--card));border-radius:8px}
     #weight-coach .operator-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px}
     #weight-coach .operator-list div{padding:9px;background:var(--muted);border-radius:8px}
     #weight-coach .converter-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:end}
@@ -810,7 +875,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     #weight-coach .finish-icon{font-size:38px}
     #weight-coach .author-footer{text-align:center;padding:18px 8px 4px;color:var(--muted-foreground);border-top:1px solid var(--border)}
     @media(max-width:780px){#weight-coach .hero,#weight-coach .guides,#weight-coach .info-grid{grid-template-columns:1fr}#weight-coach .hero-art{width:min(100%,360px);margin:auto}#weight-coach .converter-grid,#weight-coach .operator-list{grid-template-columns:1fr}#weight-coach .progress{grid-template-columns:repeat(7,1fr)}}
-    @media(max-width:480px){#weight-coach .ladder{grid-template-columns:1fr}#weight-coach .ladder-arrow{transform:rotate(90deg)}#weight-coach .fraction-row{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:480px){#weight-coach .ladder{grid-template-columns:1fr}#weight-coach .ladder-arrow{transform:rotate(90deg)}#weight-coach .example-row{grid-template-columns:repeat(2,1fr)}}
   &lt;/style&gt;
 
   &lt;section class=&quot;hero&quot; aria-labelledby=&quot;gw-title&quot;&gt;
@@ -869,7 +934,7 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;div class=&quot;info-grid&quot;&gt;
       &lt;article class=&quot;card&quot;&gt;
         &lt;h3&gt;Teile eines Kilogramms&lt;/h3&gt;
-        &lt;div class=&quot;fraction-row&quot;&gt;&lt;span&gt;¼ kg&lt;br&gt;&lt;strong&gt;250 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;½ kg&lt;br&gt;&lt;strong&gt;500 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;¾ kg&lt;br&gt;&lt;strong&gt;750 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;1 kg&lt;br&gt;&lt;strong&gt;1.000 g&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;example-row&quot;&gt;&lt;span&gt;0,25 kg&lt;br&gt;&lt;strong&gt;250 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;0,5 kg&lt;br&gt;&lt;strong&gt;500 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;0,75 kg&lt;br&gt;&lt;strong&gt;750 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;1 kg&lt;br&gt;&lt;strong&gt;1.000 g&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
       &lt;/article&gt;
       &lt;article class=&quot;card&quot;&gt;
         &lt;h3&gt;Typische Signalwörter&lt;/h3&gt;
@@ -878,9 +943,9 @@ html&gt;body{padding:0}&lt;/style&gt;
     &lt;/div&gt;
     &lt;article class=&quot;card&quot;&gt;
       &lt;h3&gt;Kommazahlen bei Kilogramm&lt;/h3&gt;
-      &lt;p&gt;Ein Kilogramm hat 1.000 Gramm. Deshalb entspricht ein Zehntel Kilogramm genau 100 Gramm.&lt;/p&gt;
-      &lt;div class=&quot;fraction-row&quot;&gt;&lt;span&gt;0,1 kg&lt;br&gt;&lt;strong&gt;100 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;0,5 kg&lt;br&gt;&lt;strong&gt;500 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;0,7 kg&lt;br&gt;&lt;strong&gt;700 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;1,25 kg&lt;br&gt;&lt;strong&gt;1.250 g&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
-      &lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; 700 g = 0,7 kg, denn 700 g sind sieben Zehntel von 1.000 g. Bei 1,25 kg stehen vor dem Komma 1 kg und hinter dem Komma weitere 250 g.&lt;/p&gt;
+      &lt;p&gt;Ein Kilogramm hat 1.000 Gramm. Beim Umrechnen von Gramm in Kilogramm teilst du die Grammzahl durch 1.000.&lt;/p&gt;
+      &lt;div class=&quot;example-row&quot;&gt;&lt;span&gt;0,1 kg&lt;br&gt;&lt;strong&gt;100 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;0,5 kg&lt;br&gt;&lt;strong&gt;500 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;0,7 kg&lt;br&gt;&lt;strong&gt;700 g&lt;/strong&gt;&lt;/span&gt;&lt;span&gt;1,25 kg&lt;br&gt;&lt;strong&gt;1.250 g&lt;/strong&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;p&gt;&lt;strong&gt;Beispiel:&lt;/strong&gt; 700 g : 1.000 = 0,7 kg. Bei 1,25 kg stehen vor dem Komma 1 kg und hinter dem Komma weitere 250 g.&lt;/p&gt;
     &lt;/article&gt;
   &lt;/section&gt;
 
@@ -940,41 +1005,41 @@ html&gt;body{padding:0}&lt;/style&gt;
     [&#x27;#gw-converter-value&#x27;,&#x27;#gw-converter-from&#x27;,&#x27;#gw-converter-to&#x27;].forEach(id=&gt;q(id).addEventListener(&#x27;input&#x27;,updateConverter));
 
     const tasks=[
-      {l:&#x27;Einstieg · Passende Einheit&#x27;,p:&#x27;Ein Fußball wiegt ungefähr 430 …&#x27;,t:&#x27;choice&#x27;,c:[&#x27;g&#x27;,&#x27;kg&#x27;,&#x27;t&#x27;],a:&#x27;g&#x27;,h:&#x27;Ein Fußball lässt sich leicht mit einer Hand tragen.&#x27;,e:&#x27;Ein Fußball wiegt ungefähr 430 g.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Einstieg · Passende Einheit&#x27;,p:&#x27;Ein gefüllter Schulranzen wiegt ungefähr 4 …&#x27;,t:&#x27;choice&#x27;,c:[&#x27;g&#x27;,&#x27;kg&#x27;,&#x27;t&#x27;],a:&#x27;kg&#x27;,h:&#x27;Vier Gramm wären leichter als ein Radiergummi.&#x27;,e:&#x27;Ein Schulranzen wird sinnvoll in Kilogramm gewogen.&#x27;,i:&#x27;🎒&#x27;},
-      {l:&#x27;Einstieg · Passende Einheit&#x27;,p:&#x27;Ein Kleinwagen wiegt ungefähr 1,4 …&#x27;,t:&#x27;choice&#x27;,c:[&#x27;g&#x27;,&#x27;kg&#x27;,&#x27;t&#x27;],a:&#x27;t&#x27;,h:&#x27;Ein Auto wiegt deutlich mehr als 1.000 kg.&#x27;,e:&#x27;1,4 t entsprechen ungefähr 1.400 kg.&#x27;,i:&#x27;🚗&#x27;},
-      {l:&#x27;Einstieg · Schätzen&#x27;,p:&#x27;Welches Gewicht passt am besten zu einem Fußball?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;43 g&#x27;,&#x27;430 g&#x27;,&#x27;4,3 kg&#x27;],a:&#x27;430 g&#x27;,h:&#x27;Der Ball ist schwerer als eine Tafel Schokolade, aber viel leichter als ein Schulranzen.&#x27;,e:&#x27;Ein Fußball wiegt je nach Größe ungefähr 410 bis 450 g.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Grundlagen · Kommazahlen&#x27;,p:&#x27;700 g = ? kg&#x27;,t:&#x27;number&#x27;,a:0.7,u:&#x27;kg&#x27;,h:&#x27;700 g sind sieben Zehntel von 1.000 g.&#x27;,e:&#x27;700 g = 0,7 kg.&#x27;,i:&#x27;0,7&#x27;},
-      {l:&#x27;Grundlagen · Kommazahlen&#x27;,p:&#x27;250 g = ? kg&#x27;,t:&#x27;number&#x27;,a:0.25,u:&#x27;kg&#x27;,h:&#x27;250 g sind ein Viertel Kilogramm.&#x27;,e:&#x27;250 g = 0,25 kg.&#x27;,i:&#x27;0,25&#x27;},
-      {l:&#x27;Grundlagen · Umrechnen&#x27;,p:&#x27;1,3 kg = ? g&#x27;,t:&#x27;number&#x27;,a:1300,u:&#x27;g&#x27;,h:&#x27;1 kg sind 1.000 g und 0,3 kg sind 300 g.&#x27;,e:&#x27;1.000 g + 300 g = 1.300 g.&#x27;,i:&#x27;⚖️&#x27;},
-      {l:&#x27;Grundlagen · Umrechnen&#x27;,p:&#x27;2,05 kg = ? g&#x27;,t:&#x27;number&#x27;,a:2050,u:&#x27;g&#x27;,h:&#x27;0,05 kg entsprechen 50 g.&#x27;,e:&#x27;2 kg + 50 g = 2.050 g.&#x27;,i:&#x27;⚖️&#x27;},
-      {l:&#x27;Grundlagen · Gemischte Einheit&#x27;,p:&#x27;2 kg 400 g = ? kg&#x27;,t:&#x27;number&#x27;,a:2.4,u:&#x27;kg&#x27;,h:&#x27;400 g sind 0,4 kg.&#x27;,e:&#x27;2 kg 400 g = 2,4 kg.&#x27;,i:&#x27;⚖️&#x27;},
-      {l:&#x27;Grundlagen · Tonne&#x27;,p:&#x27;0,9 t = ? kg&#x27;,t:&#x27;number&#x27;,a:900,u:&#x27;kg&#x27;,h:&#x27;Ein Zehntel Tonne sind 100 kg.&#x27;,e:&#x27;Neun Zehntel von 1.000 kg sind 900 kg.&#x27;,i:&#x27;🚚&#x27;},
-      {l:&#x27;Mittel · Kommazahlen&#x27;,p:&#x27;1.250 g = ? kg&#x27;,t:&#x27;number&#x27;,a:1.25,u:&#x27;kg&#x27;,h:&#x27;1.000 g sind 1 kg, weitere 250 g sind 0,25 kg.&#x27;,e:&#x27;1.250 g = 1,25 kg.&#x27;,i:&#x27;1,25&#x27;},
-      {l:&#x27;Mittel · Umrechnen&#x27;,p:&#x27;2,75 kg = ? g&#x27;,t:&#x27;number&#x27;,a:2750,u:&#x27;g&#x27;,h:&#x27;0,75 kg sind 750 g.&#x27;,e:&#x27;2.000 g + 750 g = 2.750 g.&#x27;,i:&#x27;2,75&#x27;},
-      {l:&#x27;Mittel · Vergleichen&#x27;,p:&#x27;450 g __ 0,5 kg&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;&lt;&#x27;,h:&#x27;0,5 kg sind 500 g.&#x27;,e:&#x27;450 g sind leichter als 500 g.&#x27;,i:&#x27;⚖️&#x27;},
-      {l:&#x27;Mittel · Vergleichen&#x27;,p:&#x27;1,2 kg __ 1.200 g&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;=&#x27;,h:&#x27;0,2 kg sind 200 g.&#x27;,e:&#x27;1,2 kg und 1.200 g sind gleich schwer.&#x27;,i:&#x27;⚖️&#x27;},
-      {l:&#x27;Mittel · Ordnen&#x27;,p:&#x27;Welche Reihenfolge geht vom leichtesten zum schwersten?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;750 g – 0,8 kg – 1,05 kg&#x27;,&#x27;0,8 kg – 750 g – 1,05 kg&#x27;,&#x27;1,05 kg – 0,8 kg – 750 g&#x27;],a:&#x27;750 g – 0,8 kg – 1,05 kg&#x27;,h:&#x27;Schreibe alles in Gramm: 750 g, 800 g und 1.050 g.&#x27;,e:&#x27;750 g &lt; 800 g &lt; 1.050 g.&#x27;,i:&#x27;📊&#x27;},
-      {l:&#x27;Mittel · Gemischte Rechnung&#x27;,p:&#x27;0,6 kg + 350 g = ? g&#x27;,t:&#x27;number&#x27;,a:950,u:&#x27;g&#x27;,h:&#x27;0,6 kg sind 600 g.&#x27;,e:&#x27;600 g + 350 g = 950 g.&#x27;,i:&#x27;➕&#x27;},
-      {l:&#x27;Mittel · Gemischte Rechnung&#x27;,p:&#x27;2,4 kg − 900 g = ? kg&#x27;,t:&#x27;number&#x27;,a:1.5,u:&#x27;kg&#x27;,h:&#x27;900 g sind 0,9 kg.&#x27;,e:&#x27;2,4 kg − 0,9 kg = 1,5 kg.&#x27;,i:&#x27;➖&#x27;},
-      {l:&#x27;Mittel · Multiplizieren&#x27;,p:&#x27;Drei Pakete wiegen je 0,75 kg. Wie schwer sind sie zusammen?&#x27;,t:&#x27;number&#x27;,a:2.25,u:&#x27;kg&#x27;,h:&#x27;Rechne zuerst in Gramm: 3 · 750 g.&#x27;,e:&#x27;3 · 750 g = 2.250 g = 2,25 kg.&#x27;,i:&#x27;📦&#x27;},
-      {l:&#x27;Mittel · Subtrahieren&#x27;,p:&#x27;5 kg − 1,35 kg = ?&#x27;,t:&#x27;number&#x27;,a:3.65,u:&#x27;kg&#x27;,h:&#x27;Rechne 5,00 kg − 1,35 kg.&#x27;,e:&#x27;5 kg − 1,35 kg = 3,65 kg.&#x27;,i:&#x27;➖&#x27;},
-      {l:&#x27;Mittel · Tonne und Kilogramm&#x27;,p:&#x27;0,5 t + 250 kg = ? kg&#x27;,t:&#x27;number&#x27;,a:750,u:&#x27;kg&#x27;,h:&#x27;0,5 t sind 500 kg.&#x27;,e:&#x27;500 kg + 250 kg = 750 kg.&#x27;,i:&#x27;🚚&#x27;},
-      {l:&#x27;Schwer · Verteilen&#x27;,p:&#x27;3,2 kg werden gleichmäßig auf 4 Beutel verteilt. Wie schwer ist jeder Beutel?&#x27;,t:&#x27;number&#x27;,a:0.8,u:&#x27;kg&#x27;,h:&#x27;3,2 kg sind 3.200 g. Teile durch 4.&#x27;,e:&#x27;3.200 g : 4 = 800 g = 0,8 kg.&#x27;,i:&#x27;🛍️&#x27;},
-      {l:&#x27;Schwer · Gemischte Einheiten&#x27;,p:&#x27;1 kg 250 g + 750 g = ? kg&#x27;,t:&#x27;number&#x27;,a:2,u:&#x27;kg&#x27;,h:&#x27;250 g + 750 g ergeben genau 1 kg.&#x27;,e:&#x27;1 kg + 1 kg = 2 kg.&#x27;,i:&#x27;⚖️&#x27;},
-      {l:&#x27;Schwer · Gemischte Einheiten&#x27;,p:&#x27;Ein Paket wiegt 2,4 kg. Ein zweites wiegt 850 g. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:3.25,u:&#x27;kg&#x27;,h:&#x27;850 g sind 0,85 kg.&#x27;,e:&#x27;2,4 kg + 0,85 kg = 3,25 kg.&#x27;,i:&#x27;📦&#x27;},
-      {l:&#x27;Schwer · Sachaufgabe&#x27;,p:&#x27;Acht Äpfel wiegen je 175 g. Wie schwer sind sie zusammen?&#x27;,t:&#x27;number&#x27;,a:1.4,u:&#x27;kg&#x27;,h:&#x27;Rechne 8 · 175 g und wandle danach in Kilogramm um.&#x27;,e:&#x27;8 · 175 g = 1.400 g = 1,4 kg.&#x27;,i:&#x27;🍎&#x27;},
-      {l:&#x27;Schwer · Sachaufgabe&#x27;,p:&#x27;Eine Bäckerei verbraucht 6 Packungen mit je 1,25 kg Mehl. Wie viel Mehl ist das?&#x27;,t:&#x27;number&#x27;,a:7.5,u:&#x27;kg&#x27;,h:&#x27;Rechne 6 · 1,25 kg.&#x27;,e:&#x27;6 · 1,25 kg = 7,5 kg.&#x27;,i:&#x27;🥖&#x27;},
-      {l:&#x27;Schwer · Sachaufgabe&#x27;,p:&#x27;Ein Sack enthält 12,5 kg Futter. 3,75 kg werden verbraucht. Wie viel bleibt?&#x27;,t:&#x27;number&#x27;,a:8.75,u:&#x27;kg&#x27;,h:&#x27;Rechne 12,50 kg − 3,75 kg.&#x27;,e:&#x27;Es bleiben 8,75 kg.&#x27;,i:&#x27;🐕&#x27;},
-      {l:&#x27;Fußball · Multiplizieren&#x27;,p:&#x27;Zehn Fußbälle wiegen je 430 g. Wie schwer sind alle zusammen?&#x27;,t:&#x27;number&#x27;,a:4.3,u:&#x27;kg&#x27;,h:&#x27;Rechne 10 · 430 g und wandle in Kilogramm um.&#x27;,e:&#x27;10 · 430 g = 4.300 g = 4,3 kg.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Fußball · Mehrschrittig&#x27;,p:&#x27;In einer Tasche liegen 6 Bälle zu je 450 g. Die leere Tasche wiegt 1,3 kg. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:4,u:&#x27;kg&#x27;,h:&#x27;Berechne zuerst das Gewicht der Bälle.&#x27;,e:&#x27;6 · 450 g = 2,7 kg. Mit 1,3 kg Tasche sind es 4 kg.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Fußball · Multiplizieren&#x27;,p:&#x27;Für ein Training werden 12 Trinkflaschen mit je 0,75 kg getragen. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:9,u:&#x27;kg&#x27;,h:&#x27;Rechne 12 · 0,75 kg.&#x27;,e:&#x27;12 · 0,75 kg = 9 kg.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Fußball · Addieren&#x27;,p:&#x27;Ein Ballsack wiegt 4,8 kg, ein zweiter 3,65 kg. Wie schwer sind beide?&#x27;,t:&#x27;number&#x27;,a:8.45,u:&#x27;kg&#x27;,h:&#x27;Stelle die Kommas beim Addieren untereinander.&#x27;,e:&#x27;4,8 kg + 3,65 kg = 8,45 kg.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Fußball · Unterschied&#x27;,p:&#x27;Ein Spielball wiegt 450 g, ein Jugendball 380 g. Wie groß ist der Unterschied?&#x27;,t:&#x27;number&#x27;,a:70,u:&#x27;g&#x27;,h:&#x27;Gesucht ist der Unterschied: 450 g − 380 g.&#x27;,e:&#x27;Der Spielball ist 70 g schwerer.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Fußball · Knifflig&#x27;,p:&#x27;Ein Verein bestellt 24 Bälle mit je 0,42 kg. Wie schwer sind alle Bälle?&#x27;,t:&#x27;number&#x27;,a:10.08,u:&#x27;kg&#x27;,h:&#x27;Rechne zunächst 24 · 420 g.&#x27;,e:&#x27;24 · 420 g = 10.080 g = 10,08 kg.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Fußball · Verteilen&#x27;,p:&#x27;9 kg Markierungshütchen werden auf 6 Kisten verteilt. Gewicht je Kiste?&#x27;,t:&#x27;number&#x27;,a:1.5,u:&#x27;kg&#x27;,h:&#x27;Teile 9 kg durch 6.&#x27;,e:&#x27;9 kg : 6 = 1,5 kg.&#x27;,i:&#x27;⚽&#x27;},
-      {l:&#x27;Knifflig · Tonne&#x27;,p:&#x27;Ein Transporter darf 0,5 t laden. Bereits geladen sind 320 kg. Wie viel darf noch hinein?&#x27;,t:&#x27;number&#x27;,a:180,u:&#x27;kg&#x27;,h:&#x27;0,5 t sind 500 kg.&#x27;,e:&#x27;500 kg − 320 kg = 180 kg.&#x27;,i:&#x27;🚐&#x27;},
-      {l:&#x27;Fußball · Mehrschrittig&#x27;,p:&#x27;Eine Getränkekiste enthält 12 Flaschen zu je 0,75 kg. Die leere Kiste wiegt 1,5 kg. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:10.5,u:&#x27;kg&#x27;,h:&#x27;Berechne zuerst 12 · 0,75 kg und addiere das Kistengewicht.&#x27;,e:&#x27;Die Flaschen wiegen 9 kg. Mit der Kiste sind es 10,5 kg.&#x27;,i:&#x27;⚽&#x27;}
+      {l:&#x27;Einstieg · Passende Einheit&#x27;,p:&#x27;Eine Büroklammer wiegt ungefähr 2 …&#x27;,t:&#x27;choice&#x27;,c:[&#x27;g&#x27;,&#x27;kg&#x27;,&#x27;t&#x27;],a:&#x27;g&#x27;,h:&#x27;Eine Büroklammer ist sehr leicht und passt auf deine Fingerspitze.&#x27;,e:&#x27;Das Gewicht einer Büroklammer gibt man in Gramm an.&#x27;,i:&#x27;📎&#x27;},
+      {l:&#x27;Einstieg · Passende Einheit&#x27;,p:&#x27;Ein mittelgroßer Hund wiegt ungefähr 18 …&#x27;,t:&#x27;choice&#x27;,c:[&#x27;g&#x27;,&#x27;kg&#x27;,&#x27;t&#x27;],a:&#x27;kg&#x27;,h:&#x27;Einen Hund kann man nicht sinnvoll in Gramm oder Tonnen wiegen.&#x27;,e:&#x27;Das Gewicht eines Hundes gibt man in Kilogramm an.&#x27;,i:&#x27;🐕&#x27;},
+      {l:&#x27;Einstieg · Passende Einheit&#x27;,p:&#x27;Ein großer Lastwagen wiegt ungefähr 12 …&#x27;,t:&#x27;choice&#x27;,c:[&#x27;g&#x27;,&#x27;kg&#x27;,&#x27;t&#x27;],a:&#x27;t&#x27;,h:&#x27;Ein Lastwagen ist viel schwerer als ein Auto.&#x27;,e:&#x27;Sehr schwere Fahrzeuge werden in Tonnen gewogen.&#x27;,i:&#x27;🚛&#x27;},
+      {l:&#x27;Einstieg · Schätzen&#x27;,p:&#x27;Welches Gewicht passt am besten zu einem Apfel?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;18 g&#x27;,&#x27;180 g&#x27;,&#x27;18 kg&#x27;],a:&#x27;180 g&#x27;,h:&#x27;Ein Apfel ist schwerer als ein Radiergummi, aber leichter als ein Schulranzen.&#x27;,e:&#x27;Ein mittelgroßer Apfel wiegt ungefähr 180 g.&#x27;,i:&#x27;🍎&#x27;},
+      {l:&#x27;Einstieg · Schätzen&#x27;,p:&#x27;Welches Gewicht passt am besten zu einem Kind in Klasse 3?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;30 g&#x27;,&#x27;30 kg&#x27;,&#x27;30 t&#x27;],a:&#x27;30 kg&#x27;,h:&#x27;Menschen werden normalerweise in Kilogramm gewogen.&#x27;,e:&#x27;Für ein Grundschulkind sind ungefähr 30 kg eine sinnvolle Schätzung.&#x27;,i:&#x27;🧒&#x27;},
+      {l:&#x27;Grundlagen · Umrechnen&#x27;,p:&#x27;600 g = ? kg&#x27;,t:&#x27;number&#x27;,a:0.6,u:&#x27;kg&#x27;,h:&#x27;Teile 600 durch 1.000. Das Komma wandert drei Stellen nach links.&#x27;,e:&#x27;600 g = 0,6 kg.&#x27;,i:&#x27;0,6&#x27;},
+      {l:&#x27;Grundlagen · Umrechnen&#x27;,p:&#x27;1,4 kg = ? g&#x27;,t:&#x27;number&#x27;,a:1400,u:&#x27;g&#x27;,h:&#x27;Multipliziere 1,4 mit 1.000.&#x27;,e:&#x27;1,4 kg = 1.400 g.&#x27;,i:&#x27;⚖️&#x27;},
+      {l:&#x27;Grundlagen · Gemischte Einheit&#x27;,p:&#x27;2 kg 75 g = ? g&#x27;,t:&#x27;number&#x27;,a:2075,u:&#x27;g&#x27;,h:&#x27;Rechne zuerst 2 kg in Gramm um und addiere 75 g.&#x27;,e:&#x27;2.000 g + 75 g = 2.075 g.&#x27;,i:&#x27;⚖️&#x27;},
+      {l:&#x27;Grundlagen · Kommazahl&#x27;,p:&#x27;3,25 kg = ? g&#x27;,t:&#x27;number&#x27;,a:3250,u:&#x27;g&#x27;,h:&#x27;3 kg sind 3.000 g. Hinter dem Komma stehen weitere 250 g.&#x27;,e:&#x27;3,25 kg = 3.250 g.&#x27;,i:&#x27;3,25&#x27;},
+      {l:&#x27;Grundlagen · Tonne&#x27;,p:&#x27;0,8 t = ? kg&#x27;,t:&#x27;number&#x27;,a:800,u:&#x27;kg&#x27;,h:&#x27;Multipliziere 0,8 mit 1.000.&#x27;,e:&#x27;0,8 t = 800 kg.&#x27;,i:&#x27;🚚&#x27;},
+      {l:&#x27;Mittel · Vergleichen&#x27;,p:&#x27;720 g __ 0,7 kg&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;&gt;&#x27;,h:&#x27;0,7 kg sind 700 g.&#x27;,e:&#x27;720 g sind schwerer als 700 g.&#x27;,i:&#x27;⚖️&#x27;},
+      {l:&#x27;Mittel · Vergleichen&#x27;,p:&#x27;1,35 kg __ 1.350 g&#x27;,t:&#x27;choice&#x27;,c:[&#x27;&lt;&#x27;,&#x27;=&#x27;,&#x27;&gt;&#x27;],a:&#x27;=&#x27;,h:&#x27;Wandle 1,35 kg in Gramm um.&#x27;,e:&#x27;1,35 kg und 1.350 g sind gleich schwer.&#x27;,i:&#x27;⚖️&#x27;},
+      {l:&#x27;Mittel · Ordnen&#x27;,p:&#x27;Welche Reihenfolge geht vom leichtesten zum schwersten?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;680 g – 0,75 kg – 1,1 kg&#x27;,&#x27;0,75 kg – 680 g – 1,1 kg&#x27;,&#x27;1,1 kg – 0,75 kg – 680 g&#x27;],a:&#x27;680 g – 0,75 kg – 1,1 kg&#x27;,h:&#x27;Vergleiche 680 g, 750 g und 1.100 g.&#x27;,e:&#x27;680 g &lt; 750 g &lt; 1.100 g.&#x27;,i:&#x27;📊&#x27;},
+      {l:&#x27;Mittel · Fehler finden&#x27;,p:&#x27;Welche Umrechnung ist richtig?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;1.600 g = 1,6 kg&#x27;,&#x27;1.600 g = 16 kg&#x27;,&#x27;1.600 g = 0,16 kg&#x27;],a:&#x27;1.600 g = 1,6 kg&#x27;,h:&#x27;1.000 g ergeben 1 kg; 600 g kommen noch dazu.&#x27;,e:&#x27;1.600 g = 1,6 kg.&#x27;,i:&#x27;🔍&#x27;},
+      {l:&#x27;Mittel · Ergänzen&#x27;,p:&#x27;Eine Tasche wiegt mit einer 500-g-Flasche genau 2 kg. Wie schwer ist die leere Tasche?&#x27;,t:&#x27;number&#x27;,a:1500,u:&#x27;g&#x27;,h:&#x27;2 kg sind 2.000 g. Ziehe 500 g ab.&#x27;,e:&#x27;2.000 g − 500 g = 1.500 g.&#x27;,i:&#x27;🎒&#x27;},
+      {l:&#x27;Mittel · Addieren&#x27;,p:&#x27;0,8 kg + 350 g = ? g&#x27;,t:&#x27;number&#x27;,a:1150,u:&#x27;g&#x27;,h:&#x27;0,8 kg sind 800 g.&#x27;,e:&#x27;800 g + 350 g = 1.150 g.&#x27;,i:&#x27;➕&#x27;},
+      {l:&#x27;Mittel · Subtrahieren&#x27;,p:&#x27;3 kg − 650 g = ? g&#x27;,t:&#x27;number&#x27;,a:2350,u:&#x27;g&#x27;,h:&#x27;3 kg sind 3.000 g.&#x27;,e:&#x27;3.000 g − 650 g = 2.350 g.&#x27;,i:&#x27;➖&#x27;},
+      {l:&#x27;Mittel · Multiplizieren&#x27;,p:&#x27;Vier Müslipackungen wiegen je 250 g. Wie schwer sind sie zusammen?&#x27;,t:&#x27;number&#x27;,a:1,u:&#x27;kg&#x27;,h:&#x27;Rechne 4 · 250 g.&#x27;,e:&#x27;4 · 250 g = 1.000 g = 1 kg.&#x27;,i:&#x27;🥣&#x27;},
+      {l:&#x27;Mittel · Verteilen&#x27;,p:&#x27;2.400 g Reis werden gleichmäßig auf 6 Dosen verteilt. Wie viel kommt in jede Dose?&#x27;,t:&#x27;number&#x27;,a:400,u:&#x27;g&#x27;,h:&#x27;Teile 2.400 g durch 6.&#x27;,e:&#x27;2.400 g : 6 = 400 g.&#x27;,i:&#x27;🍚&#x27;},
+      {l:&#x27;Mittel · Einkaufen&#x27;,p:&#x27;Im Einkaufskorb liegen 1 kg Äpfel, 500 g Tomaten und 250 g Käse. Wie schwer ist alles?&#x27;,t:&#x27;number&#x27;,a:1750,u:&#x27;g&#x27;,h:&#x27;Schreibe zuerst 1 kg als 1.000 g.&#x27;,e:&#x27;1.000 g + 500 g + 250 g = 1.750 g.&#x27;,i:&#x27;🛒&#x27;},
+      {l:&#x27;Schwer · Rezept&#x27;,p:&#x27;Für ein Rezept werden drei 500-g-Packungen Mehl und 250 g Zucker gebraucht. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:1750,u:&#x27;g&#x27;,h:&#x27;Berechne zuerst 3 · 500 g und addiere 250 g.&#x27;,e:&#x27;1.500 g + 250 g = 1.750 g.&#x27;,i:&#x27;🥣&#x27;},
+      {l:&#x27;Schwer · Rest berechnen&#x27;,p:&#x27;In einem Sack sind 5 kg Hundefutter. 1,2 kg werden verbraucht. Wie viel bleibt?&#x27;,t:&#x27;number&#x27;,a:3.8,u:&#x27;kg&#x27;,h:&#x27;Rechne 5,0 kg − 1,2 kg.&#x27;,e:&#x27;Es bleiben 3,8 kg Hundefutter.&#x27;,i:&#x27;🐕&#x27;},
+      {l:&#x27;Schwer · Pakete&#x27;,p:&#x27;Ein Paket wiegt 2,35 kg, ein zweites 780 g. Wie schwer sind beide zusammen?&#x27;,t:&#x27;number&#x27;,a:3.13,u:&#x27;kg&#x27;,h:&#x27;780 g sind 0,78 kg.&#x27;,e:&#x27;2,35 kg + 0,78 kg = 3,13 kg.&#x27;,i:&#x27;📦&#x27;},
+      {l:&#x27;Schwer · Recycling&#x27;,p:&#x27;Acht Kisten Altpapier wiegen je 1,25 kg. Wie schwer sind alle Kisten?&#x27;,t:&#x27;number&#x27;,a:10,u:&#x27;kg&#x27;,h:&#x27;Du kannst auch in Gramm rechnen: 8 · 1.250 g.&#x27;,e:&#x27;8 · 1.250 g = 10.000 g = 10 kg.&#x27;,i:&#x27;♻️&#x27;},
+      {l:&#x27;Schwer · Waage&#x27;,p:&#x27;Links liegen 1,2 kg und 350 g. Welches Gewicht muss rechts liegen, damit die Waage ausgeglichen ist?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;1,55 kg&#x27;,&#x27;1,35 kg&#x27;,&#x27;1,7 kg&#x27;],a:&#x27;1,55 kg&#x27;,h:&#x27;350 g sind 0,35 kg.&#x27;,e:&#x27;1,2 kg + 0,35 kg = 1,55 kg.&#x27;,i:&#x27;⚖️&#x27;},
+      {l:&#x27;Fußball · Multiplizieren&#x27;,p:&#x27;Acht Fußbälle wiegen je 425 g. Wie schwer sind alle zusammen?&#x27;,t:&#x27;number&#x27;,a:3.4,u:&#x27;kg&#x27;,h:&#x27;Rechne 8 · 425 g und wandle das Ergebnis in Kilogramm um.&#x27;,e:&#x27;8 · 425 g = 3.400 g = 3,4 kg.&#x27;,i:&#x27;⚽&#x27;},
+      {l:&#x27;Fußball · Mehrschrittig&#x27;,p:&#x27;In einer Tasche liegen 6 Bälle zu je 450 g. Die leere Tasche wiegt 1,3 kg. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:4,u:&#x27;kg&#x27;,h:&#x27;Berechne zuerst das Gewicht der sechs Bälle.&#x27;,e:&#x27;6 · 450 g = 2,7 kg. Mit der Tasche sind es 4 kg.&#x27;,i:&#x27;⚽&#x27;},
+      {l:&#x27;Fußball · Vergleichen&#x27;,p:&#x27;Team Blau trägt 3,8 kg Material, Team Rot 3.650 g. Welches Team trägt mehr?&#x27;,t:&#x27;choice&#x27;,c:[&#x27;Team Blau&#x27;,&#x27;Team Rot&#x27;,&#x27;beide gleich viel&#x27;],a:&#x27;Team Blau&#x27;,h:&#x27;3,8 kg sind 3.800 g.&#x27;,e:&#x27;Team Blau trägt 150 g mehr.&#x27;,i:&#x27;⚽&#x27;},
+      {l:&#x27;Fußball · Getränke&#x27;,p:&#x27;Zwölf Trinkflaschen wiegen je 0,75 kg. Wie schwer sind alle zusammen?&#x27;,t:&#x27;number&#x27;,a:9,u:&#x27;kg&#x27;,h:&#x27;Rechne 12 · 750 g.&#x27;,e:&#x27;12 · 750 g = 9.000 g = 9 kg.&#x27;,i:&#x27;⚽&#x27;},
+      {l:&#x27;Fußball · Unterschied&#x27;,p:&#x27;Ein Spielball wiegt 450 g, ein Trainingsball 390 g. Wie groß ist der Unterschied?&#x27;,t:&#x27;number&#x27;,a:60,u:&#x27;g&#x27;,h:&#x27;Ziehe 390 g von 450 g ab.&#x27;,e:&#x27;450 g − 390 g = 60 g.&#x27;,i:&#x27;⚽&#x27;},
+      {l:&#x27;Knifflig · Zuladung&#x27;,p:&#x27;Ein Transporter darf 0,9 t laden. Bereits geladen sind 635 kg. Wie viel darf noch hinein?&#x27;,t:&#x27;number&#x27;,a:265,u:&#x27;kg&#x27;,h:&#x27;0,9 t sind 900 kg.&#x27;,e:&#x27;900 kg − 635 kg = 265 kg.&#x27;,i:&#x27;🚐&#x27;},
+      {l:&#x27;Knifflig · Tierpark&#x27;,p:&#x27;Drei Ziegen bekommen je 1,4 kg Futter. Zusätzlich bekommt ein Pony 2,8 kg. Wie viel Futter wird gebraucht?&#x27;,t:&#x27;number&#x27;,a:7,u:&#x27;kg&#x27;,h:&#x27;Berechne zuerst 3 · 1,4 kg.&#x27;,e:&#x27;3 · 1,4 kg + 2,8 kg = 7 kg.&#x27;,i:&#x27;🐐&#x27;},
+      {l:&#x27;Knifflig · Verpacken&#x27;,p:&#x27;Eine Bäckerei verteilt 4,8 kg Teig gleichmäßig auf 8 Formen. Wie viel Teig kommt in jede Form?&#x27;,t:&#x27;number&#x27;,a:600,u:&#x27;g&#x27;,h:&#x27;4,8 kg sind 4.800 g. Teile durch 8.&#x27;,e:&#x27;4.800 g : 8 = 600 g.&#x27;,i:&#x27;🥖&#x27;},
+      {l:&#x27;Knifflig · Mehrschrittig&#x27;,p:&#x27;Vier Pakete wiegen je 1,15 kg. Zwei weitere Pakete wiegen je 700 g. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:6,u:&#x27;kg&#x27;,h:&#x27;Berechne beide Paketgruppen getrennt und addiere.&#x27;,e:&#x27;4 · 1,15 kg = 4,6 kg und 2 · 700 g = 1,4 kg. Zusammen sind es 6 kg.&#x27;,i:&#x27;📦&#x27;},
+      {l:&#x27;Fußball · Turnier&#x27;,p:&#x27;Für ein Turnier werden 15 Bälle zu je 430 g in eine 2,55 kg schwere Kiste gepackt. Gesamtgewicht?&#x27;,t:&#x27;number&#x27;,a:9,u:&#x27;kg&#x27;,h:&#x27;Berechne zuerst 15 · 430 g.&#x27;,e:&#x27;15 · 430 g = 6,45 kg. Mit der Kiste sind es 9 kg.&#x27;,i:&#x27;🏆&#x27;}
     ];
 
     let index=0,score=0,solved=false,testBonus=0;
